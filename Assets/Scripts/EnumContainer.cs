@@ -12,8 +12,8 @@ public enum PuzzleType
 
 }
 
-public enum ControllerMode
-{
-    VRController,
-    FPSController,
-}
+//public enum ControllerMode
+//{
+//    VRController,
+//    FPSController,
+//}
