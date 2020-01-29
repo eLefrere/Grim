@@ -7,7 +7,6 @@ using UnityEngine;
 /// </summary>
 public class EventManager : MonoBehaviour
 {
-    public static bool debugEventOn = true;
     /// <summary>
     /// Delegate for events
     /// </summary>
@@ -29,7 +28,7 @@ public class EventManager : MonoBehaviour
     /// <param name="pos">position of event</param>
     public static void OnTriggerEnterEvent(string eventCode, Vector3 pos)
     {
-        if(debugEventOn)
+        if(DebugTable.EventDebug)
             Debug.Log("On Trigger Enter Event CODE: " + eventCode + " POSITION: " + pos);
 
         onTriggerEnter?.Invoke(eventCode, pos);
@@ -42,7 +41,7 @@ public class EventManager : MonoBehaviour
     /// <param name="pos">position of event</param>
     public static void OnTriggerExitEvent(string eventCode, Vector3 pos)
     {
-        if(debugEventOn)
+        if(DebugTable.EventDebug)
             Debug.Log("On Trigger Exit Event CODE: " + eventCode + " POSITION: " + pos);
 
         onTriggerExit?.Invoke(eventCode, pos);
