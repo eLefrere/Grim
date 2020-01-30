@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877019976548402427}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4914904, y: 1.6075137, z: 0.3722613}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -43,5 +43,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b22df3981724b1640b392233f5ecef42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventDebug: 0
-  puzzleDebug: 0
+  debugging: 0
+  debugFields:
+  - {fileID: 11400000, guid: 4d33cd0ceb2d98840baac245628e6fcb, type: 2}
+  eventDebug: 1
+  puzzleDebug: 1
+  playerMovementDebug: 0
+  playerInteractionDebug: 0
+  soundDebug: 0
+  aiPlayerDebug: 0
+  monsterDebug: 0
+  shaderDebug: 0
