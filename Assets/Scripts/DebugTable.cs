@@ -8,12 +8,9 @@ using UnityEngine;
 public class DebugTable : MonoBehaviour
 {
 
-    [Header("Different Debug areas ON/OFF, automatically changes static member to match bool")]
-    public bool debugging;
-    public static bool Debugging;
     [Tooltip("List of Debug Field Scriptable Objects optionally used to check debugging status")]
     public DebugField[] debugFields;
-
+   
     [Header("Dev-vellu debugging")]
     public bool eventDebug;
     public static bool EventDebug;
@@ -74,8 +71,8 @@ public class DebugTable : MonoBehaviour
     {
         for (int i = 0; i < debugFields.Length; i++)
         {
-            if(Debugging)
-                Debug.Log(debugFields[i].name);
+          
+            Debug.Log(debugFields[i].name);
 
             if (field == debugFields[i])
             {
@@ -96,8 +93,8 @@ public class DebugTable : MonoBehaviour
     {
         for (int i = 0; i < debugFields.Length; i++)
         {
-            if(Debugging)
-                Debug.Log(debugFields[i].name);
+          
+            Debug.Log(debugFields[i].name);
 
             if (fieldName == debugFields[i].name)
             {
@@ -114,15 +111,12 @@ public class DebugTable : MonoBehaviour
     private void OnValidate()
     {
 
-        if (debugging != Debugging)
-            Debugging = debugging;
-
         if (eventDebug != EventDebug)
             EventDebug = eventDebug;
-
+        
         if (puzzleDebug != PuzzleDebug)
             PuzzleDebug = puzzleDebug;
-
+     
         if (playerMovementDebug != PlayerMovementDebug)
             PlayerMovementDebug = playerMovementDebug;
 

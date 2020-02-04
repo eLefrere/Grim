@@ -15,12 +15,21 @@ public class EventManager : MonoBehaviour
     public static event EventTriggerDelegate onTriggerEnter;
     public static event EventTriggerDelegate onTriggerExit;
 
+    public delegate void PuzzleEventDelegate(string eventCode);
+    public static event PuzzleEventDelegate onPuzzleComplete;
+    public static event PuzzleEventDelegate onPuzzleReset;
+    public static event PuzzleEventDelegate onPuzzlepartComplete;
+    public static event PuzzleEventDelegate onPuzzlepartReset;
+
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
     }
 
-    #region EventCall Functions for <EventTriggerDelegate>
+    #region EventCall Functions
+
+    #region Trigger Event Calls
     /// <summary>
     /// To Invoke the onTriggerEnter
     /// </summary>
@@ -46,6 +55,43 @@ public class EventManager : MonoBehaviour
 
         onTriggerExit?.Invoke(eventCode, pos);
     }
-    #endregion
+
+    #endregion Trigger Event Calls
+
+    #region Puzzle Events Calls
+    public static void OnPuzzleCompleteEvent(string eventCode)
+    {
+        if (DebugTable.instance.IsDebugging("EventDebug"))
+            Debug.Log("On Puzzle Complete Event CODE: " + eventCode);
+
+        onPuzzleComplete?.Invoke(eventCode);
+    }
+
+    public static void OnPuzzleResetEvent(string eventCode)
+    {
+        if (DebugTable.instance.IsDebugging("EventDebug"))
+            Debug.Log("On Puzzle Reset Event CODE: " + eventCode);
+
+        onPuzzleReset?.Invoke(eventCode);
+    }
+
+    public static void OnPuzzlepartCompleteEvent(string eventCode)
+    {
+        if (DebugTable.instance.IsDebugging("EventDebug"))
+            Debug.Log("On Puzzlepart Complete Event CODE: " + eventCode);
+
+        onPuzzlepartComplete?.Invoke(eventCode);
+    }
+
+    public static void OnPuzzlepartResetEvent(string eventCode)
+    {
+        if (DebugTable.instance.IsDebugging("EventDebug"))
+            Debug.Log("On Puzzlepart Reset Event CODE: " + eventCode);
+
+        onPuzzlepartReset?.Invoke(eventCode);
+    }
+    #endregion Puzzle Events Calls
+
+    #endregion EventCall Functions for <EventTriggerDelegate>
 
 }
