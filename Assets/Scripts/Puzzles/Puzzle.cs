@@ -15,7 +15,13 @@ public abstract class Puzzle : MonoBehaviour
     private IEnumerator coroutine;
     public List<PuzzlePart> puzzleParts = new List<PuzzlePart>();
     public bool finished = false;
-  
+
+
+    private void Start()
+    {
+        coroutine = Tick(timeStep);
+        StartCoroutine(coroutine);
+    }
 
     public IEnumerator Tick(float time)
     {
@@ -25,7 +31,7 @@ public abstract class Puzzle : MonoBehaviour
 
             if (DebugTable.PuzzleDebug)
                 Debug.Log("Check Puzzle Status " + Time.time);
-
+          
             CheckStatus();
         }
     }
@@ -43,7 +49,7 @@ public abstract class Puzzle : MonoBehaviour
 
     public void CheckStatus()
     {
-
+      
         if (puzzleParts.Any() == false)
         {
             if (DebugTable.PuzzleDebug)
@@ -67,6 +73,9 @@ public abstract class Puzzle : MonoBehaviour
                 return;
             }
         }
+
+        if (finished)
+            return;
 
         finished = true;
         EventManager.OnPuzzleCompleteEvent(completionEventCode);

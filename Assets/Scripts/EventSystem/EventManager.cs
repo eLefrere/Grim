@@ -21,6 +21,14 @@ public class EventManager : MonoBehaviour
     public static event PuzzleEventDelegate onPuzzlepartComplete;
     public static event PuzzleEventDelegate onPuzzlepartReset;
 
+    public static event PuzzleEventDelegate onAllPuzzlesComplete;
+    public static event PuzzleEventDelegate on25PercentCompletion;
+    public static event PuzzleEventDelegate on50PercentCompletion;
+    public static event PuzzleEventDelegate on75PercentCompletion;
+
+    public delegate void NormalEventDelegate();
+    public static event NormalEventDelegate onNormalEvent;
+
 
     private void Awake()
     {
@@ -28,6 +36,16 @@ public class EventManager : MonoBehaviour
     }
 
     #region EventCall Functions
+
+    public static void OnNormalEvent()
+    {
+        if(DebugTable.instance.IsDebugging("EventDebug"))
+        {
+            Debug.Log("Invoking normal event!");
+        }
+
+        onNormalEvent?.Invoke();
+    }
 
     #region Trigger Event Calls
     /// <summary>
@@ -90,6 +108,39 @@ public class EventManager : MonoBehaviour
 
         onPuzzlepartReset?.Invoke(eventCode);
     }
+
+    public static void OnPuzzlesCompleteEvent(string eventCode)
+    {
+        if (DebugTable.instance.IsDebugging("EventDebug"))
+            Debug.Log("Invoking all puzzles compled event : " + eventCode);
+
+        onAllPuzzlesComplete?.Invoke(eventCode);
+    }
+
+    public static void OnPuzzles25CompletedEvent(string eventCode)
+    {
+        if (DebugTable.instance.IsDebugging("EventDebug"))
+            Debug.Log("Invoking 25% puzzles compled event : " + eventCode);
+
+        on25PercentCompletion?.Invoke(eventCode);
+    }
+
+    public static void OnPuzzles50CompletedEvent(string eventCode)
+    {
+        if (DebugTable.instance.IsDebugging("EventDebug"))
+            Debug.Log("Invoking 50% puzzles compled event : " + eventCode);
+
+        on50PercentCompletion?.Invoke(eventCode);
+    }
+
+    public static void OnPuzzles75CompletedEvent(string eventCode)
+    {
+        if (DebugTable.instance.IsDebugging("EventDebug"))
+            Debug.Log("Invoking 75% puzzles compled event : " + eventCode);
+
+        on75PercentCompletion?.Invoke(eventCode);
+    }
+
     #endregion Puzzle Events Calls
 
     #endregion EventCall Functions for <EventTriggerDelegate>
