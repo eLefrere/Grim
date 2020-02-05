@@ -12,7 +12,6 @@ public abstract class PuzzlePart : MonoBehaviour
     public string eventCodeComplete;
     public string eventCodeReset;
 
-
     public void SetFinished()
     {
         if (!completed)
