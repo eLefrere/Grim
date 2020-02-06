@@ -4,15 +4,23 @@ using System.Linq;
 using UnityEngine;
 
 /// <summary>
+/// Author : Veli-Matti Vuoti
+/// 
 /// Observes the puzzles completion events
 /// </summary>
 public class PuzzleObserver : MonoBehaviour
 {
 
+    [Header("List of puzzles, finds all Puzzle classes when start")]
     public List<Puzzle> puzzles = new List<Puzzle>();
+
+    [Header("Booleans for completed puzzles, could use the list too though")]
     public bool[] puzzlesCompleted;
+
+    [Header("Current puzzle completion percent")]
     public float completionPercent = 0;
 
+    [Header("Total completion status")]
     public bool isPercent25Reached;
     public bool isPercent50Reached;
     public bool isPercent75Reached;
@@ -20,17 +28,21 @@ public class PuzzleObserver : MonoBehaviour
 
     private void Awake()
     {
+        //Make object DDOL always keep observer
         DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
     {
+        //Listen puzzle completion events
         EventManager.onPuzzleComplete += PuzzleComplete;
         EventManager.onPuzzleReset += PuzzleReset;
 
+        //Initialize lists and bool array
         puzzles = FindObjectsOfType<Puzzle>().ToList();
         puzzlesCompleted = new bool[puzzles.Count];
 
+        //debug stuff
         if (DebugTable.PuzzleDebug)
         {
             for (int i = 0; i < puzzles.Count; i++)
@@ -53,18 +65,29 @@ public class PuzzleObserver : MonoBehaviour
         EventManager.onPuzzleReset += PuzzleReset;
     }
 
+    /// <summary>
+    /// When puzzle somewhere is completed
+    /// </summary>
+    /// <param name="eventCode"></param>
     public void PuzzleComplete(string eventCode)
     {
         UpdateCompletedArray();
         
     }
 
+    /// <summary>
+    /// When puzzle somewhere is resetted
+    /// </summary>
+    /// <param name="eventCode"></param>
     public void PuzzleReset(string eventCode)
     {
         UpdateCompletedArray();
       
     }
 
+    /// <summary>
+    /// Update the bool array to match puzzles
+    /// </summary>
     public void UpdateCompletedArray()
     {
 
@@ -90,6 +113,9 @@ public class PuzzleObserver : MonoBehaviour
         CheckPuzzleCompletionStatus();
     }
 
+    /// <summary>
+    /// Check puzzles completion
+    /// </summary>
     public void CheckPuzzleCompletionStatus()
     {
         if (DebugTable.PuzzleDebug)

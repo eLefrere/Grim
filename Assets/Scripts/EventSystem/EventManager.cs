@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Manages events of the game
+/// Author : Veli-Matti Vuoti
+/// 
+/// Invokes the events, makes easier to have all delegates and events in same class instead of scattered all around classes.
+/// Using regions to keep it cleaner.
 /// </summary>
 public class EventManager : MonoBehaviour
 {
@@ -15,6 +18,11 @@ public class EventManager : MonoBehaviour
     public static event EventTriggerDelegate onTriggerEnter;
     public static event EventTriggerDelegate onTriggerExit;
 
+    #region PUZZLE EVENTS
+    /// <summary>
+    /// Delegate for puzzles
+    /// </summary>
+    /// <param name="eventCode">Just in case for more complex listening</param>
     public delegate void PuzzleEventDelegate(string eventCode);
     public static event PuzzleEventDelegate onPuzzleComplete;
     public static event PuzzleEventDelegate onPuzzleReset;
@@ -25,18 +33,36 @@ public class EventManager : MonoBehaviour
     public static event PuzzleEventDelegate on25PercentCompletion;
     public static event PuzzleEventDelegate on50PercentCompletion;
     public static event PuzzleEventDelegate on75PercentCompletion;
+    #endregion PUZZLE EVENTS
 
-    public delegate void NormalEventDelegate();
-    public static event NormalEventDelegate onNormalEvent;
+    /// <summary>
+    /// Just normal event without parameters
+    /// </summary>
+    public delegate void BasicEventDelegate();
+    public static event BasicEventDelegate onBasicEvent;
 
+    /// <summary>
+    /// Generic One Parameter delegate
+    /// </summary>
+    /// <typeparam name="T">Generic Return type</typeparam>
+    /// <param name="parameter">Generic parameter</param>
+    /// <returns></returns>
+    public delegate T GenericDelegate<T>(T parameter);
+    public static event GenericDelegate<int> onSingleIntParameterEvent;
+    public static event GenericDelegate<float> onSingleFloatParameterEvent;
+    public static event GenericDelegate<string> onSingleStringParameterEvent;
+    public static event GenericDelegate<Vector3> onSingleVector3ParameterEvent;
+    public static event GenericDelegate<GameObject> onSingleGameObjectParameterEvent;
+    public static event GenericDelegate<Transform> onSingleTransformParameterEvent;
 
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
     }
 
-    #region EventCall Functions
+    #region EVENT CALL FUNCTIONS
 
+    #region BASIC EVENT CALL FUNCTIONS
     public static void OnNormalEvent()
     {
         if(DebugTable.instance.IsDebugging("EventDebug"))
@@ -44,10 +70,11 @@ public class EventManager : MonoBehaviour
             Debug.Log("Invoking normal event!");
         }
 
-        onNormalEvent?.Invoke();
+        onBasicEvent?.Invoke();
     }
+    #endregion BASIC EVENT CALL FUNCTIONS
 
-    #region Trigger Event Calls
+    #region TRIGGER EVENT CALL FUNCTIONS
     /// <summary>
     /// To Invoke the onTriggerEnter
     /// </summary>
@@ -74,9 +101,9 @@ public class EventManager : MonoBehaviour
         onTriggerExit?.Invoke(eventCode, pos);
     }
 
-    #endregion Trigger Event Calls
+    #endregion TRIGGER EVENT CALL FUNCTIONS
 
-    #region Puzzle Events Calls
+    #region PUZZLE EVENT CALL FUNCTIONS
     public static void OnPuzzleCompleteEvent(string eventCode)
     {
         if (DebugTable.instance.IsDebugging("EventDebug"))
@@ -141,8 +168,8 @@ public class EventManager : MonoBehaviour
         on75PercentCompletion?.Invoke(eventCode);
     }
 
-    #endregion Puzzle Events Calls
+    #endregion PUZZLE EVENT CALL FUNCTIONS
 
-    #endregion EventCall Functions for <EventTriggerDelegate>
+    #endregion EVENT CALL FUNCTIONS
 
 }

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Booleans to activate and deactivate specific debugging works with Scriptable Objects OR just static member functions use what you like!
+/// Author : Veli-Matti Vuoti
+/// 
+/// Booleans to activate and deactivate specific debugging works with Scriptable Objects to avoid merge issues OR just static members, use what you like!
 /// </summary>
 public class DebugTable : MonoBehaviour
 {
@@ -29,8 +31,8 @@ public class DebugTable : MonoBehaviour
     public static bool SoundDebug;
 
     [Header("Dev-Tohvu debugging")]
-    public bool aiPlayerDebug;
-    public static bool AiPlayerDebug;
+    public bool inventoryDebug;
+    public static bool InventoryDebug;
 
     [Header("Dev-Leo debugging")]
     public bool monsterDebug;
@@ -39,7 +41,11 @@ public class DebugTable : MonoBehaviour
     public bool shaderDebug;
     public static bool ShaderDebug;
 
+    #region singleton
     private static DebugTable debugTableInstance = null;
+    /// <summary>
+    /// DebugTable singleton to check custom scriptable object debugfields!
+    /// </summary>
     public static DebugTable instance
     {
         get
@@ -52,6 +58,7 @@ public class DebugTable : MonoBehaviour
             return debugTableInstance;
         }
     }
+    #endregion singleton
 
     private void Awake()
     {
@@ -126,8 +133,8 @@ public class DebugTable : MonoBehaviour
         if (soundDebug != SoundDebug)
             SoundDebug = soundDebug;
 
-        if (aiPlayerDebug != AiPlayerDebug)
-            AiPlayerDebug = aiPlayerDebug;
+        if (inventoryDebug != InventoryDebug)
+            InventoryDebug = inventoryDebug;
 
         if (monsterDebug != MonsterDebug)
             MonsterDebug = monsterDebug;
