@@ -2,7 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonPuzzlePart : PuzzlePart
+/// <summary>
+/// Author : Veli-Matti Vuoti
+/// 
+/// Button as a part of the button puzzle , does nothing special. 
+/// Usage : Add for button and SetFinished() on button press event in editor!
+/// </summary>
+public class ButtonPuzzlepart : Puzzlepart
 {
     
 }
