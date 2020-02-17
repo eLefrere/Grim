@@ -12,6 +12,14 @@ public enum PuzzleType
 
 }
 
+public enum SaveableType
+{
+    PuzzlepartSaveable,
+    InteractableSaveable,
+    InventorySaveable,
+
+}
+
 //public enum ControllerMode
 //{
 //    VRController,
