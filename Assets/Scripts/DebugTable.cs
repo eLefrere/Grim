@@ -20,6 +20,9 @@ public class DebugTable : MonoBehaviour
     public bool puzzleDebug;
     public static bool PuzzleDebug;
 
+    public bool saveDebug;
+    public static bool SaveDebug;
+
     [Header("Dev-emppu debugging")]
     public bool playerMovementDebug;
     public static bool PlayerMovementDebug;
@@ -123,6 +126,9 @@ public class DebugTable : MonoBehaviour
         
         if (puzzleDebug != PuzzleDebug)
             PuzzleDebug = puzzleDebug;
+
+        if (saveDebug != SaveDebug)
+            SaveDebug = saveDebug;
      
         if (playerMovementDebug != PlayerMovementDebug)
             PlayerMovementDebug = playerMovementDebug;
