@@ -8,13 +8,13 @@ using UnityEngine;
 public class SaveObject
 {
 
-    public Guid saveID;
+    public string saveID;
     public string saveName;
-    public DateTime timestamp;
+    public string timestamp;
 
-    public List<ISaveable> saveables = new List<ISaveable>();
+    public List<SaveablePuzzlePart> saveablesPuzzleParts = new List<SaveablePuzzlePart>();
 
-    public SaveObject(Guid id, string saveName, DateTime timeStamp)
+    public SaveObject(string id, string saveName, string timeStamp)
     {
         saveID = id;
         this.saveName = saveName;

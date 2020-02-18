@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using Newtonsoft.Json;
 
 /// <summary>
 /// Saves and loads the gamestate Json format
@@ -11,18 +12,52 @@ using UnityEngine;
 public class SaveLoad : MonoBehaviour
 {
     
-    public static readonly string SavePath = Application.persistentDataPath + "/Saves/";
+    public static string SavePath;
     public string file = "save_";
-    public string extension = ".txt";
+    public string extension = ".json";
+    DirectoryInfo folder;
 
+    Puzzlepart[] puzzleparts;
+
+    public bool load = false;
+
+    /// <summary>
+    /// Get save name without extension
+    /// </summary>
+    /// <returns></returns>
     string GetSaveName()
     {
         return file;
     }
 
+    /// <summary>
+    /// Get Save file name with extension
+    /// </summary>
+    /// <returns></returns>
     string GetSaveFile()
     {
-        return GetSaveName() + extension;
+        return file + extension;
+    }
+
+    /// <summary>
+    /// Get Full save path
+    /// </summary>
+    /// <param name="fileName">name of file</param>
+    /// <returns></returns>
+    string GetPath(string fileName)
+    {
+        return Path.Combine(SavePath, fileName);
+    }
+
+    private void Awake()
+    {
+        SavePath = Application.persistentDataPath + "/Saves/";
+
+        if (!Directory.Exists(SavePath))
+        {
+            folder = Directory.CreateDirectory(SavePath);       
+        }
+     
     }
 
     private void Start()
@@ -35,70 +70,67 @@ public class SaveLoad : MonoBehaviour
         EventManager.onPuzzleComplete -= TimeToSave;
     }
 
-    void TimeToSave(string eventCode)
+    public void TimeToSave(string eventCode)
     {
         if (DebugTable.SaveDebug)
         {
             Debug.Log("Saving...");
         }
-
-     
         Save();
-
     }
 
     public void Save()
     {
 
-        SaveObject save = new SaveObject(Guid.NewGuid(), GetSaveName(), DateTime.Now );
+        EventManager.OnSave();
 
-      
+        SaveObject save = new SaveObject(Guid.NewGuid().ToString(), GetSaveName(), DateTime.Now.ToString() );
+        puzzleparts = FindObjectsOfType<Puzzlepart>();
 
-        string json = JsonUtility.ToJson(save);
-        WriteToFile(GetSaveFile(), json);
+        for (int i = 0; i < puzzleparts.Length; i++)
+        {
+            save.saveablesPuzzleParts.Add(puzzleparts[i].mySaveable);
+        }
+        
+        for (int i = 0; i < save.saveablesPuzzleParts.Count; i++)
+        {
+            Debug.Log(save.saveablesPuzzleParts[i]);
+        }
+
+        string json = JsonConvert.SerializeObject(save); // with newtonsoft
+        //string json = JsonUtility.ToJson(save);
+        Debug.Log(GetPath(GetSaveFile()));
+        File.WriteAllText(GetPath(GetSaveFile()), json);
     }
 
     public void Load()
     {
-        SaveObject loadedSave = JsonUtility.FromJson<SaveObject>(ReadFromFile(GetSaveFile()));
+        EventManager.OnLoad();
 
-        ISaveable[] saveables = loadedSave.saveables.ToArray();
+        string saveString = File.ReadAllText(GetPath(GetSaveFile()));
+        SaveObject loadedSave = JsonConvert.DeserializeObject<SaveObject>(saveString);
+        //SaveObject loadedSave = JsonUtility.FromJson<SaveObject>(saveString);
 
-       
+        for (int i = 0; i < loadedSave.saveablesPuzzleParts.Count; i++)
+        {
+            Debug.Log(loadedSave.saveablesPuzzleParts[i]);
+        }
+
+        if (DebugTable.SaveDebug)
+            Debug.Log("LOAD SAVENAME : " + loadedSave.saveName);
+      
         //Reset Player pos to 0.0.0
         Valve.VR.InteractionSystem.Player.instance.transform.position = Vector3.zero;
     }
 
-    void WriteToFile(string fileName, string json)
+    private void Update()
     {
-        string path = SavePath + fileName;
-        FileStream fileStream = new FileStream(path, FileMode.Create);
-
-        using (StreamWriter writer = new StreamWriter(fileStream))
+        if(load)
         {
-            writer.Write(json);
+            load = false;
+
+            Load();
+
         }
     }
-
-    string ReadFromFile(string fileName)
-    {
-        string path = SavePath + fileName;
-
-        if(File.Exists(path))
-        {
-            using(StreamReader reader = new StreamReader(path))
-            {
-                string json = reader.ReadToEnd();
-                return json;
-            }
-        }
-        else
-        {
-            Debug.LogWarning("File not found from path : " + path);
-        }
-
-        return null;
-    }
-
-  
 }

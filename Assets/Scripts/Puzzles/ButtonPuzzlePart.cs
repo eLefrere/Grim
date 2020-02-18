@@ -10,5 +10,6 @@ using UnityEngine;
 /// </summary>
 public class ButtonPuzzlepart : Puzzlepart
 {
-    
+
+   
 }
