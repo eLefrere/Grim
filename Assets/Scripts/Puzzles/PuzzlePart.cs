@@ -10,6 +10,8 @@ using UnityEngine;
 public abstract class Puzzlepart : MonoBehaviour
 {
 
+    public SaveablePuzzlePart mySaveable;
+
     public bool completed = false;
     public string eventCodeComplete;
     public string eventCodeReset;
@@ -18,7 +20,7 @@ public abstract class Puzzlepart : MonoBehaviour
     public float triggerTimer;
     public float resettingTime;
 
-    private void Update()
+    public void Update()
     {
         //Adds time to triggertime when puzzlepart is set complete state
         if(completed)
@@ -78,6 +80,50 @@ public abstract class Puzzlepart : MonoBehaviour
         }
 
         return triggerTimer/resettingTime * 100f;
+    }
+
+    private void OnEnable()
+    {
+        EventManager.onSave += UpdateMySaveable;
+        EventManager.onLoad += LoadFromMySaveable;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.onSave -= UpdateMySaveable;
+        EventManager.onLoad -= LoadFromMySaveable;
+    }
+
+    public void UpdateMySaveable()
+    {
+
+        mySaveable.partState = completed;
+
+
+        mySaveable.position = transform.position;
+
+
+        mySaveable.rotation = transform.rotation.eulerAngles;
+
+
+        mySaveable.scale = transform.localScale;
+
+    }
+
+    public void LoadFromMySaveable()
+    {
+
+        completed = mySaveable.partState;
+
+
+        transform.position = mySaveable.position;
+
+
+        transform.rotation = Quaternion.Euler(mySaveable.rotation);
+
+
+        transform.localScale = mySaveable.scale;
+
     }
 
 }

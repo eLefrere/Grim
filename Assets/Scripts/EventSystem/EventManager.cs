@@ -41,6 +41,10 @@ public class EventManager : MonoBehaviour
     public delegate void BasicEventDelegate();
     public static event BasicEventDelegate onBasicEvent;
 
+    public delegate void SaveDelegate();
+    public static event SaveDelegate onSave;
+    public static event SaveDelegate onLoad;
+
     /// <summary>
     /// Generic One Parameter Delegate, in the end of the event name there are first letter of each parameter
     /// </summary>
@@ -204,6 +208,24 @@ public class EventManager : MonoBehaviour
     }
 
     #endregion PUZZLE EVENT CALL FUNCTIONS
+
+    #region SAVE EVENT CALL FUNCTIONS
+    public static void OnSave()
+    {
+        if(DebugTable.EventDebug)
+            Debug.Log("Calling On Save Event!");
+
+        onSave?.Invoke();
+    }
+
+    public static void OnLoad()
+    {
+        if (DebugTable.EventDebug)
+            Debug.Log("Calling On Load Event!");
+
+        onLoad?.Invoke();
+    }
+    #endregion
 
     #region GENERIC EVENT CALL FUNCTIONS
 
