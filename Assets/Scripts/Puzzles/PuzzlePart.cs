@@ -7,7 +7,7 @@ using UnityEngine;
 /// 
 /// Puzzles have puzzleparts, when puzzlepart is completed puzzle will update also raises event
 /// </summary>
-public abstract class Puzzlepart : MonoBehaviour
+public abstract class Puzzlepart : MonoBehaviour, ISaveable
 {
 
     public SaveablePuzzlePart mySaveable;
@@ -19,6 +19,18 @@ public abstract class Puzzlepart : MonoBehaviour
     public bool isResetedOverTime;
     public float triggerTimer;
     public float resettingTime;
+
+    private void OnEnable()
+    {
+        EventManager.onSave += UpdateMySaveable;
+        EventManager.onLoad += LoadFromMySaveable;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.onSave -= UpdateMySaveable;
+        EventManager.onLoad -= LoadFromMySaveable;
+    }
 
     public void Update()
     {
@@ -82,17 +94,7 @@ public abstract class Puzzlepart : MonoBehaviour
         return triggerTimer/resettingTime * 100f;
     }
 
-    private void OnEnable()
-    {
-        EventManager.onSave += UpdateMySaveable;
-        EventManager.onLoad += LoadFromMySaveable;
-    }
-
-    private void OnDisable()
-    {
-        EventManager.onSave -= UpdateMySaveable;
-        EventManager.onLoad -= LoadFromMySaveable;
-    }
+   
 
     public void UpdateMySaveable()
     {
