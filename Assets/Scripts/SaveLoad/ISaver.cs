@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ISaveable
+public interface ISaver
 {
 
     void UpdateMySaveable();

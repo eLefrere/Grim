@@ -12,7 +12,7 @@ public class SaveObject
     public string saveName;
     public string timestamp;
 
-    public List<SaveablePuzzlePart> saveablesPuzzleParts = new List<SaveablePuzzlePart>();
+    public List<PuzzlepartSaveData> saveablePuzzleParts = new List<PuzzlepartSaveData>();
 
     public SaveObject(string id, string saveName, string timeStamp)
     {

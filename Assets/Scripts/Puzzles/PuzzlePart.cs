@@ -7,10 +7,10 @@ using UnityEngine;
 /// 
 /// Puzzles have puzzleparts, when puzzlepart is completed puzzle will update also raises event
 /// </summary>
-public abstract class Puzzlepart : MonoBehaviour, ISaveable
+public abstract class Puzzlepart : MonoBehaviour
 {
 
-    public SaveablePuzzlePart mySaveable;
+    public int id;
 
     public bool completed = false;
     public string eventCodeComplete;
@@ -19,18 +19,6 @@ public abstract class Puzzlepart : MonoBehaviour, ISaveable
     public bool isResetedOverTime;
     public float triggerTimer;
     public float resettingTime;
-
-    private void OnEnable()
-    {
-        EventManager.onSave += UpdateMySaveable;
-        EventManager.onLoad += LoadFromMySaveable;
-    }
-
-    private void OnDisable()
-    {
-        EventManager.onSave -= UpdateMySaveable;
-        EventManager.onLoad -= LoadFromMySaveable;
-    }
 
     public void Update()
     {
@@ -92,40 +80,6 @@ public abstract class Puzzlepart : MonoBehaviour, ISaveable
         }
 
         return triggerTimer/resettingTime * 100f;
-    }
-
-   
-
-    public void UpdateMySaveable()
-    {
-
-        mySaveable.partState = completed;
-
-
-        mySaveable.position = transform.position;
-
-
-        mySaveable.rotation = transform.rotation.eulerAngles;
-
-
-        mySaveable.scale = transform.localScale;
-
-    }
-
-    public void LoadFromMySaveable()
-    {
-
-        completed = mySaveable.partState;
-
-
-        transform.position = mySaveable.position;
-
-
-        transform.rotation = Quaternion.Euler(mySaveable.rotation);
-
-
-        transform.localScale = mySaveable.scale;
-
     }
 
 }

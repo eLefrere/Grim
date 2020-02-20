@@ -108,6 +108,7 @@ public abstract class Puzzle : MonoBehaviour
     public void CompletePuzzle()
     {
         finished = true;
+
         EventManager.OnPuzzleCompleteEvent(completionEventCode);
     }
 

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Saveable
 {
-    public Guid id;
+    public int id;
     public Vector3 position;
     public Vector3 rotation;
     public Vector3 scale;

@@ -11,32 +11,35 @@ using Newtonsoft.Json;
 /// </summary>
 public class SaveLoad : MonoBehaviour
 {
-    
+
     public static string SavePath;
     public string file = "save_";
     public string extension = ".json";
+    public int saveId;
     DirectoryInfo folder;
 
-    Puzzlepart[] puzzleparts;
+    PuzzlepartSaver[] puzzlePartSavers;
 
     public bool load = false;
+    public bool continueG = false;
+    public bool save = false;
 
     /// <summary>
     /// Get save name without extension
     /// </summary>
     /// <returns></returns>
-    string GetSaveName()
+    string GetSaveName(int saveNumber)
     {
-        return file;
+        return file + saveNumber.ToString();
     }
 
     /// <summary>
     /// Get Save file name with extension
     /// </summary>
     /// <returns></returns>
-    string GetSaveFile()
+    string GetSaveFile(int saveNumber)
     {
-        return file + extension;
+        return file + saveNumber.ToString() + extension;
     }
 
     /// <summary>
@@ -55,82 +58,134 @@ public class SaveLoad : MonoBehaviour
 
         if (!Directory.Exists(SavePath))
         {
-            folder = Directory.CreateDirectory(SavePath);       
+            folder = Directory.CreateDirectory(SavePath);
         }
-     
+
+        if (puzzlePartSavers.IsEmpty())
+            puzzlePartSavers = FindObjectsOfType<PuzzlepartSaver>();
+
     }
 
     private void Start()
     {
         EventManager.onPuzzleComplete += TimeToSave;
+        EventManager.onGameContinue += TimeToLoad;
+        EventManager.onNewGame += TimeToNewSave;
     }
 
     private void OnDestroy()
     {
         EventManager.onPuzzleComplete -= TimeToSave;
+        EventManager.onGameContinue -= TimeToLoad;
+        EventManager.onNewGame -= TimeToNewSave;
+    }
+
+    public void TimeToNewSave(GameState toState)
+    {
+        if (!File.Exists(SavePath + GetSaveFile(saveId)))
+            return;
+
+        while (File.Exists(SavePath + GetSaveFile(saveId)))
+        {
+            saveId++;
+        }
+
     }
 
     public void TimeToSave(string eventCode)
+    {
+       
+        Save();
+    }
+
+    public void TimeToLoad(GameState toState)
+    {
+        
+        Load();
+    }
+
+    public void Save()
     {
         if (DebugTable.SaveDebug)
         {
             Debug.Log("Saving...");
         }
-        Save();
-    }
-
-    public void Save()
-    {
 
         EventManager.OnSave();
 
-        SaveObject save = new SaveObject(Guid.NewGuid().ToString(), GetSaveName(), DateTime.Now.ToString() );
-        puzzleparts = FindObjectsOfType<Puzzlepart>();
+        SaveObject save = new SaveObject(Guid.NewGuid().ToString(), GetSaveName(saveId), DateTime.Now.ToString());
 
-        for (int i = 0; i < puzzleparts.Length; i++)
+        if (puzzlePartSavers.IsEmpty())
+            puzzlePartSavers = FindObjectsOfType<PuzzlepartSaver>();
+
+        for (int i = 0; i < puzzlePartSavers.Length; i++)
         {
-            save.saveablesPuzzleParts.Add(puzzleparts[i].mySaveable);
+            save.saveablePuzzleParts.Add(puzzlePartSavers[i].mySaveData);
         }
-        
-        for (int i = 0; i < save.saveablesPuzzleParts.Count; i++)
+
+        for (int i = 0; i < save.saveablePuzzleParts.Count; i++)
         {
-            Debug.Log(save.saveablesPuzzleParts[i]);
+            if (DebugTable.SaveDebug)
+                Debug.Log(save.saveablePuzzleParts[i]);
         }
 
         string json = JsonConvert.SerializeObject(save); // with newtonsoft
         //string json = JsonUtility.ToJson(save);
-        Debug.Log(GetPath(GetSaveFile()));
-        File.WriteAllText(GetPath(GetSaveFile()), json);
+        Debug.Log(GetPath(GetSaveFile(saveId)));
+        File.WriteAllText(GetPath(GetSaveFile(saveId)), json);
     }
 
     public void Load()
     {
-        EventManager.OnLoad();
+        if (DebugTable.SaveDebug)
+            Debug.Log("Loading...");
 
-        string saveString = File.ReadAllText(GetPath(GetSaveFile()));
+        string saveString = File.ReadAllText(GetPath(GetSaveFile(saveId)));
         SaveObject loadedSave = JsonConvert.DeserializeObject<SaveObject>(saveString);
         //SaveObject loadedSave = JsonUtility.FromJson<SaveObject>(saveString);
 
-        for (int i = 0; i < loadedSave.saveablesPuzzleParts.Count; i++)
-        {
-            Debug.Log(loadedSave.saveablesPuzzleParts[i]);
-        }
+        if (puzzlePartSavers.IsEmpty())
+            puzzlePartSavers = FindObjectsOfType<PuzzlepartSaver>();
 
         if (DebugTable.SaveDebug)
             Debug.Log("LOAD SAVENAME : " + loadedSave.saveName);
-      
+
+        for (int i = 0; i < loadedSave.saveablePuzzleParts.Count; i++)
+        {
+            if (puzzlePartSavers[i].mySaveData != null)
+            {
+                puzzlePartSavers[i].mySaveData = loadedSave.saveablePuzzleParts[i];
+            }
+        }
+
         //Reset Player pos to 0.0.0
         Valve.VR.InteractionSystem.Player.instance.transform.position = Vector3.zero;
+
+        EventManager.OnLoad();
     }
 
     private void Update()
     {
-        if(load)
+        if (load)
         {
             load = false;
 
             Load();
 
+        }
+
+        if(continueG)
+        {
+            continueG = false;
+
+            EventManager.OnNewGameStart(GameState.GameOn);
+        }
+
+        if(save)
+        {
+            save = false;
+
+            Save();
         }
     }
 }
