@@ -12,6 +12,12 @@ public enum PuzzleType
 
 }
 
+public enum GameState
+{
+    GameOn,
+    GamePause
+}
+
 public enum SaveableType
 {
     PuzzlepartSaveable,

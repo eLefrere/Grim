@@ -45,6 +45,12 @@ public class EventManager : MonoBehaviour
     public static event SaveDelegate onSave;
     public static event SaveDelegate onLoad;
 
+    public delegate void GameStateDelegate(GameState toState);
+    public static event GameStateDelegate onGameContinue;
+    public static event GameStateDelegate onNewGame;
+    public static event GameStateDelegate onGameExit;
+    public static event GameStateDelegate onGamePause;
+
     /// <summary>
     /// Generic One Parameter Delegate, in the end of the event name there are first letter of each parameter
     /// </summary>
@@ -402,6 +408,43 @@ public class EventManager : MonoBehaviour
 
 
     #endregion GENERIC EVENTS
+
+    #region GAMESTATE EVENT CALL FUNCTIONS
+
+    public static void OnNewGameStart(GameState toState)
+    {
+        if (DebugTable.EventDebug)
+            Debug.Log("Invoking On New Game Start Gamestate event! ");
+
+        onNewGame?.Invoke(toState);
+
+    }
+
+    public static void OnGameContinue(GameState toState)
+    {
+        if (DebugTable.EventDebug)
+            Debug.Log("Invoking On Game Continue Gamestate event! ");
+
+        onGameContinue?.Invoke(toState);
+    }
+
+    public static void OnGameExit(GameState toState)
+    {
+        if (DebugTable.EventDebug)
+            Debug.Log("Invoking On Game Exit Gamestate event! ");
+
+        onGameExit?.Invoke(toState);
+    }
+
+    public static void OnGamePause(GameState toState)
+    {
+        if (DebugTable.EventDebug)
+            Debug.Log("Invoking On Game Pause Gamestate event! ");
+
+        onGamePause?.Invoke(toState);
+    }
+
+    #endregion
 
     #endregion EVENT CALL FUNCTIONS
 

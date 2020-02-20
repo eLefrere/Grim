@@ -26,4 +26,12 @@ public static class ExtensionMethods
         return Mathf.Clamp(angle, min, max);
     }
 
+    public static bool IsEmpty<T>(this T[] array)
+    {
+        if (array == null || array.Length == 0)
+            return true;
+
+        return false;
+    }
+
 }
