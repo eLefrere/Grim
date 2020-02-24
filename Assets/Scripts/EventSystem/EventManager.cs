@@ -41,10 +41,17 @@ public class EventManager : MonoBehaviour
     public delegate void BasicEventDelegate();
     public static event BasicEventDelegate onBasicEvent;
 
+    /// <summary>
+    /// Used when save or load are happening
+    /// </summary>
     public delegate void SaveDelegate();
     public static event SaveDelegate onSave;
     public static event SaveDelegate onLoad;
 
+    /// <summary>
+    /// Used when gamestate changes
+    /// </summary>
+    /// <param name="toState">which state to change</param>
     public delegate void GameStateDelegate(GameState toState);
     public static event GameStateDelegate onGameContinue;
     public static event GameStateDelegate onNewGame;
@@ -105,6 +112,9 @@ public class EventManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    /// <summary>
+    /// USE THESE FUNCTIONS TO INVOKE EVENTS LISTED IN THIS CLASS
+    /// </summary>
     #region EVENT CALL FUNCTIONS
 
     #region BASIC EVENT CALL FUNCTIONS
