@@ -2,35 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// @Author : Veli-Matti Vuoti
+/// 
+/// This class is used to save puzzlepart data without causing merge issues with the puzzlepart class itself, implements ISaver interface
+/// Has reference to puzzlepart and the savedata
+/// Listens OnSave and OnLoad events for updating data
+/// Add this component for puzzleparts that needs saving
+/// </summary>
 public class PuzzlepartSaver : MonoBehaviour, ISaver
 {
-    public PuzzlepartSaveData mySaveData;
-    public Puzzlepart objectToSave;
+    public SaveDataType dataType;
+    public PuzzlepartSaveData saveData;
+    public Puzzlepart objectData;
 
     private void Awake()
     {
-        if (objectToSave == null)
-            objectToSave = GetComponent<Puzzlepart>();
+        if (objectData == null)
+            objectData = GetComponent<Puzzlepart>();
 
-        if (mySaveData == null)
-            mySaveData = GetComponent<PuzzlepartSaveData>();
+        if (saveData == null)
+            saveData = GetComponent<PuzzlepartSaveData>();
     }
 
     private void OnEnable()
     {
-        EventManager.onSave += UpdateMySaveable;
-        EventManager.onLoad += LoadFromMySaveable;
+        EventManager.onSave += UpdateSaveData;
+        EventManager.onLoad += UpdateObjectData;
     }
 
     private void OnDisable()
     {
-        EventManager.onSave -= UpdateMySaveable;
-        EventManager.onLoad -= LoadFromMySaveable;
+        EventManager.onSave -= UpdateSaveData;
+        EventManager.onLoad -= UpdateObjectData;
     }
 
-    public void UpdateMySaveable()
+    /// <summary>
+    /// On Save updates the save data with object data
+    /// </summary>
+    public void UpdateSaveData()
     {
-        if (mySaveData == null)
+        if (saveData == null)
         {
             if (DebugTable.SaveDebug)
                 Debug.Log(this.gameObject.name + " Has no saveable object, this is object is not saved ! ");
@@ -38,22 +50,27 @@ public class PuzzlepartSaver : MonoBehaviour, ISaver
             return;
         }
 
-        mySaveData.id = objectToSave.id;
+        saveData.id = objectData.id;
 
-        mySaveData.partState = objectToSave.completed;
+        saveData.active = gameObject.activeSelf;
 
-        mySaveData.position = transform.position;
+        saveData.partState = objectData.completed;
 
-        mySaveData.rotation = transform.rotation.eulerAngles;
+        saveData.position = transform.position;
 
-        mySaveData.scale = transform.localScale;
+        saveData.rotation = transform.rotation.eulerAngles;
+
+        saveData.scale = transform.localScale;
 
     }
 
-    public void LoadFromMySaveable()
+    /// <summary>
+    /// On Load updates the object data with save data
+    /// </summary>
+    public void UpdateObjectData()
     {
 
-        if (mySaveData == null)
+        if (saveData == null)
         {
             if (DebugTable.SaveDebug)
                 Debug.Log(this.gameObject.name + " Has no saveable object, this is object is not saved ! ");
@@ -61,13 +78,22 @@ public class PuzzlepartSaver : MonoBehaviour, ISaver
             return;
         }
 
-        objectToSave.completed = mySaveData.partState;
+        if(!saveData.active)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(true);
+        }
 
-        transform.position = mySaveData.position;
+        objectData.completed = saveData.partState;
 
-        transform.rotation = Quaternion.Euler(mySaveData.rotation);
+        transform.position = saveData.position;
 
-        transform.localScale = mySaveData.scale;
+        transform.rotation = Quaternion.Euler(saveData.rotation);
+
+        transform.localScale = saveData.scale;
 
     }
 }

@@ -3,26 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This class contains global enums
+/// Type of Puzzle
 /// </summary>
-
-
 public enum PuzzleType
 {
-
+    ButtonPuzzle,
+    BookPuzzle,
+    ItemPuzzle
 }
 
+/// <summary>
+/// State of game
+/// </summary>
 public enum GameState
 {
     GameOn,
     GamePause
 }
 
-public enum SaveableType
+/// <summary>
+/// 
+/// </summary>
+public enum SaveDataType
 {
-    PuzzlepartSaveable,
-    InteractableSaveable,
-    InventorySaveable,
+    PuzzlepartSaveData,
+    InteractableSaveData,
+    InventorySaveData,
 
 }
 

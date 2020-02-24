@@ -7,7 +7,9 @@ using UnityEngine;
 using Newtonsoft.Json;
 
 /// <summary>
-/// Saves and loads the gamestate Json format
+/// @Author : Veli-Matti Vuoti
+/// 
+/// This class does Saving and loading using JSON format
 /// </summary>
 public class SaveLoad : MonoBehaviour
 {
@@ -52,6 +54,11 @@ public class SaveLoad : MonoBehaviour
         return Path.Combine(SavePath, fileName);
     }
 
+    /// <summary>
+    /// On Awake Sets the SavePath to persistent datapath "works with multiple platforms" + folder "Saves"
+    /// Checks if directory is already there, if not Creates it and saves the folderinfo into folder variable
+    /// Finds all savers if not already done
+    /// </summary>
     private void Awake()
     {
         SavePath = Application.persistentDataPath + "/Saves/";
@@ -80,6 +87,10 @@ public class SaveLoad : MonoBehaviour
         EventManager.onNewGame -= TimeToNewSave;
     }
 
+    /// <summary>
+    /// When starting new game makes new save file with incremented number save_(number)
+    /// </summary>
+    /// <param name="toState">Not used in this function</param>
     public void TimeToNewSave(GameState toState)
     {
         if (!File.Exists(SavePath + GetSaveFile(saveId)))
@@ -92,18 +103,36 @@ public class SaveLoad : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Saves automatically when puzzle is completed
+    /// </summary>
+    /// <param name="eventCode"></param>
     public void TimeToSave(string eventCode)
     {
        
         Save();
     }
 
+    /// <summary>
+    /// Loads automatically when continuing game
+    /// </summary>
+    /// <param name="toState">Not used in this function</param>
     public void TimeToLoad(GameState toState)
     {
         
         Load();
     }
 
+    /// <summary>
+    /// This Function Saves the data:
+    /// 
+    /// 1. Invokes OnSave Event to update all save data objects
+    /// 2. Creates new saveobject
+    /// 3. Finds all savers if not done it before
+    /// 4. Adds the saveable data into the save object specific object data lists
+    /// 5. Converts / Serializes the saveobject into JSON format using newtonsoft libs
+    /// 6. Writes all the data into a save file into Saves folder path for windows : C:\Users\"username"\AppData\LocalLow\GrimVR\Grim\Saves\
+    /// </summary>
     public void Save()
     {
         if (DebugTable.SaveDebug)
@@ -120,7 +149,7 @@ public class SaveLoad : MonoBehaviour
 
         for (int i = 0; i < puzzlePartSavers.Length; i++)
         {
-            save.saveablePuzzleParts.Add(puzzlePartSavers[i].mySaveData);
+            save.saveablePuzzleParts.Add(puzzlePartSavers[i].saveData);
         }
 
         for (int i = 0; i < save.saveablePuzzleParts.Count; i++)
@@ -131,14 +160,34 @@ public class SaveLoad : MonoBehaviour
 
         string json = JsonConvert.SerializeObject(save); // with newtonsoft
         //string json = JsonUtility.ToJson(save);
-        Debug.Log(GetPath(GetSaveFile(saveId)));
+
+        if(DebugTable.SaveDebug)
+            Debug.Log(GetPath(GetSaveFile(saveId)));
+
         File.WriteAllText(GetPath(GetSaveFile(saveId)), json);
     }
 
+    /// <summary>
+    /// This function loads the data
+    /// 
+    /// 1. Reads the file from the correct file path into a string variable
+    /// 2. Deserializes the JSON presentated data from string variable into new SaveObject using newtonsoft lib
+    /// 3. Finds all saver classes if not already done before
+    /// 4. Updates the saver classes with data from saveobject
+    /// 5. Sets player pos 0,0,0
+    /// 6. Invokes OnLoad Event to update all objects with their loaded data
+    /// </summary>
     public void Load()
     {
         if (DebugTable.SaveDebug)
             Debug.Log("Loading...");
+
+        if (!File.Exists(SavePath + GetSaveFile(saveId)))
+        {
+            Debug.LogError("THERE ARE NO SAVE FILE IN " + SavePath + GetSaveFile(saveId));
+            Debug.LogError("SAVE BEFORE TRYING TO LOAD");
+            return;
+        }
 
         string saveString = File.ReadAllText(GetPath(GetSaveFile(saveId)));
         SaveObject loadedSave = JsonConvert.DeserializeObject<SaveObject>(saveString);
@@ -152,9 +201,9 @@ public class SaveLoad : MonoBehaviour
 
         for (int i = 0; i < loadedSave.saveablePuzzleParts.Count; i++)
         {
-            if (puzzlePartSavers[i].mySaveData != null)
+            if (puzzlePartSavers[i].saveData != null)
             {
-                puzzlePartSavers[i].mySaveData = loadedSave.saveablePuzzleParts[i];
+                puzzlePartSavers[i].saveData = loadedSave.saveablePuzzleParts[i];
             }
         }
 
