@@ -21,10 +21,14 @@ public class SaveLoad : MonoBehaviour
     DirectoryInfo folder;
 
     PuzzlepartSaver[] puzzlePartSavers;
+    InteractableSaver[] interactableSavers;
+    InventoryItemSaver[] inventoryItemSavers;
+    EventSaver[] eventSavers;
 
     public bool load = false;
     public bool continueG = false;
     public bool save = false;
+    public bool newG = false;
 
     /// <summary>
     /// Get save name without extension
@@ -68,9 +72,20 @@ public class SaveLoad : MonoBehaviour
             folder = Directory.CreateDirectory(SavePath);
         }
 
+        InitSaverArrays();
+        
+    }
+
+    public void InitSaverArrays()
+    {
         if (puzzlePartSavers.IsEmpty())
             puzzlePartSavers = FindObjectsOfType<PuzzlepartSaver>();
-
+        if (interactableSavers.IsEmpty())
+            interactableSavers = FindObjectsOfType<InteractableSaver>();
+        if (inventoryItemSavers.IsEmpty())
+            inventoryItemSavers = FindObjectsOfType<InventoryItemSaver>();
+        if (eventSavers.IsEmpty())
+            eventSavers = FindObjectsOfType<EventSaver>();
     }
 
     private void Start()
@@ -99,6 +114,12 @@ public class SaveLoad : MonoBehaviour
         while (File.Exists(SavePath + GetSaveFile(saveId)))
         {
             saveId++;
+        }
+
+        //if too many saves it overrides first
+        if(saveId > 5)
+        {
+            saveId = 0;
         }
 
     }
@@ -144,13 +165,8 @@ public class SaveLoad : MonoBehaviour
 
         SaveObject save = new SaveObject(Guid.NewGuid().ToString(), GetSaveName(saveId), DateTime.Now.ToString());
 
-        if (puzzlePartSavers.IsEmpty())
-            puzzlePartSavers = FindObjectsOfType<PuzzlepartSaver>();
-
-        for (int i = 0; i < puzzlePartSavers.Length; i++)
-        {
-            save.saveablePuzzleParts.Add(puzzlePartSavers[i].saveData);
-        }
+        InitSaverArrays();
+        FillSaveObject(save);
 
         for (int i = 0; i < save.saveablePuzzleParts.Count; i++)
         {
@@ -161,10 +177,33 @@ public class SaveLoad : MonoBehaviour
         string json = JsonConvert.SerializeObject(save); // with newtonsoft
         //string json = JsonUtility.ToJson(save);
 
-        if(DebugTable.SaveDebug)
+        if (DebugTable.SaveDebug)
             Debug.Log(GetPath(GetSaveFile(saveId)));
 
         File.WriteAllText(GetPath(GetSaveFile(saveId)), json);
+    }
+
+    private void FillSaveObject(SaveObject save)
+    {
+        for (int i = 0; i < puzzlePartSavers.Length; i++)
+        {
+            save.saveablePuzzleParts.Add(puzzlePartSavers[i].saveData);
+        }
+
+        for (int i = 0; i < interactableSavers.Length; i++)
+        {
+            save.saveableInteractables.Add(interactableSavers[i].saveData);
+        }
+
+        for (int i = 0; i < inventoryItemSavers.Length; i++)
+        {
+            save.saveableInventoryItems.Add(inventoryItemSavers[i].saveData);
+        }
+
+        for (int i = 0; i < eventSavers.Length; i++)
+        {
+            save.saveableEventTriggers.Add(eventSavers[i].saveData);
+        }
     }
 
     /// <summary>
@@ -193,12 +232,21 @@ public class SaveLoad : MonoBehaviour
         SaveObject loadedSave = JsonConvert.DeserializeObject<SaveObject>(saveString);
         //SaveObject loadedSave = JsonUtility.FromJson<SaveObject>(saveString);
 
-        if (puzzlePartSavers.IsEmpty())
-            puzzlePartSavers = FindObjectsOfType<PuzzlepartSaver>();
+        InitSaverArrays();
 
         if (DebugTable.SaveDebug)
             Debug.Log("LOAD SAVENAME : " + loadedSave.saveName);
 
+        UnloadLists(loadedSave);
+
+        //Reset Player pos to 0.0.0
+        Valve.VR.InteractionSystem.Player.instance.transform.position = Vector3.zero;
+
+        EventManager.OnLoad();
+    }
+
+    private void UnloadLists(SaveObject loadedSave)
+    {
         for (int i = 0; i < loadedSave.saveablePuzzleParts.Count; i++)
         {
             if (puzzlePartSavers[i].saveData != null)
@@ -207,10 +255,29 @@ public class SaveLoad : MonoBehaviour
             }
         }
 
-        //Reset Player pos to 0.0.0
-        Valve.VR.InteractionSystem.Player.instance.transform.position = Vector3.zero;
+        for (int i = 0; i < interactableSavers.Length; i++)
+        {
+            if (interactableSavers[i].saveData != null)
+            {
+                interactableSavers[i].saveData = loadedSave.saveableInteractables[i];
+            }
+        }
 
-        EventManager.OnLoad();
+        for (int i = 0; i < inventoryItemSavers.Length; i++)
+        {
+            if (inventoryItemSavers[i].saveData != null)
+            {
+                inventoryItemSavers[i].saveData = loadedSave.saveableInventoryItems[i];
+            }
+        }
+
+        for (int i = 0; i < eventSavers.Length; i++)
+        {
+            if (eventSavers[i].saveData != null)
+            {
+                eventSavers[i].saveData = loadedSave.saveableEventTriggers[i];
+            }
+        }
     }
 
     private void Update()
@@ -226,6 +293,13 @@ public class SaveLoad : MonoBehaviour
         if(continueG)
         {
             continueG = false;
+
+            EventManager.OnGameContinue(GameState.GameOn);
+        }
+
+        if(newG)
+        {
+            newG = false;
 
             EventManager.OnNewGameStart(GameState.GameOn);
         }

@@ -13,6 +13,7 @@ public class EventTrigger : MonoBehaviour
 
     [Header("Does this trigger only once during game?")]
     public bool happenOnce;
+    public bool triggered;
 
     [Header("Trigger Cooldown")]
     public float cd = 1f;
@@ -41,15 +42,18 @@ public class EventTrigger : MonoBehaviour
             if (oncd)
                 return;
 
+            
+
             if (other.gameObject.CompareTag(triggerTag[i]) && previousMatchingTag != triggerTag[i])
             {
-                
+                triggered = true;
+
                 EventManager.OnTriggerEnterEvent(eventCode, transform.position); //Kutsuu eventtiä managerista
                 StartCoroutine(CD());
 
                 if (happenOnce)
                 {
-                    Destroy(gameObject);
+                    gameObject.SetActive(false);
                     return;
                 }
 

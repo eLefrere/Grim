@@ -19,6 +19,9 @@ public class SaveObject
     public string timestamp;
 
     public List<PuzzlepartSaveData> saveablePuzzleParts = new List<PuzzlepartSaveData>();
+    public List<InteractableSaveData> saveableInteractables = new List<InteractableSaveData>();
+    public List<InventoryItemSaveData> saveableInventoryItems = new List<InventoryItemSaveData>();
+    public List<EventSaveData> saveableEventTriggers = new List<EventSaveData>();
 
     /// <summary>
     /// Constructor for save
