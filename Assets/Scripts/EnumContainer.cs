@@ -3,17 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This class contains global enums
+/// Type of Puzzle
 /// </summary>
-
-
 public enum PuzzleType
 {
-
+    ButtonPuzzle,
+    BookPuzzle,
+    ItemPuzzle
 }
 
-public enum ControllerMode
+/// <summary>
+/// State of game
+/// </summary>
+public enum GameState
 {
-    VRController,
-    FPSController,
+    GameOn,
+    GamePause
 }
+
+/// <summary>
+/// 
+/// </summary>
+public enum SaveDataType
+{
+    PuzzlepartSaveData,
+    InteractableSaveData,
+    InventorySaveData,
+
+}
+
+//public enum ControllerMode
+//{
+//    VRController,
+//    FPSController,
+//}

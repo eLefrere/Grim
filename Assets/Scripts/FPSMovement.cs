@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Handles the "VR" Movement without VR Eguipment
+/// </summary>
 public class FPSMovement : MonoBehaviour
 {
     public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
@@ -53,9 +56,10 @@ public class FPSMovement : MonoBehaviour
         transform.position += new Vector3(transform.forward.x, 0, transform.forward.z) * zAxis * speed * Time.deltaTime;
         transform.position += transform.right * xAxis * speed * Time.deltaTime;
 
+        // When holding the right mousebutton
         if (Input.GetMouseButton(1))
         {
-            
+            // When enum that enables movement with X and Y Axis is chosen
             if (axes == RotationAxes.MouseXAndY)
             {
                 rotAverageY = 0f;
@@ -96,7 +100,8 @@ public class FPSMovement : MonoBehaviour
 
                 transform.localRotation = originalRotation * xQuaternion * yQuaternion;
             }
-            else if (axes == RotationAxes.MouseX)
+            // When enum with that enables movement with X Axis is chosen
+            else if (axes == RotationAxes.MouseX) 
             {
                 rotAverageX = 0f;
 
@@ -119,6 +124,7 @@ public class FPSMovement : MonoBehaviour
                 Quaternion xQuaternion = Quaternion.AngleAxis(rotAverageX, Vector3.up);
                 transform.localRotation = originalRotation * xQuaternion;
             }
+            // When other enum is chosen , if adding more modes specify the enum with else if!
             else
             {
                 rotAverageY = 0f;
