@@ -43,14 +43,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b22df3981724b1640b392233f5ecef42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugging: 0
   debugFields:
   - {fileID: 11400000, guid: 4d33cd0ceb2d98840baac245628e6fcb, type: 2}
   eventDebug: 1
   puzzleDebug: 1
-  playerMovementDebug: 0
-  playerInteractionDebug: 0
-  soundDebug: 0
-  aiPlayerDebug: 0
-  monsterDebug: 0
-  shaderDebug: 0
+  saveDebug: 1
+  playerMovementDebug: 1
+  playerInteractionDebug: 1
+  soundDebug: 1
+  inventoryDebug: 1
+  monsterDebug: 1
+  shaderDebug: 1
