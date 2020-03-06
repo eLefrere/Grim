@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Bool_keys:
   - pbIconGUI
+  - pbEnableBackfaceSelection
   m_Int_keys:
   - pbHandleAlignment
   - pbDefaultEditLevel
@@ -25,6 +26,7 @@ MonoBehaviour:
   - pbEditorScroll.x
   - pbEditorScroll.y
   - pbBevelAmount
+  - pbWeldDistance
   m_String_keys:
   - pbVertexColorPrefs4
   - pbVertexColorPrefs0
@@ -33,12 +35,13 @@ MonoBehaviour:
   - pbVertexColorPrefs2
   m_Color_keys: []
   m_Material_keys: []
-  m_Bool_values: 00
-  m_Int_values: 000000000100000001000000000000000200000000000000
+  m_Bool_values: 0001
+  m_Int_values: 000000000100000000000000000000000200000000000000
   m_Float_values:
   - 0
   - 21
   - 0.13912849
+  - 0.2
   m_String_values:
   - RGBA(0.148, 0.165, 0.170, 1.000)
   - RGBA(0.243, 0.251, 0.275, 1.000)
