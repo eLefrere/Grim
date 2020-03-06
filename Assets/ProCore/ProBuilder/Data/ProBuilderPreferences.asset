@@ -19,19 +19,23 @@ MonoBehaviour:
   - pbDefaultEditLevel
   - pbDefaultSelectionMode
   - pb_GIWorkflowMode
+  - pbDragSelectMode
+  - pbVertexColorTool
   m_Float_keys:
   - pbEditorScroll.x
   - pbEditorScroll.y
   - pbBevelAmount
-  m_String_keys: []
+  m_String_keys:
+  - pbVertexColorPrefs4
   m_Color_keys: []
   m_Material_keys: []
   m_Bool_values: 00
-  m_Int_values: 00000000010000000100000000000000
+  m_Int_values: 000000000000000002000000000000000200000000000000
   m_Float_values:
   - 0
-  - 0
+  - 21
   - 0.13912849
-  m_String_values: []
+  m_String_values:
+  - RGBA(0.148, 0.165, 0.170, 1.000)
   m_Color_values: []
   m_Material_values: []
