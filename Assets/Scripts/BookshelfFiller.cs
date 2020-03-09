@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
 public class BookshelfFiller : MonoBehaviour
 {
     public Transform bookRows;
@@ -23,61 +22,72 @@ public class BookshelfFiller : MonoBehaviour
 
     public bool hasPuzzleBooks;
 
-
     public bool isFilled;
 
     private void Start()
     {
+        //Debug.Log("BOOKSSHELF IS FILLED " + isFilled);
+
         if (bookRows == null)
+        {
             return;
+        }
 
         if (rowsCount != bookRows.childCount)
+        {
             rowsCount = bookRows.childCount;
+        }
 
-        if (books.IsEmpty() || books[0] == null)
-            books = new GameObject[(rowsCount + 1) * maxBooksPerRow];
-
-        if (!isFilled && books[0] == null)
-        {                      
-            isFilled = true;
-            FillBookRows();
+        if (!isFilled)
+        {
+            if (books.IsEmpty())
+            {
+                FillBookRows();
+                isFilled = true;
+            }
         }
 
         if (hasPuzzleBooks)
+        {
             SwapRandomsToPuzzleBooks();
-      
+        }
     }
 
     public void FillBookRows()
     {
-        int bookIndex = 0;
-        
-        for (int i = 0; i < rowsCount; i++)
-        {
-            Transform row = bookRows.GetChild(i);
-            int randomBookAmount = Random.Range(minBooksPerRow, maxBooksPerRow);
-            Vector3 bookPos = new Vector3(row.position.x, row.position.y, row.position.z);
+       
+            books = new GameObject[(rowsCount + 1) * maxBooksPerRow];
 
-            for (int j = 0; j < randomBookAmount; j++)
+            int bookIndex = 0;
+
+            for (int i = 0; i < rowsCount; i++)
             {
+                Transform row = bookRows.GetChild(i);
+                int randomBookAmount = Random.Range(minBooksPerRow, maxBooksPerRow);
+                Vector3 bookPos = new Vector3(row.position.x, row.position.y, row.position.z);
 
-                Vector3 nextBookPos = new Vector3(bookPos.x, bookPos.y, bookPos.z - bookWidth * j);
+                for (int j = 0; j < randomBookAmount; j++)
+                {
 
-                if (j == 0)
-                {
-                    books[bookIndex] = Instantiate(bookPrefabs[Random.Range(0, bookPrefabs.Length)], bookPos, row.rotation);
+                    Vector3 nextBookPos = new Vector3(bookPos.x, bookPos.y, bookPos.z);
+                    nextBookPos += row.transform.forward * (bookWidth * j);
+
+                    if (j == 0)
+                    {
+                        books[bookIndex] = Instantiate(bookPrefabs[Random.Range(0, bookPrefabs.Length)], bookPos, row.rotation);
+                    }
+                    if (j > 0 && j <= randomBookAmount)
+                    {
+                        books[bookIndex] = Instantiate(bookPrefabs[Random.Range(0, bookPrefabs.Length)], nextBookPos, row.rotation);
+                    }
+                    books[bookIndex].transform.SetParent(row);
+                    bookIndex++;
                 }
-                if(j > 0 && j <= randomBookAmount)
-                {
-                    books[bookIndex] = Instantiate(bookPrefabs[Random.Range(0, bookPrefabs.Length)], nextBookPos, row.rotation);
-                }
-                books[bookIndex].transform.SetParent(row);
-                bookIndex++;
+
             }
-          
-        }
 
-        totalBooksAmount = bookIndex + 1;
+            totalBooksAmount = bookIndex + 1;
+         
     }
 
     public void SwapRandomsToPuzzleBooks()
@@ -86,7 +96,7 @@ public class BookshelfFiller : MonoBehaviour
 
         for (int i = 0; i < fourRandomSlots.Length; i++)
         {
-            fourRandomSlots[i] = Random.Range(0, totalBooksAmount);
+            fourRandomSlots[i] = Random.Range(0, totalBooksAmount -1);
         }
 
         for (int i = 0; i < books.Length; i++)

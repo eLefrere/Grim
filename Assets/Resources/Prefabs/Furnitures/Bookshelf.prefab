@@ -96,7 +96,7 @@ MonoBehaviour:
   rowsCount: 8
   maxBooksPerRow: 16
   minBooksPerRow: 4
-  totalBooksAmount: 100
+  totalBooksAmount: 61
   bookWidth: 0.05
   bookHeight: 0
   bookPrefabs:
