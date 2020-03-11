@@ -3764,6 +3764,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: WheelPuzzle
       objectReference: {fileID: 0}
+    - target: {fileID: 1863080866021405256, guid: 6f0c176d980249341b9b1176d63aee47,
+        type: 3}
+      propertyPath: correctMark
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800090205249144370, guid: 6f0c176d980249341b9b1176d63aee47,
+        type: 3}
+      propertyPath: correctMark
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f0c176d980249341b9b1176d63aee47, type: 3}
 --- !u!1 &569359331
