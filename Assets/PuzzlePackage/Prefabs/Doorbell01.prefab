@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8421272312110692680}
   - component: {fileID: 8421272312107825512}
   - component: {fileID: 8421272312108923816}
+  - component: {fileID: 150649310}
   m_Layer: 0
   m_Name: ButtonSocket
   m_TagString: Untagged
@@ -77,6 +78,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &150649310
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8421272312111113576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: ec77bb3dbab189746939bfea6744e1b8, type: 3}
 --- !u!1 &8421272312111113578
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +103,7 @@ GameObject:
   - component: {fileID: 8421272312110692682}
   - component: {fileID: 8421272312107825514}
   - component: {fileID: 8421272312108923818}
+  - component: {fileID: 132169877}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -154,6 +170,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &132169877
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8421272312111113578}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: ec77bb3dbab189746939bfea6744e1b8, type: 3}
 --- !u!1 &8421272312111113582
 GameObject:
   m_ObjectHideFlags: 0
