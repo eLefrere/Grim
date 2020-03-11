@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2390351481551780126}
   - component: {fileID: -8381865278994008146}
+  - component: {fileID: 869508474432824213}
   m_Layer: 0
   m_Name: RotatingPuzzlePart03
   m_TagString: Untagged
@@ -54,6 +55,27 @@ MonoBehaviour:
   resettingTime: 0
   rotatingPart: {fileID: 2390351481551780126}
   myTrigger: {fileID: 2390351483018429315}
+--- !u!114 &869508474432824213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2390351481551780123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 283a6648802560243b546d91b0ba3cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataType: 0
+  saveData:
+    id: 0
+    active: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}
+    partState: 0
+  objectData: {fileID: -8381865278994008146}
 --- !u!1 &2390351482002961500
 GameObject:
   m_ObjectHideFlags: 0
@@ -66,7 +88,7 @@ GameObject:
   - component: {fileID: 2390351482002961490}
   - component: {fileID: 2390351482002961489}
   - component: {fileID: 6088594174641288994}
-  m_Layer: 14
+  m_Layer: 10
   m_Name: PuzzleMark1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +163,7 @@ GameObject:
   - component: {fileID: 2390351482326207824}
   - component: {fileID: 2390351482326207839}
   - component: {fileID: 3956653426921493004}
-  m_Layer: 14
+  m_Layer: 10
   m_Name: PuzzleMark3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -366,7 +388,7 @@ GameObject:
   - component: {fileID: 2390351483543598744}
   - component: {fileID: 2390351483543598759}
   - component: {fileID: 596159066200002071}
-  m_Layer: 14
+  m_Layer: 10
   m_Name: PuzzleMark2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +546,7 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
-  m_Mesh: {fileID: -1196432672485977636, guid: d5138be28b13ce844a7aa87c5161e9b3, type: 3}
+  m_Mesh: {fileID: 4300000, guid: d5138be28b13ce844a7aa87c5161e9b3, type: 3}
 --- !u!114 &2390351483605483455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,4 +730,4 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
-  m_Mesh: {fileID: 6201849370180432740, guid: 7f1abc4b9c73f1f448c885a68d5585b0, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 7f1abc4b9c73f1f448c885a68d5585b0, type: 3}

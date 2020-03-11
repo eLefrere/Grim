@@ -95,7 +95,7 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
-  m_Mesh: {fileID: -2704161552171646915, guid: 6775b6598151b4243811b5b57ffab48a, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 6775b6598151b4243811b5b57ffab48a, type: 3}
 --- !u!114 &6273334229316362665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,7 +279,7 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
-  m_Mesh: {fileID: 6201849370180432740, guid: 7f1abc4b9c73f1f448c885a68d5585b0, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 7f1abc4b9c73f1f448c885a68d5585b0, type: 3}
 --- !u!1 &6273334227461891853
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,6 +290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6273334227461891848}
   - component: {fileID: -1114129716383320620}
+  - component: {fileID: 8888282970161347573}
   m_Layer: 0
   m_Name: RotatingPuzzlePart04
   m_TagString: Untagged
@@ -334,6 +335,27 @@ MonoBehaviour:
   resettingTime: 0
   rotatingPart: {fileID: 6273334227461891848}
   myTrigger: {fileID: 6273334228695834005}
+--- !u!114 &8888282970161347573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6273334227461891853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 283a6648802560243b546d91b0ba3cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataType: 0
+  saveData:
+    id: 0
+    active: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}
+    partState: 0
+  objectData: {fileID: -1114129716383320620}
 --- !u!1 &6273334227678259786
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +368,7 @@ GameObject:
   - component: {fileID: 6273334227678259780}
   - component: {fileID: 6273334227678259783}
   - component: {fileID: 4875272283016927839}
-  m_Layer: 14
+  m_Layer: 10
   m_Name: PuzzleMark1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,7 +443,7 @@ GameObject:
   - component: {fileID: 6273334228305531718}
   - component: {fileID: 6273334228305531721}
   - component: {fileID: 823879275195250693}
-  m_Layer: 14
+  m_Layer: 10
   m_Name: PuzzleMark3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,7 +668,7 @@ GameObject:
   - component: {fileID: 6273334229252384910}
   - component: {fileID: 6273334229252384945}
   - component: {fileID: 8514972812141994218}
-  m_Layer: 14
+  m_Layer: 10
   m_Name: PuzzleMark2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
