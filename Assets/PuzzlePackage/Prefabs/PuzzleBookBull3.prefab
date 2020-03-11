@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2047741250944360647}
   - component: {fileID: 7080529830982267665}
   - component: {fileID: 2373225190743218943}
+  - component: {fileID: 114971347208175766}
   m_Layer: 16
   m_Name: PuzzleBookBull3
   m_TagString: ChosenOne
@@ -200,3 +201,29 @@ MonoBehaviour:
   highlightMaterial: {fileID: 0}
   originalMaterial: {fileID: 2100000, guid: 600c0a6d8bdb1c048ae857db06653bd0, type: 2}
   timeTick: 0.2
+--- !u!114 &114971347208175766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5981810418400101659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachmentFlags: 44
+  attachmentOffset: {fileID: 0}
+  catchingSpeedThreshold: -1
+  releaseVelocityStyle: 1
+  releaseVelocityTimeOffset: -0.011
+  scaleReleaseVelocity: 1.1
+  restoreOriginalParent: 0
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls: []
+  onDetachFromHand:
+    m_PersistentCalls:
+      m_Calls: []
+  interactable: {fileID: 0}
