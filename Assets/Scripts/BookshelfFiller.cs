@@ -47,47 +47,49 @@ public class BookshelfFiller : MonoBehaviour
             }
         }
 
-        if (hasPuzzleBooks)
-        {
-            SwapRandomsToPuzzleBooks();
-        }
+
     }
 
     public void FillBookRows()
     {
-       
-            books = new GameObject[(rowsCount + 1) * maxBooksPerRow];
 
-            int bookIndex = 0;
+        books = new GameObject[(rowsCount + 1) * maxBooksPerRow];
 
-            for (int i = 0; i < rowsCount; i++)
+        int bookIndex = 0;
+
+        for (int i = 0; i < rowsCount; i++)
+        {
+            Transform row = bookRows.GetChild(i);
+            int randomBookAmount = Random.Range(minBooksPerRow, maxBooksPerRow);
+            Vector3 bookPos = new Vector3(row.position.x, row.position.y, row.position.z);
+
+            for (int j = 0; j < randomBookAmount; j++)
             {
-                Transform row = bookRows.GetChild(i);
-                int randomBookAmount = Random.Range(minBooksPerRow, maxBooksPerRow);
-                Vector3 bookPos = new Vector3(row.position.x, row.position.y, row.position.z);
 
-                for (int j = 0; j < randomBookAmount; j++)
+                Vector3 nextBookPos = new Vector3(bookPos.x, bookPos.y, bookPos.z);
+                nextBookPos += row.transform.forward * (bookWidth * j);
+
+                if (j == 0)
                 {
-
-                    Vector3 nextBookPos = new Vector3(bookPos.x, bookPos.y, bookPos.z);
-                    nextBookPos += row.transform.forward * (bookWidth * j);
-
-                    if (j == 0)
-                    {
-                        books[bookIndex] = Instantiate(bookPrefabs[Random.Range(0, bookPrefabs.Length)], bookPos, row.rotation);
-                    }
-                    if (j > 0 && j <= randomBookAmount)
-                    {
-                        books[bookIndex] = Instantiate(bookPrefabs[Random.Range(0, bookPrefabs.Length)], nextBookPos, row.rotation);
-                    }
-                    books[bookIndex].transform.SetParent(row);
-                    bookIndex++;
+                    books[bookIndex] = Instantiate(bookPrefabs[Random.Range(0, bookPrefabs.Length)], bookPos, row.rotation);
                 }
-
+                if (j > 0 && j <= randomBookAmount)
+                {
+                    books[bookIndex] = Instantiate(bookPrefabs[Random.Range(0, bookPrefabs.Length)], nextBookPos, row.rotation);
+                }
+                books[bookIndex].transform.SetParent(row);
+                bookIndex++;
             }
 
-            totalBooksAmount = bookIndex + 1;
-         
+        }
+
+        totalBooksAmount = bookIndex + 1;
+
+        if (hasPuzzleBooks)
+        {
+            SwapRandomsToPuzzleBooks();
+        }
+
     }
 
     public void SwapRandomsToPuzzleBooks()
@@ -96,12 +98,12 @@ public class BookshelfFiller : MonoBehaviour
 
         for (int i = 0; i < fourRandomSlots.Length; i++)
         {
-            fourRandomSlots[i] = Random.Range(0, totalBooksAmount -1);
+            fourRandomSlots[i] = Random.Range(0, totalBooksAmount - 1);
         }
 
         for (int i = 0; i < books.Length; i++)
         {
-            if(books[i] != null)
+            if (books[i] != null)
             {
                 Vector3 pos = books[i].transform.position;
                 Quaternion rot = books[i].transform.rotation;
@@ -109,7 +111,7 @@ public class BookshelfFiller : MonoBehaviour
 
                 for (int j = 0; j < fourRandomSlots.Length; j++)
                 {
-                    if( i == fourRandomSlots[j])
+                    if (i == fourRandomSlots[j])
                     {
                         DestroyImmediate(books[i]);
                         books[i] = null;
