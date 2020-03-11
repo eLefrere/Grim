@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 25457fa38f95ce741ab101dfb7b60ca7
+guid: 77f9b65db551f294a8a930d3aa89bdcd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -7,13 +7,13 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Plane.002
+    4300000: VictorianVase_1
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Paper
-    second: {fileID: 2100000, guid: 65cfd1108a8269d48a2867dd47e74e48, type: 2}
+      name: Checker
+    second: {fileID: 2100000, guid: 37ad47bbf3ecf3a4aad6540d18403266, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -1,19 +1,24 @@
 fileFormatVersion: 2
-guid: 25457fa38f95ce741ab101dfb7b60ca7
+guid: 476b6f91c65d6eb47976afec2bb597de
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Plane.002
+    100000: CandleWax
+    100002: //RootNode
+    400000: CandleWax
+    400002: //RootNode
+    2300000: CandleWax
+    2300002: //RootNode
+    3300000: CandleWax
+    3300002: //RootNode
+    4300000: CandleHolder
+    4300002: CandleWax
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Paper
-    second: {fileID: 2100000, guid: 65cfd1108a8269d48a2867dd47e74e48, type: 2}
+      name: Checker
+    second: {fileID: 2100000, guid: 259c3bab19d2b014f9d3a582e83a8d68, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

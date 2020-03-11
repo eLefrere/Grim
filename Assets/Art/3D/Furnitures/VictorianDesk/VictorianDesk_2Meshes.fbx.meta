@@ -1,19 +1,26 @@
 fileFormatVersion: 2
-guid: 25457fa38f95ce741ab101dfb7b60ca7
+guid: 3bdeee8453a20a140bba3bc2beac3fff
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: VictorianDesk_Desk.001
+    100004: VictorianDesk_Drawer_Handles
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Plane.002
+    400002: VictorianDesk_Desk.001
+    400004: VictorianDesk_Drawer_Handles
+    2300000: VictorianDesk_Desk.001
+    2300002: VictorianDesk_Drawer_Handles
+    3300000: VictorianDesk_Desk.001
+    3300002: VictorianDesk_Drawer_Handles
+    4300000: VictorianDesk_Desk.001
+    4300002: VictorianDesk_Drawer_Handles
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Paper
-    second: {fileID: 2100000, guid: 65cfd1108a8269d48a2867dd47e74e48, type: 2}
+      name: VictorianDesk
+    second: {fileID: 2100000, guid: 8f28ea69b0ff2db4794feb0f4e4d85a5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

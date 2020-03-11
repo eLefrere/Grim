@@ -1,19 +1,15 @@
 fileFormatVersion: 2
-guid: 25457fa38f95ce741ab101dfb7b60ca7
+guid: 7f234a93a716899478716b8003b470ba
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
+    2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Plane.002
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Paper
-    second: {fileID: 2100000, guid: 65cfd1108a8269d48a2867dd47e74e48, type: 2}
+    4300000: Victorian Dining Table
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -41,7 +37,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
