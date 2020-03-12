@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 
 /// <summary>
@@ -26,18 +27,32 @@ public class PuzzleObserver : MonoBehaviour
     public bool isPercent75Reached;
     public bool allCompleted;
 
+    public TextMeshProUGUI[] textMeshes;
+
+    private void OnEnable()
+    {
+        EventManager.onPuzzleComplete += PuzzleComplete;
+        EventManager.onPuzzleReset += PuzzleReset;
+    }
+
     private void Start()
     {
         
-        //Listen puzzle completion events
-        EventManager.onPuzzleComplete += PuzzleComplete;
-        EventManager.onPuzzleReset += PuzzleReset;
-
         //Initialize lists and bool array
         puzzles = FindObjectsOfType<Puzzle>().ToList();
 
       
         puzzlesCompleted = new bool[puzzles.Count];
+
+        for (int i = 0; i < puzzles.Count; i++)
+        {
+            textMeshes[i].text = puzzles[i].name + " initialized";
+        }
+
+        for (int i = 0; i < puzzles.Count; i++)
+        {
+            textMeshes[i + puzzles.Count].text = puzzlesCompleted[i].ToString();
+        }
 
         //debug stuff
         if (DebugTable.PuzzleDebug)
@@ -56,7 +71,7 @@ public class PuzzleObserver : MonoBehaviour
         UpdateCompletedArray();     
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         EventManager.onPuzzleComplete -= PuzzleComplete;
         EventManager.onPuzzleReset -= PuzzleReset;
@@ -105,6 +120,11 @@ public class PuzzleObserver : MonoBehaviour
                     Debug.Log("Changed Puzzle Completed index : " + i + " to " + puzzlesCompleted[i]);
                 }
             }
+        }
+
+        for (int i = 0; i < puzzles.Count; i++)
+        {
+            textMeshes[i + puzzles.Count].text = puzzlesCompleted[i].ToString();
         }
 
         CheckPuzzleCompletionStatus();
