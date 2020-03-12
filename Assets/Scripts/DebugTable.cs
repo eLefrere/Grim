@@ -103,7 +103,7 @@ public class DebugTable : MonoBehaviour
         for (int i = 0; i < debugFields.Length; i++)
         {
           
-            Debug.Log(debugFields[i].name);
+            //Debug.Log(debugFields[i].name);
 
             if (fieldName == debugFields[i].name)
             {

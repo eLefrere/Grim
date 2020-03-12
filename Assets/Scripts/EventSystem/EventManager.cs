@@ -192,7 +192,7 @@ public class EventManager : MonoBehaviour
         onPuzzlepartReset?.Invoke(eventCode);
     }
 
-    public static void OnPuzzlesCompleteEvent(string eventCode)
+    public static void OnAllPuzzlesCompleteEvent(string eventCode)
     {
         if (DebugTable.instance.IsDebugging("EventDebug"))
             Debug.Log("Invoking all puzzles compled event : " + eventCode);

@@ -44,8 +44,8 @@ public abstract class Puzzle : MonoBehaviour
         {
             yield return new WaitForSeconds(time);
 
-            if (DebugTable.PuzzleDebug)
-                Debug.Log("Check Puzzle Status " + Time.time);
+            //if (DebugTable.PuzzleDebug)
+            //    Debug.Log("Check Puzzle Status " + Time.time);
           
             CheckStatus();
         }

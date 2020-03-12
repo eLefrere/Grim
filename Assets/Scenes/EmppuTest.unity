@@ -2553,6 +2553,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 106593455525627481, guid: 4bba7e06bf2b2c94ea0835c2e1b82f56,
+        type: 3}
+      propertyPath: saveDebug
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106593455525627481, guid: 4bba7e06bf2b2c94ea0835c2e1b82f56,
+        type: 3}
+      propertyPath: playerMovementDebug
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106593455525627481, guid: 4bba7e06bf2b2c94ea0835c2e1b82f56,
+        type: 3}
+      propertyPath: playerInteractionDebug
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106593455525627481, guid: 4bba7e06bf2b2c94ea0835c2e1b82f56,
+        type: 3}
+      propertyPath: soundDebug
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106593455525627481, guid: 4bba7e06bf2b2c94ea0835c2e1b82f56,
+        type: 3}
+      propertyPath: inventoryDebug
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106593455525627481, guid: 4bba7e06bf2b2c94ea0835c2e1b82f56,
+        type: 3}
+      propertyPath: monsterDebug
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 106593455774765276, guid: 4bba7e06bf2b2c94ea0835c2e1b82f56,
         type: 3}
       propertyPath: m_LocalPosition.x
