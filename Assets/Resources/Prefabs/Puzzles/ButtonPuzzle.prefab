@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completionEventCode: ButtonPuzzleComplete
   resetEventCode: ButtonPuzzleReset
-  timeStep: 3
+  timeStep: 2
   puzzleParts:
   - {fileID: 174243084537099829}
   - {fileID: 7780128786800311719}

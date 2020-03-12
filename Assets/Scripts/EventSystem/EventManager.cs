@@ -10,6 +10,7 @@ using UnityEngine;
 /// </summary>
 public class EventManager : MonoBehaviour
 {
+
     /// <summary>
     /// Delegate for events
     /// </summary>
@@ -196,6 +197,7 @@ public class EventManager : MonoBehaviour
         if (DebugTable.instance.IsDebugging("EventDebug"))
             Debug.Log("Invoking all puzzles compled event : " + eventCode);
 
+        
         onAllPuzzlesComplete?.Invoke(eventCode);
     }
 

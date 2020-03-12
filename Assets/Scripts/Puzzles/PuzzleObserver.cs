@@ -26,20 +26,17 @@ public class PuzzleObserver : MonoBehaviour
     public bool isPercent75Reached;
     public bool allCompleted;
 
-    private void Awake()
-    {
-        //Make object DDOL always keep observer
-        DontDestroyOnLoad(gameObject);
-    }
-
     private void Start()
     {
+        
         //Listen puzzle completion events
         EventManager.onPuzzleComplete += PuzzleComplete;
         EventManager.onPuzzleReset += PuzzleReset;
 
         //Initialize lists and bool array
         puzzles = FindObjectsOfType<Puzzle>().ToList();
+
+      
         puzzlesCompleted = new bool[puzzles.Count];
 
         //debug stuff
@@ -62,7 +59,7 @@ public class PuzzleObserver : MonoBehaviour
     private void OnDestroy()
     {
         EventManager.onPuzzleComplete -= PuzzleComplete;
-        EventManager.onPuzzleReset += PuzzleReset;
+        EventManager.onPuzzleReset -= PuzzleReset;
     }
 
     /// <summary>
@@ -150,14 +147,9 @@ public class PuzzleObserver : MonoBehaviour
             Debug.Log(count + " puzzles of " + puzzlesCompleted.Length + " completed");
         }
 
-        if (count <= 0)
-        {
-            completionPercent = count / puzzlesCompleted.Length * 100;
-        }
-        else
-        {
-            completionPercent = 100f;
-        }
+        
+        completionPercent = count / (float)puzzlesCompleted.Length * 100f;
+        
 
         if (DebugTable.PuzzleDebug)
         {

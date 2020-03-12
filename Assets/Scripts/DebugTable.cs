@@ -65,8 +65,7 @@ public class DebugTable : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
-
+     
         debugTableInstance = this;
 
     }

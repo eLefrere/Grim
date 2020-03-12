@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completionEventCode: WheelPuzzleComplete
   resetEventCode: WheelPuzzleReset
-  timeStep: 3
+  timeStep: 2
   puzzleParts:
   - {fileID: 4286128203198995404}
   - {fileID: 1825488527943060021}
