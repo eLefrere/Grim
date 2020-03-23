@@ -44,14 +44,17 @@ public class PuzzleObserver : MonoBehaviour
       
         puzzlesCompleted = new bool[puzzles.Count];
 
-        for (int i = 0; i < puzzles.Count; i++)
+        if (!textMeshes.IsEmpty())
         {
-            textMeshes[i].text = puzzles[i].name + " initialized";
-        }
+            for (int i = 0; i < puzzles.Count; i++)
+            {
+                textMeshes[i].text = puzzles[i].name + " initialized";
+            }
 
-        for (int i = 0; i < puzzles.Count; i++)
-        {
-            textMeshes[i + puzzles.Count].text = puzzlesCompleted[i].ToString();
+            for (int i = 0; i < puzzles.Count; i++)
+            {
+                textMeshes[i + puzzles.Count].text = puzzlesCompleted[i].ToString();
+            }
         }
 
         //debug stuff
@@ -120,9 +123,12 @@ public class PuzzleObserver : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < puzzles.Count; i++)
+        if (!textMeshes.IsEmpty())
         {
-            textMeshes[i + puzzles.Count].text = puzzlesCompleted[i].ToString();
+            for (int i = 0; i < puzzles.Count; i++)
+            {
+                textMeshes[i + puzzles.Count].text = puzzlesCompleted[i].ToString();
+            }
         }
 
         //CheckPuzzleCompletionStatus();
@@ -158,13 +164,17 @@ public class PuzzleObserver : MonoBehaviour
         {
             Debug.Log(count + " puzzles of " + puzzlesCompleted.Length + " completed");
         }
-
-        textMeshes[4].text = count.ToString() + " puzzles of " + puzzlesCompleted.Length.ToString() + " completed";
+        if (!textMeshes.IsEmpty())
+        {
+            textMeshes[4].text = count.ToString() + " puzzles of " + puzzlesCompleted.Length.ToString() + " completed";
+        }
 
         completionPercent = count / (float)puzzlesCompleted.Length * 100f;
 
-        textMeshes[5].text = "Completion percent is : " + completionPercent.ToString();
-
+        if (!textMeshes.IsEmpty())
+        {
+            textMeshes[5].text = "Completion percent is : " + completionPercent.ToString();
+        }
 
         if (DebugTable.PuzzleDebug)
         {

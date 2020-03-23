@@ -23,6 +23,9 @@ public class DebugTable : MonoBehaviour
     public bool saveDebug;
     public static bool SaveDebug;
 
+    public bool monsterDebug;
+    public static bool MonsterDebug;
+
     [Header("Dev-emppu debugging")]
     public bool playerMovementDebug;
     public static bool PlayerMovementDebug;
@@ -33,13 +36,8 @@ public class DebugTable : MonoBehaviour
     public bool soundDebug;
     public static bool SoundDebug;
 
-    [Header("Dev-Tohvu debugging")]
     public bool inventoryDebug;
     public static bool InventoryDebug;
-
-    [Header("Dev-Leo debugging")]
-    public bool monsterDebug;
-    public static bool MonsterDebug;
 
     public bool shaderDebug;
     public static bool ShaderDebug;
