@@ -32,6 +32,18 @@ public enum SaveDataType
 
 }
 
+public enum AIType
+{
+    Teleporting,
+    Walking,
+}
+
+public enum MovementType
+{
+    Teleporting,
+    Walking,
+}
+
 //public enum ControllerMode
 //{
 //    VRController,
