@@ -254,7 +254,7 @@ MonoBehaviour:
   movingPart: {fileID: 8421272312110692682}
   localMoveDistance: {x: 0, y: 0, z: -0.1}
   engageAtPercent: 0.2
-  disengageAtPercent: 0.1
+  disengageAtPercent: 0.2
   onButtonDown:
     m_PersistentCalls:
       m_Calls:

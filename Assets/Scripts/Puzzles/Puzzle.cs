@@ -26,8 +26,9 @@ public abstract class Puzzle : MonoBehaviour
     public bool finished = false;
 
 
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return new WaitForSeconds(2);
         coroutine = Tick(timeStep);
         StartCoroutine(coroutine);
     }
@@ -43,8 +44,8 @@ public abstract class Puzzle : MonoBehaviour
         {
             yield return new WaitForSeconds(time);
 
-            if (DebugTable.PuzzleDebug)
-                Debug.Log("Check Puzzle Status " + Time.time);
+            //if (DebugTable.PuzzleDebug)
+            //    Debug.Log("Check Puzzle Status " + Time.time);
           
             CheckStatus();
         }

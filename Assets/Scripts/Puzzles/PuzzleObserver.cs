@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 
 /// <summary>
@@ -26,21 +27,35 @@ public class PuzzleObserver : MonoBehaviour
     public bool isPercent75Reached;
     public bool allCompleted;
 
-    private void Awake()
+    public TextMeshProUGUI[] textMeshes;
+
+    private void OnEnable()
     {
-        //Make object DDOL always keep observer
-        DontDestroyOnLoad(gameObject);
+        EventManager.onPuzzleComplete += PuzzleComplete;
+        EventManager.onPuzzleReset += PuzzleReset;
     }
 
     private void Start()
     {
-        //Listen puzzle completion events
-        EventManager.onPuzzleComplete += PuzzleComplete;
-        EventManager.onPuzzleReset += PuzzleReset;
-
+        
         //Initialize lists and bool array
         puzzles = FindObjectsOfType<Puzzle>().ToList();
+
+      
         puzzlesCompleted = new bool[puzzles.Count];
+
+        if (!textMeshes.IsEmpty())
+        {
+            for (int i = 0; i < puzzles.Count; i++)
+            {
+                textMeshes[i].text = puzzles[i].name + " initialized";
+            }
+
+            for (int i = 0; i < puzzles.Count; i++)
+            {
+                textMeshes[i + puzzles.Count].text = puzzlesCompleted[i].ToString();
+            }
+        }
 
         //debug stuff
         if (DebugTable.PuzzleDebug)
@@ -59,10 +74,10 @@ public class PuzzleObserver : MonoBehaviour
         UpdateCompletedArray();     
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         EventManager.onPuzzleComplete -= PuzzleComplete;
-        EventManager.onPuzzleReset += PuzzleReset;
+        EventManager.onPuzzleReset -= PuzzleReset;
     }
 
     /// <summary>
@@ -72,7 +87,6 @@ public class PuzzleObserver : MonoBehaviour
     public void PuzzleComplete(string eventCode)
     {
         UpdateCompletedArray();
-        
     }
 
     /// <summary>
@@ -82,7 +96,6 @@ public class PuzzleObserver : MonoBehaviour
     public void PuzzleReset(string eventCode)
     {
         UpdateCompletedArray();
-      
     }
 
     /// <summary>
@@ -110,21 +123,22 @@ public class PuzzleObserver : MonoBehaviour
             }
         }
 
-        CheckPuzzleCompletionStatus();
-    }
+        if (!textMeshes.IsEmpty())
+        {
+            for (int i = 0; i < puzzles.Count; i++)
+            {
+                textMeshes[i + puzzles.Count].text = puzzlesCompleted[i].ToString();
+            }
+        }
 
-    /// <summary>
-    /// Check puzzles completion
-    /// </summary>
-    public void CheckPuzzleCompletionStatus()
-    {
+        //CheckPuzzleCompletionStatus();
         if (DebugTable.PuzzleDebug)
         {
             Debug.Log("Checking puzzle completion status...");
         }
 
         int count = 0;
-     
+
 
         for (int i = 0; i < puzzlesCompleted.Length; i++)
         {
@@ -140,8 +154,9 @@ public class PuzzleObserver : MonoBehaviour
                 if (DebugTable.PuzzleDebug)
                 {
                     Debug.Log(" Puzzle index : " + i + " is completed!");
-                    count++;
+                    
                 }
+                count++;
             }
         }
 
@@ -149,14 +164,16 @@ public class PuzzleObserver : MonoBehaviour
         {
             Debug.Log(count + " puzzles of " + puzzlesCompleted.Length + " completed");
         }
-
-        if (count <= 0)
+        if (!textMeshes.IsEmpty())
         {
-            completionPercent = count / puzzlesCompleted.Length * 100;
+            textMeshes[4].text = count.ToString() + " puzzles of " + puzzlesCompleted.Length.ToString() + " completed";
         }
-        else
+
+        completionPercent = count / (float)puzzlesCompleted.Length * 100f;
+
+        if (!textMeshes.IsEmpty())
         {
-            completionPercent = 100f;
+            textMeshes[5].text = "Completion percent is : " + completionPercent.ToString();
         }
 
         if (DebugTable.PuzzleDebug)
@@ -164,29 +181,30 @@ public class PuzzleObserver : MonoBehaviour
             Debug.Log("Completion percent is : " + completionPercent);
         }
 
-        if(completionPercent >= 25f && completionPercent <= 30f && !isPercent25Reached)
+        if (completionPercent >= 25f && completionPercent <= 30f && !isPercent25Reached)
         {
             EventManager.OnPuzzles25CompletedEvent(this.name);
             isPercent25Reached = true;
         }
 
-        if(completionPercent >= 50f && completionPercent <= 60f && !isPercent50Reached)
+        if (completionPercent >= 50f && completionPercent <= 60f && !isPercent50Reached)
         {
             EventManager.OnPuzzles50CompletedEvent(this.name);
             isPercent50Reached = true;
         }
 
-        if(completionPercent >= 75f && completionPercent <= 80f && !isPercent75Reached)
+        if (completionPercent >= 75f && completionPercent <= 80f && !isPercent75Reached)
         {
             EventManager.OnPuzzles75CompletedEvent(this.name);
             isPercent75Reached = true;
         }
 
-        if(count == puzzlesCompleted.Length && count > 0)
+        if (count == puzzlesCompleted.Length && count > 0)
         {
-            EventManager.OnPuzzlesCompleteEvent(this.name);
+            EventManager.OnAllPuzzlesCompleteEvent(this.name);
             allCompleted = true;
         }
 
-     }
+    }
+
 }

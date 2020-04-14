@@ -10,6 +10,7 @@ using UnityEngine;
 /// </summary>
 public class EventManager : MonoBehaviour
 {
+
     /// <summary>
     /// Delegate for events
     /// </summary>
@@ -57,6 +58,17 @@ public class EventManager : MonoBehaviour
     public static event GameStateDelegate onNewGame;
     public static event GameStateDelegate onGameExit;
     public static event GameStateDelegate onGamePause;
+
+    //Some player events
+    public delegate void PlayerStatusDelegate();
+    public static event PlayerStatusDelegate onPlayerHide;
+    public static event PlayerStatusDelegate onPlayerDeath;
+    public static event PlayerStatusDelegate onPlayerSpawn;
+    public static event PlayerStatusDelegate onPlayerUnHide;
+
+    public delegate void MonsterDelegate();
+    public static event MonsterDelegate onMonsterSpawn;
+    public static event MonsterDelegate onMonsterDespawn;
 
     /// <summary>
     /// Generic One Parameter Delegate, in the end of the event name there are first letter of each parameter
@@ -191,11 +203,12 @@ public class EventManager : MonoBehaviour
         onPuzzlepartReset?.Invoke(eventCode);
     }
 
-    public static void OnPuzzlesCompleteEvent(string eventCode)
+    public static void OnAllPuzzlesCompleteEvent(string eventCode)
     {
         if (DebugTable.instance.IsDebugging("EventDebug"))
             Debug.Log("Invoking all puzzles compled event : " + eventCode);
 
+        
         onAllPuzzlesComplete?.Invoke(eventCode);
     }
 
@@ -452,6 +465,64 @@ public class EventManager : MonoBehaviour
             Debug.Log("Invoking On Game Pause Gamestate event! ");
 
         onGamePause?.Invoke(toState);
+    }
+
+    #endregion
+
+    #region PLAYER STATUS EVENT CALL FUNCTIONS
+
+    public static void OnPlayerHide()
+    {
+        if (DebugTable.EventDebug)
+            Debug.Log("Invoking On Player Hide Event! ");
+
+        onPlayerHide?.Invoke();
+    }
+
+    public static void OnPlayerUnHide()
+    {
+        if (DebugTable.EventDebug)
+            Debug.Log("Invoking On Player UnHide Event! ");
+
+        onPlayerUnHide?.Invoke();
+    }
+
+    public static void OnPlayerDeath()
+    {
+        if (DebugTable.EventDebug)
+            Debug.Log("Invoking On Player Death event! ");
+
+        onPlayerDeath?.Invoke();
+    }
+
+    public static void OnPlayerSpawn()
+    {
+        if (DebugTable.EventDebug)
+            Debug.Log("Invoking On Player Spawn event! ");
+
+        onPlayerSpawn?.Invoke();
+    }
+
+
+    #endregion
+
+    #region MONSTER EVENT CALL FUNCTIONS
+
+    public static void OnMonsterSpawn()
+    {
+        if (DebugTable.EventDebug)
+            Debug.Log("Invoking On Monster Spawn Event! ");
+
+        onMonsterSpawn?.Invoke();
+
+    }
+
+    public static void OnMonsterDespawn()
+    {
+        if (DebugTable.EventDebug)
+            Debug.Log("Invoking On Monster Despawn Event! ");
+
+        onMonsterDespawn?.Invoke();
     }
 
     #endregion
