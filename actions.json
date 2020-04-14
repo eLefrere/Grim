@@ -1,7 +1,6 @@
 {
   "actions": [
     {
-<<<<<<< Updated upstream
       "name": "/actions/default/in/InteractUI",
       "type": "boolean"
     },
@@ -73,15 +72,10 @@
       "name": "/actions/mixedreality/in/ExternalCamera",
       "type": "pose",
       "requirement": "optional"
-=======
-      "name": "/actions/NewSet/in/NewAction",
-      "type": "boolean"
->>>>>>> Stashed changes
     }
   ],
   "action_sets": [
     {
-<<<<<<< Updated upstream
       "name": "/actions/default",
       "usage": "single"
     },
@@ -151,11 +145,4 @@
       "/actions/platformer/in/Jump": "Jump"
     }
   ]
-=======
-      "name": "/actions/NewSet"
-    }
-  ],
-  "default_bindings": [],
-  "localization": []
->>>>>>> Stashed changes
 }

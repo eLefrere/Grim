@@ -50,7 +50,7 @@ public abstract class Puzzlepart : MonoBehaviour
             if (DebugTable.PuzzleDebug)
                 Debug.Log("Puzzle part finished! " + gameObject.name);
 
-            EventManager.OnPuzzleCompleteEvent(eventCodeComplete);
+            EventManager.OnPuzzlepartCompleteEvent(eventCodeComplete);
         }
     }
 
