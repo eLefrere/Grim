@@ -65,7 +65,7 @@ MonoBehaviour:
   - Platform: 1
     Value: 1024
   - Platform: 2
-    Value: 128
+    Value: 60
   - Platform: 20
     Value: 128
   RealChannelSettings:
