@@ -3726,6 +3726,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: handbag&wooden_box
       objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 3d3a9259411bfa94eaea0ae9e3a1536c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.14999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 3d3a9259411bfa94eaea0ae9e3a1536c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 3d3a9259411bfa94eaea0ae9e3a1536c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.1407185
