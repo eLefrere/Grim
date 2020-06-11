@@ -13,6 +13,9 @@ public class MonsterSpawn : MonoBehaviour
     public GameObject monsterPrefab;
     public GameObject monster;
 
+    public Transform[] spawnPoints;
+    public Transform[] validSpawnPoints;
+
     public bool isSpawn;
     public bool isSpawnPressed;
 
