@@ -6,6 +6,8 @@ TagManager:
   tags:
   - ChosenOne
   - Monster
+  - Right Hand
+  - Left Hand
   layers:
   - Default
   - TransparentFX
