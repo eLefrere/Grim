@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: Player
-  Event: snapshot:/Reverb Big
+  Event: snapshot:/Rev Living Room
   PlayEvent: 3
   StopEvent: 4
   AllowFadeout: 1
@@ -438,7 +438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: Player
-  Event: snapshot:/Reverb Big
+  Event: snapshot:/Rev Library
   PlayEvent: 3
   StopEvent: 4
   AllowFadeout: 1
@@ -588,7 +588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: Player
-  Event: snapshot:/Reverb Small
+  Event: snapshot:/Rev Hallway
   PlayEvent: 3
   StopEvent: 4
   AllowFadeout: 1
@@ -703,7 +703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: Player
-  Event: snapshot:/Reverb Big
+  Event: snapshot:/Rev Study
   PlayEvent: 3
   StopEvent: 4
   AllowFadeout: 1
@@ -818,7 +818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: Player
-  Event: snapshot:/Reverb Small
+  Event: snapshot:/Rev Hallway
   PlayEvent: 3
   StopEvent: 4
   AllowFadeout: 1
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: Player
-  Event: snapshot:/Reverb Big
+  Event: snapshot:/Rev Living Room
   PlayEvent: 3
   StopEvent: 4
   AllowFadeout: 1
