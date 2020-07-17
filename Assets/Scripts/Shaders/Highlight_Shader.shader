@@ -54,9 +54,11 @@
             fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
             c = lerp(c, pow(_HighlightColor, 5), (sin(_Time.w * _PulseSpeed)));
             o.Albedo = c.rgb;
+          
             o.Normal = UnpackNormal(tex2D(_NormalMap, IN.uv_NormalMap));
-            // Metallic and smoothness come from slider variables
+            // Metallic and smoothness come from slider variables        
             o.Metallic = tex2D(_MetallicMap, IN.uv_MetallicMap);
+            //o.Metallic = _Metallic;
             o.Smoothness = _Glossiness;
             o.Alpha = c.a;
         }
