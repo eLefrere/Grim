@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 326e66abc5f7b9b499d20ee0ec5d8152
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cube.049
+    100002: modular_bookshelf_part_1
+    100004: modular_bookshelf_part_2
+    100006: modular_bookshelf_part_3
+    100008: modular_bookshelf_part_4
+    100010: modular_bookshelf_part_5
+    100012: modular_bookshelf_part_6
+    100014: modular_bookshelf_part_7
+    100016: modular_bookshelf_part_8
+    100018: modular_bookshelf_part_9
+    100020: //RootNode
+    100022: Plane.045
+    400000: Cube.049
+    400002: modular_bookshelf_part_1
+    400004: modular_bookshelf_part_2
+    400006: modular_bookshelf_part_3
+    400008: modular_bookshelf_part_4
+    400010: modular_bookshelf_part_5
+    400012: modular_bookshelf_part_6
+    400014: modular_bookshelf_part_7
+    400016: modular_bookshelf_part_8
+    400018: modular_bookshelf_part_9
+    400020: //RootNode
+    400022: Plane.045
+    2100000: ModularBookshelf
+    2300000: Cube.049
+    2300002: modular_bookshelf_part_1
+    2300004: modular_bookshelf_part_2
+    2300006: modular_bookshelf_part_3
+    2300008: modular_bookshelf_part_4
+    2300010: modular_bookshelf_part_5
+    2300012: modular_bookshelf_part_6
+    2300014: modular_bookshelf_part_7
+    2300016: modular_bookshelf_part_8
+    2300018: modular_bookshelf_part_9
+    2300020: Plane.045
+    3300000: Cube.049
+    3300002: modular_bookshelf_part_1
+    3300004: modular_bookshelf_part_2
+    3300006: modular_bookshelf_part_3
+    3300008: modular_bookshelf_part_4
+    3300010: modular_bookshelf_part_5
+    3300012: modular_bookshelf_part_6
+    3300014: modular_bookshelf_part_7
+    3300016: modular_bookshelf_part_8
+    3300018: modular_bookshelf_part_9
+    3300020: Plane.045
+    4300000: modular_bookshelf_part_6
+    4300002: modular_bookshelf_part_1
+    4300004: modular_bookshelf_part_7
+    4300006: modular_bookshelf_part_8
+    4300008: modular_bookshelf_part_2
+    4300010: Cube.049
+    4300012: modular_bookshelf_part_5
+    4300014: modular_bookshelf_part_9
+    4300016: modular_bookshelf_part_3
+    4300018: modular_bookshelf_part_4
+    4300020: Plane.045
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ModularBookshelf
+    second: {fileID: 2100000, guid: d27f23ad687042d44bfab053f22c8caf, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
