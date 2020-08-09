@@ -19,6 +19,7 @@ public class MonsterFSM : MonoBehaviour
     public IState currentState;
 
     public bool initialized = false;
+    public bool isWaiting = true;
     Monster monster;
 
     /// <summary>
@@ -78,6 +79,13 @@ public class MonsterFSM : MonoBehaviour
                     Random.Range(monster.transform.position.x - radius, monster.transform.position.x + radius),
                     monster.transform.position.y,
                     Random.Range(monster.transform.position.z - radius, monster.transform.position.z + radius));
+    }
+
+    public IEnumerator Wait(float t)
+    {
+        yield return new WaitForSeconds(t);
+        monster.nav.isStopped = false;
+        isWaiting = false;
     }
 
 }

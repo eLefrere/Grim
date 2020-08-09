@@ -46,5 +46,11 @@ MonoBehaviour:
   monsterPrefab: {fileID: 7081893716889120452, guid: a1bdd4ba29bc9db47aff4c0c49133969,
     type: 3}
   monster: {fileID: 0}
+  spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   isSpawn: 0
   isSpawnPressed: 0
