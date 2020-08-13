@@ -69,6 +69,7 @@ public class EventManager : MonoBehaviour
     public delegate void MonsterDelegate();
     public static event MonsterDelegate onMonsterSpawn;
     public static event MonsterDelegate onMonsterDespawn;
+    public static event MonsterDelegate onMonsterSpawnTutorial;
 
     /// <summary>
     /// Generic One Parameter Delegate, in the end of the event name there are first letter of each parameter
@@ -523,6 +524,14 @@ public class EventManager : MonoBehaviour
             Debug.Log("Invoking On Monster Despawn Event! ");
 
         onMonsterDespawn?.Invoke();
+    }
+
+    public static void OnMonsterSpawnTutorial()
+    {
+        if (DebugTable.EventDebug)
+            Debug.Log("Invoking On Monster Spawn Tutorial Event!");
+
+        onMonsterSpawnTutorial?.Invoke();
     }
 
     #endregion

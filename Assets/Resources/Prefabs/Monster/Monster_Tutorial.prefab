@@ -11,13 +11,11 @@ GameObject:
   - component: {fileID: 7081893716889120461}
   - component: {fileID: 7081893716889120456}
   - component: {fileID: 7081893716889120457}
-  - component: {fileID: 7081893716889120454}
-  - component: {fileID: 7081893716889120455}
-  - component: {fileID: 8229210925676366715}
-  - component: {fileID: 54761527144550480}
+  - component: {fileID: 114480119505765500}
+  - component: {fileID: 54806029773260894}
   m_Layer: 0
-  m_Name: Monster
-  m_TagString: Monster
+  m_Name: Monster_Tutorial
+  m_TagString: TutorialMonster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,7 +59,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.59
-  m_Speed: 0.1
+  m_Speed: 1
   m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -73,7 +71,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &7081893716889120454
+--- !u!114 &114480119505765500
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,51 +80,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7081893716889120452}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9021cce88035bf44790f734cee925eaa, type: 3}
+  m_Script: {fileID: 11500000, guid: 491f217a272e3f34991d436137a24d46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  fsm: {fileID: 7081893716889120455}
-  awareness: 0
-  chaseAwareness: 30
-  minAwareness: 0
-  maxAwareness: 100
-  deadlyAwareness: 80
-  baseSpeed: 0
-  wanderSpeed: 0.4
-  speedIncrease: 0.01
-  searchRadius: 2
-  wanderRadius: 5
-  isPlayerVisible: 1
---- !u!114 &7081893716889120455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7081893716889120452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3adce09ecd0fded4eae6eabf765ae6ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialized: 0
-  isWaiting: 1
---- !u!114 &8229210925676366715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7081893716889120452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c26698c04d5ef664f89396b2c6efb9ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  monster: {fileID: 0}
---- !u!54 &54761527144550480
+  waypoints: []
+  stopTime: 2
+--- !u!54 &54806029773260894
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -32,7 +32,7 @@ public class Monster : MonoBehaviour
 
     private void Start()
     {
-        target = FindObjectOfType<Valve.VR.InteractionSystem.Player>().transform;
+        target = FindObjectOfType<Valve.VR.InteractionSystem.Player>().hmdTransform;
         fsm.InitStates(this);
         baseSpeed = nav.speed;
     }

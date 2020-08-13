@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TutorialPuzzle : Puzzle
+public class KeyPuzzle : Puzzle
 {
     
 }
