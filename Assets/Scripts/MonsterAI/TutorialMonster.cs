@@ -65,8 +65,10 @@ public class TutorialMonster : MonoBehaviour
     public IEnumerator Wait(float t)
     {
         nav.isStopped = true;
+        anim.SetFloat("Moving", 0.0f);
         yield return new WaitForSeconds(t);
         nav.isStopped = false;
+        anim.SetFloat("Moving", nav.speed);
         nav.SetDestination(waypoints[1].transform.position);
     }
 
