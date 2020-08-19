@@ -9,6 +9,7 @@ public class TutorialMonster : MonoBehaviour
     public Transform[] waypoints;
 
     public float stopTime = 3f;
+    float baseSpeed;
 
     NavMeshAgent nav;
     Animator anim;
@@ -20,8 +21,13 @@ public class TutorialMonster : MonoBehaviour
     {
         nav = GetComponent<NavMeshAgent>();
         nav.SetDestination(waypoints[0].transform.position);
+        if (!PlayerStatus.playerIsHiding)
+            SeePlayer();
+
         anim = GetComponentInChildren<Animator>();
         anim.SetFloat("Moving", nav.speed);
+        baseSpeed = nav.speed * 0.5f;
+        StartCoroutine(LerpSpeed());
     }
 
     private void OnEnable()
@@ -45,7 +51,9 @@ public class TutorialMonster : MonoBehaviour
 
     public void SeePlayer()
     {
-        target = FindObjectOfType<Valve.VR.InteractionSystem.Player>().hmdTransform;
+        if(target == null)
+            target = FindObjectOfType<Valve.VR.InteractionSystem.Player>().hmdTransform;
+
         attackMode = true;
         nav.SetDestination(target.position);
     }
@@ -70,6 +78,15 @@ public class TutorialMonster : MonoBehaviour
         nav.isStopped = false;
         anim.SetFloat("Moving", nav.speed);
         nav.SetDestination(waypoints[1].transform.position);
+    }
+
+    IEnumerator LerpSpeed()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.5f);
+            nav.speed = Mathf.Lerp(baseSpeed, baseSpeed + 0.35f, Mathf.PingPong(Time.time, 1));
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

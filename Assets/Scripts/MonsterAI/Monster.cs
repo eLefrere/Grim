@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -26,7 +27,7 @@ public class Monster : MonoBehaviour
     public float searchRadius = 2f;
     public float wanderRadius = 5f;
 
-    public bool isPlayerVisible = true;
+    //public bool isPlayerVisible = true;
     
     public NavMeshAgent nav => GetComponent<NavMeshAgent>();
 
@@ -39,6 +40,7 @@ public class Monster : MonoBehaviour
 
     private void Update()
     {
+        
         if (awareness > maxAwareness)
             awareness = maxAwareness;
         if (awareness < minAwareness)
@@ -47,8 +49,9 @@ public class Monster : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.onPlayerHide += PlayerIsHidden;
-        EventManager.onPlayerUnHide += PlayerVisible;
+        //EventManager.onPlayerHide += PlayerIsHidden;
+        //EventManager.onPlayerUnHide += PlayerVisible;
+        StartCoroutine(LerpSpeed());
 
         if (fsm.initialized)
         {
@@ -57,20 +60,29 @@ public class Monster : MonoBehaviour
         }
     }
 
-    private void OnDisable()
+    IEnumerator LerpSpeed()
     {
-        EventManager.onPlayerHide -= PlayerIsHidden;
-        EventManager.onPlayerUnHide -= PlayerVisible;
+        while (true)
+        {
+            yield return new WaitForSeconds(0.5f);
+            nav.speed = Mathf.Lerp(baseSpeed, baseSpeed + 0.35f, Mathf.PingPong(Time.time, 1));
+        }
     }
 
-    public void PlayerIsHidden()
-    {
-        isPlayerVisible = false;
-    }
+    //private void OnDisable()
+    //{
+    //    EventManager.onPlayerHide -= PlayerIsHidden;
+    //    EventManager.onPlayerUnHide -= PlayerVisible;
+    //}
 
-    public void PlayerVisible()
-    {
-        isPlayerVisible = true;
-    }
+    //public void PlayerIsHidden()
+    //{
+    //    isPlayerVisible = false;
+    //}
+
+    //public void PlayerVisible()
+    //{
+    //    isPlayerVisible = true;
+    //}
 
 }

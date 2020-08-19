@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2667199860185361968}
   - component: {fileID: 2667199860184231152}
   - component: {fileID: 1603658301}
+  - component: {fileID: 1360090458209158928}
   m_Layer: 0
   m_Name: Victorian_Wardrobe
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2667199860186427952}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 3.321, y: 0, z: -2.833}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.99999905, y: 0.99999905, z: 0.99999905}
   m_Children:
   - {fileID: 2667199860186656274}
@@ -37,7 +38,7 @@ Transform:
   - {fileID: 6167654190416729638}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2667199860185361968
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -102,6 +103,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!208 &1360090458209158928
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2667199860186427952}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.767, y: 1.19, z: 0.36900002}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.11, z: -0.030000001}
+  m_TimeToStationary: 0.5
 --- !u!1 &2667199860186427954
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,8 +363,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4637071, y: 0.05879843, z: 0.6794984}
-  m_Center: {x: 0.0013676597, y: 0.028908012, z: -0.00026813176}
+  m_Size: {x: 1.4637071, y: 0.062179267, z: 0.6794984}
+  m_Center: {x: 0.0013676299, y: 0.030598432, z: -0.00026813176}
 --- !u!65 &9072447738939322302
 BoxCollider:
   m_ObjectHideFlags: 0
