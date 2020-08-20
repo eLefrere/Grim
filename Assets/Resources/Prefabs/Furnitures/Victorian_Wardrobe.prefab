@@ -12,13 +12,12 @@ GameObject:
   - component: {fileID: 2667199860185361968}
   - component: {fileID: 2667199860184231152}
   - component: {fileID: 1603658301}
-  - component: {fileID: 1360090458209158928}
   m_Layer: 0
   m_Name: Victorian_Wardrobe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2667199860186656272
 Transform:
@@ -103,22 +102,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!208 &1360090458209158928
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2667199860186427952}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.767, y: 1.19, z: 0.36900002}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 1.11, z: -0.030000001}
-  m_TimeToStationary: 0.5
 --- !u!1 &2667199860186427954
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +306,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6695662053791525471
 Transform:
@@ -363,8 +346,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4637071, y: 0.062179267, z: 0.6794984}
-  m_Center: {x: 0.0013676299, y: 0.030598432, z: -0.00026813176}
+  m_Size: {x: 1.4637071, y: 0.062179267, z: 0.6757916}
+  m_Center: {x: 0.0013676299, y: 0.030598432, z: 0.0015852168}
 --- !u!65 &9072447738939322302
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -497,7 +480,7 @@ GameObject:
   m_TagString: Hidespot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &9002950288861732520
 Transform:
