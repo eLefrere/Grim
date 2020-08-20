@@ -10,6 +10,7 @@ TagManager:
   - Left Hand
   - Hidespot
   - Key
+  - TutorialMonster
   layers:
   - Default
   - TransparentFX
