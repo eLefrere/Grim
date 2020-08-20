@@ -48,7 +48,7 @@ public class SearchState : IState
         //    Debug.Log("Searching the eatable...");
         //}
 
-        if (monster.isPlayerVisible && monster.awareness > monster.chaseAwareness)
+        if (PlayerStatus.playerIsHiding && monster.awareness > monster.chaseAwareness)
         {
             monster.fsm.ChangeState(typeof(ChaseState));
         }
