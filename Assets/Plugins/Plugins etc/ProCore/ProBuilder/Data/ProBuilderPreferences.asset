@@ -22,11 +22,13 @@ MonoBehaviour:
   - pb_GIWorkflowMode
   - pbDragSelectMode
   - pbVertexColorTool
+  - pbExtrudeMethod
   m_Float_keys:
   - pbEditorScroll.x
   - pbEditorScroll.y
   - pbBevelAmount
   - pbWeldDistance
+  - pbExtrudeDistance
   m_String_keys:
   - pbVertexColorPrefs4
   - pbVertexColorPrefs0
@@ -36,12 +38,13 @@ MonoBehaviour:
   m_Color_keys: []
   m_Material_keys: []
   m_Bool_values: 0001
-  m_Int_values: 000000000000000002000000000000000200000000000000
+  m_Int_values: 00000000010000000000000000000000020000000000000001000000
   m_Float_values:
   - 0
   - 0
   - 0.13912849
   - 0.2
+  - 0.5
   m_String_values:
   - RGBA(0.148, 0.165, 0.170, 1.000)
   - RGBA(0.243, 0.251, 0.275, 1.000)
