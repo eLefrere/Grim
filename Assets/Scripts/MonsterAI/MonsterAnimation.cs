@@ -12,13 +12,25 @@ public class MonsterAnimation : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         monster = GetComponent<Monster>();
+        StartCoroutine(LogTime());
+        
     }
 
     private void Update()
     {
         anim.SetFloat("Moving", monster.nav.speed);
-        if (DebugTable.MonsterDebug)
-            Debug.Log("Monster nav speed : " + monster.nav.speed);
+
+    }
+
+    IEnumerator LogTime()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1.0f);
+            if (DebugTable.MonsterDebug)
+                Debug.Log("Monster nav speed : " + monster.nav.speed);
+            
+        }
     }
 
 }

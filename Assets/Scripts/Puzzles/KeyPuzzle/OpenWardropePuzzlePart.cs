@@ -18,6 +18,8 @@ public class OpenWardropePuzzlePart : Puzzlepart
             anim = GetComponentInParent<Animator>();
             anim.SetTrigger("Open");
 
+            EventManager.OnMonsterSpawnTutorial();
+
             SetFinished();
         }
     }
