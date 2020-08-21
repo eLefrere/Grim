@@ -41,7 +41,7 @@ public class ChaseState : IState
         monster.awareness += Time.deltaTime;
         monster.nav.speed += monster.speedIncrease * Time.deltaTime;
 
-        if (!monster.isPlayerVisible && monster.awareness < monster.deadlyAwareness)
+        if (!PlayerStatus.playerIsHiding && monster.awareness < monster.deadlyAwareness)
         {      
             monster.fsm.ChangeState(typeof(SearchState));
         }
