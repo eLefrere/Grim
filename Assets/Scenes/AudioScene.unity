@@ -137,7 +137,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71976792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.62, y: -3.42, z: 15.05}
+  m_LocalPosition: {x: 16.62, y: -7.64, z: 10.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1583321642}
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/AT/EXT/At_env_wind
+  Event: event:/SX/Doors/Sx_int_door_creack
   PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
