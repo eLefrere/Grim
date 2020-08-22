@@ -16,7 +16,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 0
   sourceProjectPath: ../../../../../WORK/WORK/GRIM/GRIM_FMOD_PROJECT/GRIM_FMOD_PROJECT.fspro
-  sourceBankPath: Assets\Audio\Desktop
+  sourceBankPath: ../../../../../WORK/WORK/GRIM/GRIM_FMOD_PROJECT/Build/Desktop
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
