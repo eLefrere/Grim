@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 955835869}
   - component: {fileID: 955835868}
   - component: {fileID: 955835867}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LivingRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 968884457}
   - component: {fileID: 968884456}
   - component: {fileID: 968884455}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Library
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1640904690}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Rooms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 1804193648}
   - component: {fileID: 1804193647}
   - component: {fileID: 1804193646}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Hallway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 1807073814}
   - component: {fileID: 1807073813}
   - component: {fileID: 1807073812}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Alcove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -768,7 +768,7 @@ GameObject:
   - component: {fileID: 1818381810}
   - component: {fileID: 1818381809}
   - component: {fileID: 1818381808}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Hallway2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -883,7 +883,7 @@ GameObject:
   - component: {fileID: 1819214157}
   - component: {fileID: 1819214156}
   - component: {fileID: 1819214155}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Study
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1030,7 +1030,7 @@ GameObject:
   - component: {fileID: 1974332154}
   - component: {fileID: 1974332153}
   - component: {fileID: 1974332152}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Hallway2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1145,7 +1145,7 @@ GameObject:
   - component: {fileID: 1986287570}
   - component: {fileID: 1986287569}
   - component: {fileID: 1986287568}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LivingRoom2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
