@@ -5703,6 +5703,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elevator
       objectReference: {fileID: 0}
+    - target: {fileID: 5787611127432295373, guid: 193ab1dc19084a9418b6e17f911bf89d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501944776313323905, guid: 193ab1dc19084a9418b6e17f911bf89d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8224772412326441223, guid: 193ab1dc19084a9418b6e17f911bf89d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7230,6 +7240,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1851635871}
+    - target: {fileID: 8906596787414630686, guid: 8fd5d4b7d8f9a1f42abc5fbdf8edc235,
+        type: 3}
+      propertyPath: traceLayerMask.m_Bits
+      value: 1847
+      objectReference: {fileID: 0}
     - target: {fileID: 8906596787491698944, guid: 8fd5d4b7d8f9a1f42abc5fbdf8edc235,
         type: 3}
       propertyPath: m_Mesh
