@@ -962,36 +962,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bba7e06bf2b2c94ea0835c2e1b82f56, type: 3}
---- !u!1 &412455744 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9,
+--- !u!114 &412455745 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 412455745, guid: dc06161b6d97feb419f45f03b62e14b9,
     type: 3}
   m_PrefabInstance: {fileID: 1145800536}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &412455745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 412455744}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2f511c1adaa1e94ebe7ca97bbcabd17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pose: {fileID: 0}
-  interactWithUI:
-    actionPath: /actions/default/in/InteractUI
-    needsReinit: 0
-  active: 1
-  color: {r: 0, g: 0, b: 0, a: 0}
-  thickness: 0.002
-  clickColor: {r: 0.45790315, g: 0.8891331, b: 0.9245283, a: 1}
-  holder: {fileID: 0}
-  pointer: {fileID: 0}
-  addRigidBody: 0
-  reference: {fileID: 0}
 --- !u!1001 &420150985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2982,14 +2964,6 @@ PrefabInstance:
     - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_TagString
-      value: Left Hand
-      objectReference: {fileID: 0}
-    - target: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_TagString
-      value: Right Hand
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5059,6 +5033,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elevator
       objectReference: {fileID: 0}
+    - target: {fileID: 5787611127432295373, guid: 193ab1dc19084a9418b6e17f911bf89d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501944776313323905, guid: 193ab1dc19084a9418b6e17f911bf89d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8224772412326441223, guid: 193ab1dc19084a9418b6e17f911bf89d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6493,6 +6477,31 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1554713167}
+    - target: {fileID: 8906596786954566339, guid: 8fd5d4b7d8f9a1f42abc5fbdf8edc235,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906596786954566361, guid: 8fd5d4b7d8f9a1f42abc5fbdf8edc235,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906596786954566363, guid: 8fd5d4b7d8f9a1f42abc5fbdf8edc235,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906596786954566365, guid: 8fd5d4b7d8f9a1f42abc5fbdf8edc235,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906596786954566367, guid: 8fd5d4b7d8f9a1f42abc5fbdf8edc235,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8906596787072702440, guid: 8fd5d4b7d8f9a1f42abc5fbdf8edc235,
         type: 3}
       propertyPath: m_Mesh
@@ -6513,6 +6522,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1851635871}
+    - target: {fileID: 8906596787414630686, guid: 8fd5d4b7d8f9a1f42abc5fbdf8edc235,
+        type: 3}
+      propertyPath: traceLayerMask.m_Bits
+      value: 1847
+      objectReference: {fileID: 0}
     - target: {fileID: 8906596787491698944, guid: 8fd5d4b7d8f9a1f42abc5fbdf8edc235,
         type: 3}
       propertyPath: m_Mesh
