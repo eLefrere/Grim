@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 
+/// <summary>
+/// @Author: Veli-Matti Vuoti
+/// 
+/// This class moves the elevator upstairs and player aswell.
+/// If map changes change the heigh values.
+/// 
+/// This functions are called by the unity events on elevator lever
+/// </summary>
 public class Elevator : MonoBehaviour
 {
     public float topHeight = 6f;
@@ -14,6 +22,9 @@ public class Elevator : MonoBehaviour
 
     public ElevatorDoorHandler doorHandler;
 
+    /// <summary>
+    /// Calls the coroutine for elevator movement upwards.
+    /// </summary>
     public void LiftElevator()
     {
         if (!moving && !top)
@@ -26,6 +37,9 @@ public class Elevator : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Calls the coroutine for elevator movement downwards
+    /// </summary>
     public void DropElevator()
     {
         if (!moving && top)
@@ -38,6 +52,11 @@ public class Elevator : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Opens the doors after the traverseTime have elapsed
+    /// </summary>
+    /// <param name="newHeight"></param>
+    /// <returns></returns>
     public IEnumerator ReachedLevel(float newHeight)
     {
         yield return new WaitForSeconds(traverseTime);

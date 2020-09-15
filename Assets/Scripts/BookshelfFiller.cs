@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// @Author: Veli-Matti Vuoti
+/// 
+/// This class fills the bookshelf with books
+/// </summary>
 public class BookshelfFiller : MonoBehaviour
 {
     public Transform bookRows;
