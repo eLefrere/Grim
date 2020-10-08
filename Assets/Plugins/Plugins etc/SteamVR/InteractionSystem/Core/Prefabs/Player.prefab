@@ -39,7 +39,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 471722}
-  - component: {fileID: 8194540}
   m_Layer: 0
   m_Name: FollowHead
   m_TagString: Untagged
@@ -63,14 +62,6 @@ Transform:
   m_Father: {fileID: 447954}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &8194540
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101548}
-  m_Enabled: 0
 --- !u!1 &105336
 GameObject:
   m_ObjectHideFlags: 0

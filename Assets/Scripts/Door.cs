@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// @Author: Veli-Matti Vuoti
+/// 
+/// This class activates the main door open animation, 
+/// when all puzzles complete event is called.
+/// </summary>
 public class Door : MonoBehaviour
 {
 

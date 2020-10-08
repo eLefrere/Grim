@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using TreeEditor;
 using UnityEngine;
 
+/// <summary>
+/// 
+/// @Author: Veli-Matti Vuoti
+/// 
+/// Attached on object with renderer!
+/// 
+/// This class creates highlighter child for the object.
+/// </summary>
 public class HighlightScript : MonoBehaviour
 {
 

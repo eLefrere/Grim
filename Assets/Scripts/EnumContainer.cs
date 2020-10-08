@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// @Author :  Veli-Matti Vuoti
+// -----------OLD---------
+// contains old puzzletypes need to be refreshed
+// Class to safekeep various enums
+
+
+
 /// <summary>
 /// Type of Puzzle
 /// </summary>
