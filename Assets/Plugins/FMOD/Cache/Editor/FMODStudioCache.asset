@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114077343602255286}
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   EditorEvents:
   - {fileID: 114482290332375660}
   - {fileID: 114263711762687672}
@@ -47,12 +47,12 @@ MonoBehaviour:
   - {fileID: 114426533660168106}
   - {fileID: 114712708800488406}
   EditorParameters:
-  - {fileID: 114947920904558188}
+  - {fileID: 114112447732937934}
   MasterBanks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   StringsBanks:
   - {fileID: 114077343602255286}
-  stringsBankWriteTime: 637357828428649430
+  stringsBankWriteTime: 637353378697000086
   cacheVersion: 3
 --- !u!114 &114004482901429100
 MonoBehaviour:
@@ -69,15 +69,32 @@ MonoBehaviour:
   Path: event:/SX/Doors/Sx_int_door_hum
   guid: c2d2975ee5a8d0478b34aa3afe795761
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114722519953413184}
+  - {fileID: 114587764270085708}
   MinDistance: 0
   MaxDistance: 0
   Length: 7303
+--- !u!114 &114022416048666022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &114077343602255286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,7 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Audio/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637357828428649430
+  lastModified: 637353378697000086
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -113,7 +130,7 @@ MonoBehaviour:
   Path: event:/SX/Puzzle/Sx_puzzle_mechanicalClicks_loop
   guid: 7137827e25cb7347b57212355a4e695b
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -121,6 +138,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 6533
+--- !u!114 &114112447732937934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &114163195547223294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +170,7 @@ MonoBehaviour:
   Path: event:/MU/Menus/Mu_main_menu
   guid: a77471bdb886e4489768777b662d29cf
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -159,7 +193,7 @@ MonoBehaviour:
   Path: event:/VO/Lore/Vo_lore_test
   guid: 51ac69cf3e000541876cf1ab6e51ac28
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -182,12 +216,12 @@ MonoBehaviour:
   Path: event:/MU/Artifact/Mu_artifact_search
   guid: b243a2fd23f8fc42b529f60be6a01985
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114756211008807218}
+  - {fileID: 114022416048666022}
   MinDistance: 0
   MaxDistance: 0
   Length: 27281
@@ -206,7 +240,7 @@ MonoBehaviour:
   Path: "snapshot:/P\xE4\xE4henkil\xF6n p\xE4\xE4n kanssa sekoilu"
   guid: 23f94a6439263a488a948acfbb94f8d0
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -214,6 +248,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114314880429511070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637353378715929444
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &114343794938280080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +281,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_letter
   guid: cd937345f139734393447137ea99037f
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -254,7 +306,7 @@ MonoBehaviour:
   lastModified: 637357828445340323
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &114402457337422586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,7 +322,7 @@ MonoBehaviour:
   Path: snapshot:/Rev Living Room
   guid: 3a1cedf474846448b9543fd459aeee46
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -293,7 +345,7 @@ MonoBehaviour:
   Path: event:/AT/INT/At_int_ambient_living_room
   guid: 356bb3b6efe28046bc829197a27323fe
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -316,7 +368,7 @@ MonoBehaviour:
   Path: event:/AT/EXT/At_env_wind
   guid: 316557f68ca3fc49914661e91f7af7e5
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -339,7 +391,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_impact_box
   guid: d86e9673cc80f049a803f2816e9d2d25
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -362,7 +414,7 @@ MonoBehaviour:
   Path: event:/SX/Doors/Sx_door_big
   guid: cb36b23b01d82245a4a145b4168c86ff
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -385,7 +437,7 @@ MonoBehaviour:
   Path: snapshot:/Snap_hiding
   guid: 1dda053dfa7af1448cda7e2ee4a34433
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -408,7 +460,7 @@ MonoBehaviour:
   Path: snapshot:/Rev Library
   guid: 4a34138d81fdc849a52e4b1619a82a9c
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -431,7 +483,7 @@ MonoBehaviour:
   Path: event:/AT/INT/At_int_drone
   guid: 50ff61adfa7ff740a5b0f812fc4a9513
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -439,6 +491,40 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 43896
+--- !u!114 &114570827768522120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114587764270085708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &114628370538208690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,7 +540,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_impact_metal
   guid: 85ab1d4a4724224ab24eab17c4630f9e
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -477,7 +563,7 @@ MonoBehaviour:
   Path: event:/VO/Monster/Vo_monster_state
   guid: 44ea2a21babb994183d8793383bdaeca
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -500,7 +586,7 @@ MonoBehaviour:
   Path: event:/SX/Elevator/Sx_int_elevator_loop
   guid: 4c7471fd7d0201469d3c4cc71787959a
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -523,7 +609,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_gramophone
   guid: 6d38da20dd2ab046946bd28a527fa789
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -546,7 +632,7 @@ MonoBehaviour:
   Path: event:/SX/Puzzle/Sx_puzzle_lock
   guid: e1ad7ad7a69a974eb9d982232e3e125e
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -569,7 +655,7 @@ MonoBehaviour:
   Path: event:/UI/Ui_generic_button
   guid: 5eeefbf299c51d45ac58a0ff600fae03
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -593,7 +679,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &114756211008807218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -610,7 +696,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &114759845362119810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,7 +712,7 @@ MonoBehaviour:
   Path: event:/AT/INT/At_stinger
   guid: 8c98597b86b9d94a8093fb7c0134c8bb
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -649,7 +735,7 @@ MonoBehaviour:
   Path: event:/AT/EXT/At_ext_rain
   guid: 3020add59f586a47a1137e96afc3c51e
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -672,12 +758,12 @@ MonoBehaviour:
   Path: snapshot:/Monster closenes
   guid: bd153fc51a173a45b43913da076f4499
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114948487980465344}
+  - {fileID: 114570827768522120}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -696,7 +782,7 @@ MonoBehaviour:
   Path: snapshot:/Rev Hallway
   guid: 5de06e21b45baa49a2028fbda235d5fb
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -719,7 +805,7 @@ MonoBehaviour:
   Path: snapshot:/Rev Study
   guid: c2a328cb3733c1478f1253d971936cfa
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -742,7 +828,7 @@ MonoBehaviour:
   Path: snapshot:/Snap_safe_zone
   guid: afb5b52ec49ac94fb8a43a9e95e6938b
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -765,7 +851,7 @@ MonoBehaviour:
   Path: snapshot:/Snap_lore_reading
   guid: b12b929450955d43a5c77b825dc273e4
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -788,7 +874,7 @@ MonoBehaviour:
   Path: event:/SX/Player/Sx_player_movement_teleport
   guid: bcf977fa9bb9fd46be68698c86292f10
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -811,7 +897,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_book
   guid: 34478b60c0ffed4ca23d90c9689e046a
   Banks:
-  - {fileID: 114386232815170434}
+  - {fileID: 114314880429511070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -835,7 +921,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &114948487980465344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -852,4 +938,4 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
