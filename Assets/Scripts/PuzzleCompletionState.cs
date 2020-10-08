@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// 
+/// @Author : Veli-Matti Vuoti
+/// 
+/// This class sets graphical text overlay for puzzle completion states, usefull for debugging puzzlestates.
+/// 
+/// Listens the Eventmanager puzzle status changes!
+/// </summary>
 public class PuzzleCompletionState : MonoBehaviour
 {
     public TextMeshProUGUI [] textMesh;
@@ -23,11 +31,20 @@ public class PuzzleCompletionState : MonoBehaviour
         EventManager.onPuzzleComplete -= PuzzleNotify;
     }
     
+    /// <summary>
+    /// Starts the coroutine on puzzle complete event
+    /// </summary>
+    /// <param name="eventCode"></param>
     public void PuzzleNotify(string eventCode)
     {
         StartCoroutine(PuzzleNotified(eventCode));
     }
 
+    /// <summary>
+    /// This coroutine shows the puzzle 
+    /// </summary>
+    /// <param name="code"></param>
+    /// <returns></returns>
     public IEnumerator PuzzleNotified(string code)
     {
         puzzleNotify.gameObject.SetActive(true);
@@ -36,11 +53,19 @@ public class PuzzleCompletionState : MonoBehaviour
         puzzleNotify.gameObject.SetActive(false);
     }
 
+    /// <summary>
+    /// Activates completionTExt when all puzzles event called.
+    /// </summary>
+    /// <param name="eventCode"></param>
     public void AllPuzzlesCompleted(string eventCode)
     {
         completionText.gameObject.SetActive(true);
     }
 
+    /// <summary>
+    /// Depending on event code changes the textmesh texts in puzzle completion state array.
+    /// </summary>
+    /// <param name="eventCode"></param>
     public void CheckCompletedPart(string eventCode)
     {
         if( eventCode == "Button1Complete")

@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// @Author : Veli-Matti Vuoti
+/// 
+/// For debugging if click boolean , playerhide event is triggered.
+/// </summary>
 public class PlayerHide : MonoBehaviour
 {
     public bool isHide;
