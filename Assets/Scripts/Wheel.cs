@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// REMEMBER TO INHERIT PUZZLEPART
+/// 
+/// @Author : Veli-Matti Vuoti
+/// 
+/// -----------OLD----------
+/// Wheel inherits puzzlepart class sets complete when correct mark triggers.
 /// </summary>
 public class Wheel : Puzzlepart
 {
@@ -22,6 +26,11 @@ public class Wheel : Puzzlepart
         MarkTrigger.OnTriggerOutEvent -= CheckTarget;
     }
 
+    /// <summary>
+    /// Checks if triggering source is correct mark and either finishes or resets the part.
+    /// </summary>
+    /// <param name="source"></param>
+    /// <param name="target"></param>
     public void CheckTarget(GameObject source, GameObject target)
     {
 

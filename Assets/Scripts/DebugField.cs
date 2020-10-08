@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
+/// @Veli-Matti Vuoti
 /// Scriptable Object Debug Field.
 /// </summary>
 [CreateAssetMenu(fileName ="DefaultDebug", menuName ="Debug/DebugField")]
