@@ -6,6 +6,11 @@ TagManager:
   tags:
   - ChosenOne
   - Monster
+  - Right Hand
+  - Left Hand
+  - Hidespot
+  - Key
+  - TutorialMonster
   layers:
   - Default
   - TransparentFX
@@ -18,8 +23,8 @@ TagManager:
   - PostProcessing
   - Player
   - PuzzleMark
-  - 
-  - 
+  - AudioLayer
+  - IgnoreTeleport
   - 
   - 
   - 
