@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 71976796}
   - component: {fileID: 71976795}
   m_Layer: 0
-  m_Name: At_env_wind
+  m_Name: At_ext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
