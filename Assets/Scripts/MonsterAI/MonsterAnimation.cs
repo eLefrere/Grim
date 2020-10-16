@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// @Author: Veli-Matti Vuoti
+/// 
+/// This class Controls the monster animations
+/// </summary>
 public class MonsterAnimation : MonoBehaviour
 {
 

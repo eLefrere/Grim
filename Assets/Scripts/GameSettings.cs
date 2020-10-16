@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// @Author: Veli-Matti Vuoti
+/// 
+/// GameSettings when there are menu and need 
+/// to change these variables for settings this will be usefull baseclass for Game Settings
+/// </summary>
 public class GameSettings : MonoBehaviour
 {
 
