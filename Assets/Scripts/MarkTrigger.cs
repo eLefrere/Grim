@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// @Author : Veli-Matti Vuoti
+/// 
+/// -----------OLD-----------
+/// This is for wheel puzzle marks. Triggers events on collision.
+/// </summary>
 public class MarkTrigger : MonoBehaviour
 {
     public bool debugOn = false;

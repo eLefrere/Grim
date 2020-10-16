@@ -23,8 +23,8 @@ TagManager:
   - PostProcessing
   - Player
   - PuzzleMark
-  - 
-  - 
+  - AudioLayer
+  - IgnoreTeleport
   - 
   - 
   - 

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
+/// @Author : Veli-Matti Vuoti
+/// 
 /// This class contains extension Methods and other global methods
 /// </summary>
 public static class ExtensionMethods

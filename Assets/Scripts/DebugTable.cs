@@ -5,7 +5,10 @@ using UnityEngine;
 /// <summary>
 /// Author : Veli-Matti Vuoti
 /// 
-/// Booleans to activate and deactivate specific debugging works with Scriptable Objects to avoid merge issues OR just static members, use what you like!
+/// Booleans to activate and deactivate specific debugging works with 
+/// Scriptable Objects to avoid merge issues OR just static members, use what you like!
+/// 
+/// Code your debug message pops check these bools for less console bloating and checkbox controlling.
 /// </summary>
 public class DebugTable : MonoBehaviour
 {

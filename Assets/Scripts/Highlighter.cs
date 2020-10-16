@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// @Author: Veli-Matti Vuoti
+/// 
+/// This script swaps the object renderer material 
+/// when 
+/// player gets too close 
+/// and 
+/// back to normal when player exits the area.
+/// </summary>
 public class Highlighter : MonoBehaviour
 {
 

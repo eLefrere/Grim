@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// @Author : Veli-Matti Vuoti
+/// 
+/// This class is For Elevator
+/// Some stypid representation of door opening, changed to run Animation of door open!
+/// </summary>
 public class ElevatorDoorHandler : MonoBehaviour
 {
     public Vector3 door1start;
@@ -29,6 +35,9 @@ public class ElevatorDoorHandler : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// TODO: Change this function to activate door open animation.
+    /// </summary>
     public void OpenDoors()
     {
         door1start = doors[0].position;
@@ -39,6 +48,9 @@ public class ElevatorDoorHandler : MonoBehaviour
         doors[1].position = Vector3.Lerp(door2start, door2end, time);
     }
 
+    /// <summary>
+    /// TODO: Change this function to activate door closing animation.
+    /// </summary>
     public void CloseDoors()
     {
         doors[0].position = Vector3.Lerp(door1end, door1start, time);

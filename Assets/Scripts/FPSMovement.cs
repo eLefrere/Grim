@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
+/// @Author: Veli-Matti Vuoti
+/// 
 /// Handles the "VR" Movement without VR Eguipment
 /// </summary>
 public class FPSMovement : MonoBehaviour
