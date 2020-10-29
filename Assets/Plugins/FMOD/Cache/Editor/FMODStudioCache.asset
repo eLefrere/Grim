@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114077343602255286}
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   EditorEvents:
   - {fileID: 114482290332375660}
   - {fileID: 114263711762687672}
@@ -46,14 +46,34 @@ MonoBehaviour:
   - {fileID: 114343794938280080}
   - {fileID: 114426533660168106}
   - {fileID: 114712708800488406}
+  - {fileID: 114131523405156726}
+  - {fileID: 114571001977339780}
+  - {fileID: 114027748478809096}
   EditorParameters:
-  - {fileID: 114112447732937934}
+  - {fileID: 114033955498517940}
   MasterBanks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   StringsBanks:
   - {fileID: 114077343602255286}
-  stringsBankWriteTime: 637353378697000086
+  stringsBankWriteTime: 637385611101088351
   cacheVersion: 3
+--- !u!114 &114003270054606420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114004482901429100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,15 +89,50 @@ MonoBehaviour:
   Path: event:/SX/Doors/Sx_int_door_hum
   guid: c2d2975ee5a8d0478b34aa3afe795761
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114587764270085708}
+  - {fileID: 114795050637838680}
   MinDistance: 0
   MaxDistance: 0
   Length: 7303
+--- !u!114 &114009311374474158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380374800171916
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114021127297306316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114022416048666022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +146,201 @@ MonoBehaviour:
   m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
   m_EditorClassIdentifier: 
   Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114022439279322172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380395535706800
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114025489270434844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114027748478809096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AT/INT/At_int_window_draft
+  m_EditorClassIdentifier: 
+  Path: event:/AT/INT/At_int_window_draft
+  guid: ef3a6ea9c05ec048b533332f660bb5e9
+  Banks:
+  - {fileID: 114271534618404268}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 188000
+--- !u!114 &114033955498517940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114037795226075470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114043344836987104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114044995103259680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114048919015462946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114056355212310514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114069633331010822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380410491434687
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114075497067664264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
   Min: 0
   Max: 1
   Default: 0
@@ -109,12 +359,83 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Audio/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637353378697000086
+  lastModified: 637385611101088351
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 3084
+    Value: 3232
   Exists: 1
+--- !u!114 &114078735416185916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114082634590264852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380393616671703
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114085902406019598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380438419453866
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114095074404141564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380416925472315
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &114099775679691078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +451,7 @@ MonoBehaviour:
   Path: event:/SX/Puzzle/Sx_puzzle_mechanicalClicks_loop
   guid: 7137827e25cb7347b57212355a4e695b
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -138,6 +459,41 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 6533
+--- !u!114 &114103072705621924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380357875103143
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114104317819311666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114112447732937934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,7 +510,201 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+  Exists: 0
+--- !u!114 &114117254931821506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114119396904468196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114119599957517862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380373907009122
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
+--- !u!114 &114131523405156726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AT/INT/At_int_weird_test
+  m_EditorClassIdentifier: 
+  Path: event:/AT/INT/At_int_weird_test
+  guid: c083b9d7ac668f41828b42cc608b2a08
+  Banks:
+  - {fileID: 114271534618404268}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4642
+--- !u!114 &114135385072574698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114136023769603238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114139859781559838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114141198819258738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114155310969842540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114159429061858708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114162677058610852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114163195547223294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +720,7 @@ MonoBehaviour:
   Path: event:/MU/Menus/Mu_main_menu
   guid: a77471bdb886e4489768777b662d29cf
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -178,6 +728,110 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 230000
+--- !u!114 &114174875285068600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380435225134705
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114175717717950378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114180341116985282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114182601847131510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114184375318457876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380439447925040
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114184431740361996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114191718101777142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,7 +847,7 @@ MonoBehaviour:
   Path: event:/VO/Lore/Vo_lore_test
   guid: 51ac69cf3e000541876cf1ab6e51ac28
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -201,6 +855,74 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 17767
+--- !u!114 &114196779487017838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114200326901503014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114204243444745288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114204496384558432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114209664324015430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,15 +938,224 @@ MonoBehaviour:
   Path: event:/MU/Artifact/Mu_artifact_search
   guid: b243a2fd23f8fc42b529f60be6a01985
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114022416048666022}
+  - {fileID: 114907003602205820}
   MinDistance: 0
   MaxDistance: 0
   Length: 27281
+--- !u!114 &114210302522529166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114214580795333218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114217075477807426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380434843985499
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114221321409675778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380408727366534
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114224051468980616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380394488314692
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114226781519329882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114249142077525682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114250002732869210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114252408307369778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114253412117527342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380416157547157
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114255425536142078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114259374389966958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380396003187259
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &114263711762687672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,7 +1171,7 @@ MonoBehaviour:
   Path: "snapshot:/P\xE4\xE4henkil\xF6n p\xE4\xE4n kanssa sekoilu"
   guid: 23f94a6439263a488a948acfbb94f8d0
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -248,6 +1179,214 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114266482899424636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114271534618404268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637385611107964592
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114279830723089490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114284800549252640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114297563686555774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380431875187013
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114299882019027836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380409368102365
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114301720408937068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114302260285259134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114304774828025130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114306928234726482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380440105568426
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114307828366940002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114309907274133952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114314880429511070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +1404,58 @@ MonoBehaviour:
   lastModified: 637353378715929444
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &114316953976984442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114326262056435626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380383374055165
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114327080249308844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &114343794938280080
 MonoBehaviour:
@@ -281,7 +1472,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_letter
   guid: cd937345f139734393447137ea99037f
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -289,6 +1480,108 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 927
+--- !u!114 &114358209553204738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114363733570856966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114364064792192264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114367022949010504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114369992090751904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114375822885893408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114386232815170434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,6 +1600,57 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &114388714146804146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114396884465390922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114400649211395950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114402457337422586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,7 +1666,7 @@ MonoBehaviour:
   Path: snapshot:/Rev Living Room
   guid: 3a1cedf474846448b9543fd459aeee46
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -330,6 +1674,92 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114410087471373538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114410418814498686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637377798650287572
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114412678872764320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114414484288988750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114416698799976660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114417574268910494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,7 +1775,7 @@ MonoBehaviour:
   Path: event:/AT/INT/At_int_ambient_living_room
   guid: 356bb3b6efe28046bc829197a27323fe
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -368,14 +1798,14 @@ MonoBehaviour:
   Path: event:/AT/EXT/At_env_wind
   guid: 316557f68ca3fc49914661e91f7af7e5
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 27600
+  Length: 27555
 --- !u!114 &114426533660168106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,7 +1821,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_impact_box
   guid: d86e9673cc80f049a803f2816e9d2d25
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -399,6 +1829,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 624
+--- !u!114 &114433892132816902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114437039601968614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,7 +1861,7 @@ MonoBehaviour:
   Path: event:/SX/Doors/Sx_door_big
   guid: cb36b23b01d82245a4a145b4168c86ff
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -422,6 +1869,194 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 860
+--- !u!114 &114444516616268808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114453352148496668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114459510236352414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114460718667335298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114462809752922634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114470430720746508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114473174576972102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114479138196087486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380431378392095
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114479768335747106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114481166312230564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114481861073149522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114482290332375660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +2072,7 @@ MonoBehaviour:
   Path: snapshot:/Snap_hiding
   guid: 1dda053dfa7af1448cda7e2ee4a34433
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -460,7 +2095,7 @@ MonoBehaviour:
   Path: snapshot:/Rev Library
   guid: 4a34138d81fdc849a52e4b1619a82a9c
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -468,30 +2103,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &114517970960584664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AT/INT/At_int_drone
-  m_EditorClassIdentifier: 
-  Path: event:/AT/INT/At_int_drone
-  guid: 50ff61adfa7ff740a5b0f812fc4a9513
-  Banks:
-  - {fileID: 114314880429511070}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 43896
---- !u!114 &114570827768522120
+--- !u!114 &114488399773579912
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -508,6 +2120,345 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114494010139712368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114500534093200278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114509444825279978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114517970960584664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AT/INT/At_int_drone
+  m_EditorClassIdentifier: 
+  Path: event:/AT/INT/At_int_drone
+  guid: 50ff61adfa7ff740a5b0f812fc4a9513
+  Banks:
+  - {fileID: 114271534618404268}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 43896
+--- !u!114 &114527090957489510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114539667066039984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114544669983059186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114548734929077604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114552057052121324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114560011094336616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114560886375152188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114569459196258196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380368331764891
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114570827768522120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114571001977339780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AT/EXT/At_ext_thunder_far
+  m_EditorClassIdentifier: 
+  Path: event:/AT/EXT/At_ext_thunder_far
+  guid: e1f836e095f4534c96609b18ceccb81e
+  Banks:
+  - {fileID: 114271534618404268}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 16200
+--- !u!114 &114572131754008976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380409111862337
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114575272667144232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380431157272734
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114575530702435148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114583668410234320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380411260631236
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114583696296072750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114587764270085708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,7 +2475,110 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+  Exists: 0
+--- !u!114 &114589052575487314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380389172425239
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
+--- !u!114 &114594614879905848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114609809115472446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114609908788345026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114614246261821926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114621577740190384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114628370538208690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,7 +2594,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_impact_metal
   guid: 85ab1d4a4724224ab24eab17c4630f9e
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -548,6 +2602,58 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 880
+--- !u!114 &114645567123699090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380398054547625
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114656594643028576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114656676053223956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114670133076963008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,7 +2669,7 @@ MonoBehaviour:
   Path: event:/VO/Monster/Vo_monster_state
   guid: 44ea2a21babb994183d8793383bdaeca
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -571,6 +2677,40 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 13600
+--- !u!114 &114670942883633708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114676431758737866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114677380708857036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,7 +2726,7 @@ MonoBehaviour:
   Path: event:/SX/Elevator/Sx_int_elevator_loop
   guid: 4c7471fd7d0201469d3c4cc71787959a
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -609,7 +2749,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_gramophone
   guid: 6d38da20dd2ab046946bd28a527fa789
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -617,6 +2757,194 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 30743
+--- !u!114 &114678431828522904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114680735650453392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114680806638971976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114692402697570052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114693895278276640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114695163409777434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114696998424622126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114699097462183410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380430002808424
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114704633883095126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114707884832312040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114708953572090312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114712708800488406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,7 +2960,7 @@ MonoBehaviour:
   Path: event:/SX/Puzzle/Sx_puzzle_lock
   guid: e1ad7ad7a69a974eb9d982232e3e125e
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -655,7 +2983,7 @@ MonoBehaviour:
   Path: event:/UI/Ui_generic_button
   guid: 5eeefbf299c51d45ac58a0ff600fae03
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -663,6 +2991,41 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 101
+--- !u!114 &114717870978843624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114718833683142334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380394622812324
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &114722519953413184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,7 +3043,145 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &114735992750237964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114736591977595566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114741180153520832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380368149348989
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114744631384528620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114749827967474880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380413602034151
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114753698230215824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114756211008807218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114756506551086038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114757821616871524
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -712,7 +3213,7 @@ MonoBehaviour:
   Path: event:/AT/INT/At_stinger
   guid: 8c98597b86b9d94a8093fb7c0134c8bb
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -720,6 +3221,265 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 250
+--- !u!114 &114762989588395236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114773156367963180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380390186171398
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114778824495884238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380405236551895
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114788962252598766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114792825444061180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114795050637838680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114799075692629042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114805712661186252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380397521207404
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114810449113800966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114811007436186444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114812723168710332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380441819002532
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114813004402469620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114814169587981486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114816920640592128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114818727344550262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114820592271975932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -735,14 +3495,14 @@ MonoBehaviour:
   Path: event:/AT/EXT/At_ext_rain
   guid: 3020add59f586a47a1137e96afc3c51e
   Banks:
-  - {fileID: 114314880429511070}
-  IsStream: 0
+  - {fileID: 114271534618404268}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 9002
+  Length: 8652
 --- !u!114 &114821771657048872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -758,15 +3518,32 @@ MonoBehaviour:
   Path: snapshot:/Monster closenes
   guid: bd153fc51a173a45b43913da076f4499
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114570827768522120}
+  - {fileID: 114075497067664264}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114843491514915044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114843781324806234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -782,7 +3559,7 @@ MonoBehaviour:
   Path: snapshot:/Rev Hallway
   guid: 5de06e21b45baa49a2028fbda235d5fb
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -805,7 +3582,7 @@ MonoBehaviour:
   Path: snapshot:/Rev Study
   guid: c2a328cb3733c1478f1253d971936cfa
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -813,6 +3590,40 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114854717415673012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114856025884160578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114857505308636848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -828,7 +3639,7 @@ MonoBehaviour:
   Path: snapshot:/Snap_safe_zone
   guid: afb5b52ec49ac94fb8a43a9e95e6938b
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -836,6 +3647,41 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114858186724542066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114862547787748464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380429460983286
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &114869226223191996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,7 +3697,7 @@ MonoBehaviour:
   Path: snapshot:/Snap_lore_reading
   guid: b12b929450955d43a5c77b825dc273e4
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -859,6 +3705,74 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114875956324956064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114876286268088330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114882936056910556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114891428817652118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &114891822012763424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,7 +3788,7 @@ MonoBehaviour:
   Path: event:/SX/Player/Sx_player_movement_teleport
   guid: bcf977fa9bb9fd46be68698c86292f10
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -882,6 +3796,246 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 512
+--- !u!114 &114893906635641002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114901224549044368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114903955671329200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114905802300830116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114907003602205820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114907474892460632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114914285108095108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114915909188234172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114926461414822512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380442398118890
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114927959110780300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114930083731681200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114933692159781298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637380365546995441
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114937434793009354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114941397779443050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114942671499169114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -897,7 +4051,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_book
   guid: 34478b60c0ffed4ca23d90c9689e046a
   Banks:
-  - {fileID: 114314880429511070}
+  - {fileID: 114271534618404268}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -905,6 +4059,40 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 285
+--- !u!114 &114944819235745802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114946012573947320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114947920904558188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -937,5 +4125,73 @@ MonoBehaviour:
   Name: Monster Dist
   Min: 0
   Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114955107996142698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114967842704209712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114989078520951130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114996219269210560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
   Default: 0
   Exists: 0
