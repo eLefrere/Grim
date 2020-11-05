@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/SX/Objects/Sx_int_impact_metal
+  Event: 
   PlayEvent: 7
   StopEvent: 0
   AllowFadeout: 1
