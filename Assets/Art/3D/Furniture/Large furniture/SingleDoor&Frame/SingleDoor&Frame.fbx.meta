@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 4c5cacd6f679fa0448f9ce8e3fe5a2b4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cube.012
+    100002: Cube.013
+    100004: Cube.014
+    100006: Cube.016
+    100008: Cube.017
+    100010: Cube.019
+    100012: //RootNode
+    100014: MiddlePiece
+    100016: SingleDoor
+    400000: Cube.012
+    400002: Cube.013
+    400004: Cube.014
+    400006: Cube.016
+    400008: Cube.017
+    400010: Cube.019
+    400012: //RootNode
+    400014: MiddlePiece
+    400016: SingleDoor
+    2100000: Checker
+    2100002: SingleDoor&Frame
+    2100004: VictorianWardrobe
+    2300000: Cube.012
+    2300002: Cube.013
+    2300004: Cube.014
+    2300006: Cube.016
+    2300008: Cube.017
+    2300010: Cube.019
+    2300012: MiddlePiece
+    2300014: SingleDoor
+    2300016: //RootNode
+    3300000: Cube.012
+    3300002: Cube.013
+    3300004: Cube.014
+    3300006: Cube.016
+    3300008: Cube.017
+    3300010: Cube.019
+    3300012: MiddlePiece
+    3300014: SingleDoor
+    3300016: //RootNode
+    4300000: Cube.019
+    4300002: Cube.017
+    4300004: Cube.016
+    4300006: Cube.014
+    4300008: Cube.012
+    4300010: Cube.013
+    4300012: Frame
+    4300014: SingleDoor
+    4300016: MiddlePiece
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Checker
+    second: {fileID: 2100000, guid: 3482a6dcfdf08624b8ff60b47d070221, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SingleDoor&Frame
+    second: {fileID: 2100000, guid: 3482a6dcfdf08624b8ff60b47d070221, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VictorianWardrobe
+    second: {fileID: 2100000, guid: 1a2d8c40e46484e47bf8d4663d3c1fc9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
