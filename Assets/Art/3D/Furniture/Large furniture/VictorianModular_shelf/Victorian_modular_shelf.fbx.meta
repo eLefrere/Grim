@@ -21,6 +21,9 @@ ModelImporter:
     4300000: Modular_shelf_lower_part
     4300002: Modular_shelf_higher_part
     4300004: Modular_shelf_middle_part
+    6400000: Modular_shelf_higher_part
+    6400002: Modular_shelf_lower_part
+    6400004: Modular_shelf_middle_part
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
@@ -60,7 +63,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

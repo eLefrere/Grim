@@ -26,6 +26,10 @@ ModelImporter:
     4300002: stand_low
     4300004: Sculpture_old_man_low
     4300006: Cube.018
+    6400000: Cube.018
+    6400002: pillar_low
+    6400004: Sculpture_old_man_low
+    6400006: stand_low
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -64,7 +68,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
