@@ -27,6 +27,10 @@ ModelImporter:
     4300002: VictorianDoor_glass.001
     4300004: VictorianDoor.001
     4300006: VictorianDoor_glass.004
+    6400000: VictorianDoor
+    6400002: VictorianDoor.001
+    6400004: VictorianDoor_glass.001
+    6400006: VictorianDoor_glass.004
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -70,7 +74,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
