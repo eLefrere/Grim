@@ -2967,15 +2967,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.44
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4092,17 +4092,17 @@ PrefabInstance:
     - target: {fileID: 4974847768657656663, guid: 59b34d810c3bc8340a1978a44398ac31,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.84
+      value: -3.7902818
       objectReference: {fileID: 0}
     - target: {fileID: 4974847768657656663, guid: 59b34d810c3bc8340a1978a44398ac31,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.63
+      value: 0.4046083
       objectReference: {fileID: 0}
     - target: {fileID: 4974847768657656663, guid: 59b34d810c3bc8340a1978a44398ac31,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.71
+      value: -5.8471127
       objectReference: {fileID: 0}
     - target: {fileID: 4974847768657656663, guid: 59b34d810c3bc8340a1978a44398ac31,
         type: 3}
@@ -6286,6 +6286,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7804526031982347850, guid: 8c9f1e80a4d19104e9bdec6d6593f3d4,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7804526031982347850, guid: 8c9f1e80a4d19104e9bdec6d6593f3d4,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7804526031982347850, guid: 8c9f1e80a4d19104e9bdec6d6593f3d4,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7804526031982778986, guid: 8c9f1e80a4d19104e9bdec6d6593f3d4,
         type: 3}

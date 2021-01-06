@@ -122,10 +122,8 @@ GameObject:
   m_Component:
   - component: {fileID: 71976793}
   - component: {fileID: 71976794}
-  - component: {fileID: 71976796}
-  - component: {fileID: 71976795}
   m_Layer: 0
-  m_Name: At_ext
+  m_Name: At_env_wind
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,7 +137,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71976792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.62, y: -7.64, z: 15.32}
+  m_LocalPosition: {x: 16.62, y: -7.64, z: 10.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1583321642}
@@ -158,53 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/AT/EXT/At_env_wind
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
---- !u!114 &71976795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71976792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/AT/EXT/At_ext_thunder_far
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
---- !u!114 &71976796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71976792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/AT/EXT/At_ext_rain
+  Event: event:/SX/Doors/Sx_int_door_creack
   PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
@@ -229,7 +181,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &617240661
 Transform:
   m_ObjectHideFlags: 0
@@ -292,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: Player
-  Event: snapshot:/Rev Study
+  Event: snapshot:/Rev Living Room
   PlayEvent: 3
   StopEvent: 4
   AllowFadeout: 1
@@ -388,7 +340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968884453}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.183505, y: 1.99, z: -10.729588}
+  m_LocalPosition: {x: -8.183505, y: 1.7868371, z: -10.729588}
   m_LocalScale: {x: 9.679167, y: 16.49297, z: 8.972793}
   m_Children: []
   m_Father: {fileID: 1640904690}
@@ -965,7 +917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: Player
-  Event: snapshot:/Rev Library
+  Event: snapshot:/Rev Study
   PlayEvent: 3
   StopEvent: 4
   AllowFadeout: 1
