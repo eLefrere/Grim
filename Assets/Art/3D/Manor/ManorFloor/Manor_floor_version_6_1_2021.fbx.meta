@@ -1,93 +1,82 @@
 fileFormatVersion: 2
-guid: 4c5cacd6f679fa0448f9ce8e3fe5a2b4
+guid: 31f57cd9a0c21dc46a926e845927bdca
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cube.012
-    100002: Cube.013
-    100004: Cube.014
-    100006: Cube.016
-    100008: Cube.017
-    100010: Cube.019
-    100012: //RootNode
-    100014: MiddlePiece
-    100016: SingleDoor
-    100018: SingleDoorHinge2
-    100020: SingleDoorHinge3
-    100022: SingleDoorHinge4
-    100024: VictorianDoor.015
-    400000: Cube.012
-    400002: Cube.013
-    400004: Cube.014
-    400006: Cube.016
-    400008: Cube.017
-    400010: Cube.019
-    400012: //RootNode
-    400014: MiddlePiece
-    400016: SingleDoor
-    400018: SingleDoorHinge2
-    400020: SingleDoorHinge3
-    400022: SingleDoorHinge4
-    400024: VictorianDoor.015
-    2100000: Checker
-    2100002: SingleDoor&Frame
-    2100004: VictorianWardrobe
-    2100006: VictorianDoor.001
-    2300000: Cube.012
-    2300002: Cube.013
-    2300004: Cube.014
-    2300006: Cube.016
-    2300008: Cube.017
-    2300010: Cube.019
-    2300012: MiddlePiece
-    2300014: SingleDoor
-    2300016: //RootNode
-    2300018: SingleDoorHinge2
-    2300020: SingleDoorHinge3
-    2300022: SingleDoorHinge4
-    2300024: VictorianDoor.015
-    3300000: Cube.012
-    3300002: Cube.013
-    3300004: Cube.014
-    3300006: Cube.016
-    3300008: Cube.017
-    3300010: Cube.019
-    3300012: MiddlePiece
-    3300014: SingleDoor
-    3300016: //RootNode
-    3300018: SingleDoorHinge2
-    3300020: SingleDoorHinge3
-    3300022: SingleDoorHinge4
-    3300024: VictorianDoor.015
-    4300000: Cube.019
-    4300002: Cube.017
-    4300004: Cube.016
-    4300006: Cube.014
-    4300008: Cube.012
-    4300010: Cube.013
-    4300012: Frame
-    4300014: SingleDoor
-    4300016: MiddlePiece
-    4300018: SingleDoorHinge3
-    4300020: SingleDoorHinge4
-    4300022: VictorianDoor.015
-    4300024: SingleDoorHinge2
+    100000: //RootNode
+    100002: TheWoodenFloor.001
+    100004: TheWoodenFloor.003
+    100006: TheWoodenFloor.004
+    100008: TheWoodenFloor.005
+    100010: TheWoodenFloor.006
+    100012: TheWoodenFloor.007
+    100014: TheWoodenFloor.008
+    100016: TheWoodenFloor.009
+    100018: TheWoodenFloor.010
+    100020: TheWoodenFloor.011
+    100022: TheWoodenFloor.012
+    100024: TheWoodenFloor.013
+    100026: TheWoodenFloor.014
+    400000: //RootNode
+    400002: TheWoodenFloor.001
+    400004: TheWoodenFloor.003
+    400006: TheWoodenFloor.004
+    400008: TheWoodenFloor.005
+    400010: TheWoodenFloor.006
+    400012: TheWoodenFloor.007
+    400014: TheWoodenFloor.008
+    400016: TheWoodenFloor.009
+    400018: TheWoodenFloor.010
+    400020: TheWoodenFloor.011
+    400022: TheWoodenFloor.012
+    400024: TheWoodenFloor.013
+    400026: TheWoodenFloor.014
+    2100000: Floor_wood_victorian
+    2300000: TheWoodenFloor.001
+    2300002: TheWoodenFloor.003
+    2300004: TheWoodenFloor.004
+    2300006: TheWoodenFloor.005
+    2300008: TheWoodenFloor.006
+    2300010: TheWoodenFloor.007
+    2300012: TheWoodenFloor.008
+    2300014: TheWoodenFloor.009
+    2300016: TheWoodenFloor.010
+    2300018: TheWoodenFloor.011
+    2300020: TheWoodenFloor.012
+    2300022: TheWoodenFloor.013
+    2300024: TheWoodenFloor.014
+    3300000: TheWoodenFloor.001
+    3300002: TheWoodenFloor.003
+    3300004: TheWoodenFloor.004
+    3300006: TheWoodenFloor.005
+    3300008: TheWoodenFloor.006
+    3300010: TheWoodenFloor.007
+    3300012: TheWoodenFloor.008
+    3300014: TheWoodenFloor.009
+    3300016: TheWoodenFloor.010
+    3300018: TheWoodenFloor.011
+    3300020: TheWoodenFloor.012
+    3300022: TheWoodenFloor.013
+    3300024: TheWoodenFloor.014
+    4300000: TheWoodenFloor.001
+    4300002: TheWoodenFloor.003
+    4300004: TheWoodenFloor.004
+    4300006: TheWoodenFloor.005
+    4300008: TheWoodenFloor.006
+    4300010: TheWoodenFloor.007
+    4300012: TheWoodenFloor.008
+    4300014: TheWoodenFloor.009
+    4300016: TheWoodenFloor.010
+    4300018: TheWoodenFloor.011
+    4300020: TheWoodenFloor.012
+    4300022: TheWoodenFloor.013
+    4300024: TheWoodenFloor.014
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Checker
-    second: {fileID: 2100000, guid: 3482a6dcfdf08624b8ff60b47d070221, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: SingleDoor&Frame
-    second: {fileID: 2100000, guid: 3482a6dcfdf08624b8ff60b47d070221, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: VictorianWardrobe
-    second: {fileID: 2100000, guid: 1a2d8c40e46484e47bf8d4663d3c1fc9, type: 2}
+      name: Floor_wood_victorian
+    second: {fileID: 2100000, guid: aa0fbbfbb04eaf4439fb9c9631752c64, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

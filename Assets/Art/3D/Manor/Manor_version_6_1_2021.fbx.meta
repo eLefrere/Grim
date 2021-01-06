@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: b3a7feebb6c3a5548b4eb7dd9c439904
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cube.006
+    100002: //RootNode
+    100004: Room.001
+    100006: Room.003
+    100008: Room.004
+    100010: Room.005
+    100012: Room.006
+    100014: Room.007
+    100016: Room.008
+    100018: Room.009
+    100020: stairs
+    100022: DoorFrame_Upstairs
+    100024: FullBuilding
+    100026: LivingRoom_outer_room
+    100028: LivingRoom_window_wall
+    100030: LivingRoom_windows_lower
+    100032: LivingRoom_windows_upper
+    100034: Upstairs_livingRoom_balcony
+    100036: Upstairs_outerwall
+    400000: Cube.006
+    400002: //RootNode
+    400004: Room.001
+    400006: Room.003
+    400008: Room.004
+    400010: Room.005
+    400012: Room.006
+    400014: Room.007
+    400016: Room.008
+    400018: Room.009
+    400020: stairs
+    400022: DoorFrame_Upstairs
+    400024: FullBuilding
+    400026: LivingRoom_outer_room
+    400028: LivingRoom_window_wall
+    400030: LivingRoom_windows_lower
+    400032: LivingRoom_windows_upper
+    400034: Upstairs_livingRoom_balcony
+    400036: Upstairs_outerwall
+    2100000: Material.001
+    2100002: Wallpaper
+    2100004: StoneFloor
+    2100006: TempStone
+    2100008: SingleDoor&Frame
+    2300000: Cube.006
+    2300002: Room.001
+    2300004: Room.003
+    2300006: Room.004
+    2300008: Room.005
+    2300010: Room.006
+    2300012: Room.007
+    2300014: Room.008
+    2300016: Room.009
+    2300018: stairs
+    2300020: DoorFrame_Upstairs
+    2300022: FullBuilding
+    2300024: LivingRoom_outer_room
+    2300026: LivingRoom_window_wall
+    2300028: LivingRoom_windows_lower
+    2300030: LivingRoom_windows_upper
+    2300032: Upstairs_livingRoom_balcony
+    2300034: Upstairs_outerwall
+    3300000: Cube.006
+    3300002: Room.001
+    3300004: Room.003
+    3300006: Room.004
+    3300008: Room.005
+    3300010: Room.006
+    3300012: Room.007
+    3300014: Room.008
+    3300016: Room.009
+    3300018: stairs
+    3300020: DoorFrame_Upstairs
+    3300022: FullBuilding
+    3300024: LivingRoom_outer_room
+    3300026: LivingRoom_window_wall
+    3300028: LivingRoom_windows_lower
+    3300030: LivingRoom_windows_upper
+    3300032: Upstairs_livingRoom_balcony
+    3300034: Upstairs_outerwall
+    4300000: Room.003
+    4300002: Cube.006
+    4300004: Room.001
+    4300006: Room.004
+    4300008: Room.005
+    4300010: Room.006
+    4300012: Room.007
+    4300014: Room.008
+    4300016: Room.009
+    4300018: stairs
+    4300020: FullBuilding
+    4300022: DoorFrame_Upstairs
+    4300024: Upstairs_outerwall
+    4300026: LivingRoom_window_wall
+    4300028: LivingRoom_windows_upper
+    4300030: LivingRoom_windows_lower
+    4300032: LivingRoom_outer_room
+    4300034: Upstairs_livingRoom_balcony
+    6400000: DoorFrame_Upstairs
+    6400002: FullBuilding
+    6400004: LivingRoom_outer_room
+    6400006: LivingRoom_window_wall
+    6400008: LivingRoom_windows_lower
+    6400010: LivingRoom_windows_upper
+    6400012: stairs
+    6400014: Upstairs_livingRoom_balcony
+    6400016: Upstairs_outerwall
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 0381096b2a676bd4b8fd03317b90c2b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SingleDoor&Frame
+    second: {fileID: 2100000, guid: 3482a6dcfdf08624b8ff60b47d070221, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StoneFloor
+    second: {fileID: 2100000, guid: c6a1a464c4b80b84681d3af606216822, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TempStone
+    second: {fileID: 2100000, guid: c6a1a464c4b80b84681d3af606216822, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wallpaper
+    second: {fileID: 2100000, guid: 250898da78b9bba49b1b04af6619f4da, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
