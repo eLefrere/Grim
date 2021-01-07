@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream:Assets/Art/3D/Floor&Roof/Floor.meta
-guid: 0b7f568b194fbf941a3d1355361fb446
-=======
-guid: b87fedec559d1408c9c73171856dd53d
->>>>>>> Stashed changes:Assets/ResonanceAudio/Demos/Environment/ResonanceAudioDemo.meta
+guid: e04a7088d30ae9c48a5ad69cba0b08ba
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
