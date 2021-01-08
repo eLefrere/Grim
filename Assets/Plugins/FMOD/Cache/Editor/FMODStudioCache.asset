@@ -12,10 +12,2228 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
-  EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  stringsBankWriteTime: 0
+  EditorBanks:
+  - {fileID: 114077343602255286}
+  - {fileID: 114831948235883548}
+  EditorEvents:
+  - {fileID: 114482290332375660}
+  - {fileID: 114263711762687672}
+  - {fileID: 114820592271975932}
+  - {fileID: 114424085261260376}
+  - {fileID: 114942671499169114}
+  - {fileID: 114417574268910494}
+  - {fileID: 114402457337422586}
+  - {fileID: 114670133076963008}
+  - {fileID: 114484860927831082}
+  - {fileID: 114677380708857036}
+  - {fileID: 114517970960584664}
+  - {fileID: 114843781324806234}
+  - {fileID: 114717496327617758}
+  - {fileID: 114677733658307500}
+  - {fileID: 114099775679691078}
+  - {fileID: 114628370538208690}
+  - {fileID: 114759845362119810}
+  - {fileID: 114163195547223294}
+  - {fileID: 114857505308636848}
+  - {fileID: 114869226223191996}
+  - {fileID: 114209664324015430}
+  - {fileID: 114891822012763424}
+  - {fileID: 114821771657048872}
+  - {fileID: 114854066247732674}
+  - {fileID: 114004482901429100}
+  - {fileID: 114437039601968614}
+  - {fileID: 114343794938280080}
+  - {fileID: 114426533660168106}
+  - {fileID: 114712708800488406}
+  - {fileID: 114176295099789082}
+  - {fileID: 114029155510873832}
+  - {fileID: 114736080270149168}
+  - {fileID: 114600166046069174}
+  - {fileID: 114176825911335122}
+  - {fileID: 114125904468247858}
+  - {fileID: 114713887121061066}
+  - {fileID: 114699696802089578}
+  - {fileID: 114904531071844692}
+  - {fileID: 114212011238029006}
+  - {fileID: 114401418835558788}
+  - {fileID: 114635317711178570}
+  - {fileID: 114607008616706638}
+  - {fileID: 114644630395991302}
+  - {fileID: 114312947382571444}
+  - {fileID: 114444108274302434}
+  - {fileID: 114553123660206524}
+  - {fileID: 114159534424907340}
+  - {fileID: 114890991540589734}
+  - {fileID: 114536301028062406}
+  - {fileID: 114008041321252950}
+  - {fileID: 114622738463589544}
+  - {fileID: 114871565345865512}
+  - {fileID: 114200132656689814}
+  - {fileID: 114100316013126506}
+  - {fileID: 114017990572682642}
+  - {fileID: 114861030854956102}
+  - {fileID: 114337902034128752}
+  - {fileID: 114229031419121234}
+  - {fileID: 114732027697278604}
+  - {fileID: 114805409493785612}
+  - {fileID: 114242196497739864}
+  - {fileID: 114129592142626192}
+  - {fileID: 114274209882243246}
+  - {fileID: 114109917780568162}
+  - {fileID: 114471637089974962}
+  - {fileID: 114053540162424858}
+  - {fileID: 114890324586195212}
+  - {fileID: 114961630628622640}
+  - {fileID: 114027403965504618}
+  - {fileID: 114785774201204514}
+  - {fileID: 114144113029172500}
+  - {fileID: 114141239296080736}
+  - {fileID: 114532843251694786}
+  - {fileID: 114875916231450700}
+  - {fileID: 114746310682786194}
+  - {fileID: 114106894097600898}
+  EditorParameters:
+  - {fileID: 114203420079893358}
+  MasterBanks:
+  - {fileID: 114831948235883548}
+  StringsBanks:
+  - {fileID: 114077343602255286}
+  stringsBankWriteTime: 637456324355894707
   cacheVersion: 3
+--- !u!114 &114004482901429100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SX/Doors/Sx_int_door_hum
+  m_EditorClassIdentifier: 
+  Path: event:/SX/Doors/Sx_int_door_hum
+  guid: c2d2975ee5a8d0478b34aa3afe795761
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114210712264861858}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7303
+--- !u!114 &114008041321252950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 6 NoService2
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 6 NoService2
+  guid: 5be9093d9d40b242883326bebe66a74e
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3427
+--- !u!114 &114017990572682642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Lore/Diary 7
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Lore/Diary 7
+  guid: 79dda6f4fb5ef541a75b004abf116a98
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 17940
+--- !u!114 &114022416048666022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114027403965504618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_testSpatialized
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_testSpatialized
+  guid: e7d0ffc1c4bdc34eb3be40f23e0a3a02
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5773
+--- !u!114 &114029155510873832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_29 WhatWasThat
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_29 WhatWasThat
+  guid: 09cad49ae7028f42a09071ed5b560734
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5143
+--- !u!114 &114053540162424858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Lore/Letter 2
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Lore/Letter 2
+  guid: d5ed50f41615cb4a95c420322050f13a
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 56872
+--- !u!114 &114077343602255286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637456324355894707
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 5302
+  Exists: 1
+--- !u!114 &114091624848426440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637456264890679303
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114099775679691078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SX/Puzzle/Sx_puzzle_mechanicalClicks_loop
+  m_EditorClassIdentifier: 
+  Path: event:/SX/Puzzle/Sx_puzzle_mechanicalClicks_loop
+  guid: 7137827e25cb7347b57212355a4e695b
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6533
+--- !u!114 &114100316013126506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Lore/Diary 2
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Lore/Diary 2
+  guid: 7516f413858fdd4fb9f18f80905d933d
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 45082
+--- !u!114 &114104722996928622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114106894097600898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 5 WhoIsPaying
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 5 WhoIsPaying
+  guid: fe4bcdb9a7dbd542a3f6d8eeaa73097d
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3028
+--- !u!114 &114109917780568162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AT/INT/At_int_weird_test
+  m_EditorClassIdentifier: 
+  Path: event:/AT/INT/At_int_weird_test
+  guid: c083b9d7ac668f41828b42cc608b2a08
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4642
+--- !u!114 &114112447732937934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114125904468247858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 15 TheseBelongTogether1
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 15 TheseBelongTogether1
+  guid: 163bf9fa36fe5f4db73509d863518b97
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2716
+--- !u!114 &114129592142626192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 22 IThinkIt'sComingThisWay
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 22 IThinkIt'sComingThisWay
+  guid: af4aa3791fa83b4d85388270738e1507
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3783
+--- !u!114 &114141239296080736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 21 IGuessIt'sMissingSomething
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 21 IGuessIt'sMissingSomething
+  guid: ed389d3a3be9874492c5b60229793de8
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2584
+--- !u!114 &114144113029172500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 26 NotDOingThat
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 26 NotDOingThat
+  guid: ebd790fcdd23924d8aa22a23db87f4ac
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5708
+--- !u!114 &114148668591852888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114159534424907340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Lore/Diary 8
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Lore/Diary 8
+  guid: 4731d87b5e0bf4408963395cba5a046f
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 98366
+--- !u!114 &114163195547223294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MU/Menus/Mu_main_menu
+  m_EditorClassIdentifier: 
+  Path: event:/MU/Menus/Mu_main_menu
+  guid: a77471bdb886e4489768777b662d29cf
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 230000
+--- !u!114 &114176295099789082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 11 StrangeLittleThing1
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 11 StrangeLittleThing1
+  guid: 076ee36486c7c745995124a28850a4a8
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1837
+--- !u!114 &114176825911335122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 2 UsedToLoveItHere
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 2 UsedToLoveItHere
+  guid: 1207831a8e2b9b47875020656860ba3c
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2626
+--- !u!114 &114182369963982364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114191718101777142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Lore/Vo_lore_test
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Lore/Vo_lore_test
+  guid: 51ac69cf3e000541876cf1ab6e51ac28
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 17767
+--- !u!114 &114200132656689814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 23 It'sGoneForNow
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 23 It'sGoneForNow
+  guid: 6cc09d8a664e934fad016a61fd1b8887
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2692
+--- !u!114 &114203420079893358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114209664324015430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MU/Artifact/Mu_artifact_search
+  m_EditorClassIdentifier: 
+  Path: event:/MU/Artifact/Mu_artifact_search
+  guid: b243a2fd23f8fc42b529f60be6a01985
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114702696450722580}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27281
+--- !u!114 &114210712264861858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114212011238029006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_28 ProbablyShouldNotTouchThat
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_28 ProbablyShouldNotTouchThat
+  guid: 224a0e05ca49b74b875f71205ee55c6b
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10824
+--- !u!114 &114229031419121234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 19 IShouldFindTheMissingPieces
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 19 IShouldFindTheMissingPieces
+  guid: 9aad6cdb9e83724e860336783ba1101b
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4013
+--- !u!114 &114242196497739864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Lore/Letter 1
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Lore/Letter 1
+  guid: a0b4dc96a72645448857085554af2162
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 66511
+--- !u!114 &114263711762687672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "snapshot:/P\xE4\xE4henkil\xF6n p\xE4\xE4n kanssa sekoilu"
+  m_EditorClassIdentifier: 
+  Path: "snapshot:/P\xE4\xE4henkil\xF6n p\xE4\xE4n kanssa sekoilu"
+  guid: 23f94a6439263a488a948acfbb94f8d0
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114274209882243246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 3 LetThereBeLight
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 3 LetThereBeLight
+  guid: b6b661f64fc310449f54a6fa3bfb1074
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2810
+--- !u!114 &114312947382571444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 11 StrangeLittleThing2
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 11 StrangeLittleThing2
+  guid: 432b6421a655a34f8098eac2a933f258
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2362
+--- !u!114 &114314880429511070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637353378715929444
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114337902034128752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 8 ReconstructWhat2
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 8 ReconstructWhat2
+  guid: 9102d0f79d4c2e43b4f065cb0a4e60da
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2743
+--- !u!114 &114343794938280080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SX/Objects/Sx_int_letter
+  m_EditorClassIdentifier: 
+  Path: event:/SX/Objects/Sx_int_letter
+  guid: cd937345f139734393447137ea99037f
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 927
+--- !u!114 &114386232815170434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637357828445340323
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114401418835558788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 16 IReallyShouldGetToTheBottomOfThis1
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 16 IReallyShouldGetToTheBottomOfThis1
+  guid: 229b376e4beb79469484937467acf921
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4162
+--- !u!114 &114402457337422586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Rev Living Room
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Rev Living Room
+  guid: 3a1cedf474846448b9543fd459aeee46
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114417574268910494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AT/INT/At_int_ambient_living_room
+  m_EditorClassIdentifier: 
+  Path: event:/AT/INT/At_int_ambient_living_room
+  guid: 356bb3b6efe28046bc829197a27323fe
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 87701
+--- !u!114 &114424085261260376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AT/EXT/At_env_wind
+  m_EditorClassIdentifier: 
+  Path: event:/AT/EXT/At_env_wind
+  guid: 316557f68ca3fc49914661e91f7af7e5
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27555
+--- !u!114 &114426533660168106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SX/Objects/Sx_int_impact_box
+  m_EditorClassIdentifier: 
+  Path: event:/SX/Objects/Sx_int_impact_box
+  guid: d86e9673cc80f049a803f2816e9d2d25
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 624
+--- !u!114 &114437039601968614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SX/Doors/Sx_door_big
+  m_EditorClassIdentifier: 
+  Path: event:/SX/Doors/Sx_door_big
+  guid: cb36b23b01d82245a4a145b4168c86ff
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 860
+--- !u!114 &114444108274302434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 4 BulbsStillWork
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 4 BulbsStillWork
+  guid: 43d994fde9c7a64bbfcedc72d206b424
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2669
+--- !u!114 &114471637089974962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Lore/Diary 5
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Lore/Diary 5
+  guid: d345d6efd65eb2459a9fa87cdcbaff6a
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 87291
+--- !u!114 &114482290332375660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Snap_hiding
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Snap_hiding
+  guid: 1dda053dfa7af1448cda7e2ee4a34433
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114484860927831082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Rev Library
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Rev Library
+  guid: 4a34138d81fdc849a52e4b1619a82a9c
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114517970960584664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AT/INT/At_int_drone
+  m_EditorClassIdentifier: 
+  Path: event:/AT/INT/At_int_drone
+  guid: 50ff61adfa7ff740a5b0f812fc4a9513
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 43896
+--- !u!114 &114532843251694786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AT/INT/At_int_window_draft
+  m_EditorClassIdentifier: 
+  Path: event:/AT/INT/At_int_window_draft
+  guid: ef3a6ea9c05ec048b533332f660bb5e9
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 188000
+--- !u!114 &114536301028062406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 17 IHaveAMissionNow
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 17 IHaveAMissionNow
+  guid: 4c1742e7d69fc945a643f0b7e64893ce
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2252
+--- !u!114 &114553123660206524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_27 Let'sSee
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_27 Let'sSee
+  guid: 44e2025de463804ba8c5afda0ede9517
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2984
+--- !u!114 &114570827768522120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114587764270085708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114600166046069174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Lore/Diary 4
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Lore/Diary 4
+  guid: 11b9689551d3904aa05565aecaca32f8
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 73043
+--- !u!114 &114607008616706638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 10 AmIFeelingThisToo
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 10 AmIFeelingThisToo
+  guid: 31a10a37b15514469e1f529cbedf2aa1
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3466
+--- !u!114 &114622738463589544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Lore/Diary 6
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Lore/Diary 6
+  guid: 5d3639ef0c6c65468546d15e860b9004
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 70935
+--- !u!114 &114628370538208690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SX/Objects/Sx_int_impact_metal
+  m_EditorClassIdentifier: 
+  Path: event:/SX/Objects/Sx_int_impact_metal
+  guid: 85ab1d4a4724224ab24eab17c4630f9e
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 880
+--- !u!114 &114635317711178570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Lore/Diary 3
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Lore/Diary 3
+  guid: 23db468543a0fb4a8d5e680500be215a
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 55215
+--- !u!114 &114644630395991302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 13 WhatWasISupposedToDoAgain
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 13 WhatWasISupposedToDoAgain
+  guid: 3e5a287eb9ed52459921a4e24981a053
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5673
+--- !u!114 &114670133076963008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Monster/Vo_monster_state
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Monster/Vo_monster_state
+  guid: 44ea2a21babb994183d8793383bdaeca
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 13600
+--- !u!114 &114677380708857036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SX/Elevator/Sx_int_elevator_loop
+  m_EditorClassIdentifier: 
+  Path: event:/SX/Elevator/Sx_int_elevator_loop
+  guid: 4c7471fd7d0201469d3c4cc71787959a
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 44566
+--- !u!114 &114677733658307500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SX/Objects/Sx_int_gramophone
+  m_EditorClassIdentifier: 
+  Path: event:/SX/Objects/Sx_int_gramophone
+  guid: 6d38da20dd2ab046946bd28a527fa789
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 30743
+--- !u!114 &114699696802089578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 6 NoService1
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 6 NoService1
+  guid: 1dbe27394c17f745bb24426bd0a19e80
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3427
+--- !u!114 &114702696450722580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114712708800488406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SX/Puzzle/Sx_puzzle_lock
+  m_EditorClassIdentifier: 
+  Path: event:/SX/Puzzle/Sx_puzzle_lock
+  guid: e1ad7ad7a69a974eb9d982232e3e125e
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 670
+--- !u!114 &114713887121061066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 12 WhatIsThat
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 12 WhatIsThat
+  guid: 1736d2c889b9394d857a636dff1262bb
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2449
+--- !u!114 &114717496327617758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Ui_generic_button
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Ui_generic_button
+  guid: 5eeefbf299c51d45ac58a0ff600fae03
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 101
+--- !u!114 &114722519953413184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114732027697278604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 7 ReconstructWhat1
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 7 ReconstructWhat1
+  guid: 9d360e8dd145dc408a31f8dd9c34ff0d
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3833
+--- !u!114 &114736080270149168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Lore/Diary 1
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Lore/Diary 1
+  guid: 0e9c4a056f403a43828cbdb67dffa7bd
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 68333
+--- !u!114 &114746310682786194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 24 HeyThat'sUs
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 24 HeyThat'sUs
+  guid: faf79a8153fad24ca206e59c6a4a9ce1
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4156
+--- !u!114 &114756211008807218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114759845362119810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AT/INT/At_stinger
+  m_EditorClassIdentifier: 
+  Path: event:/AT/INT/At_stinger
+  guid: 8c98597b86b9d94a8093fb7c0134c8bb
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 250
+--- !u!114 &114782514875077326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114785774201204514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 14 INeedToFinishThisThing
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 14 INeedToFinishThisThing
+  guid: ea78d9a249803447945380e55b1b2c10
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4101
+--- !u!114 &114805409493785612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 16 IReallyShouldGetToTheBottomOfThis2
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 16 IReallyShouldGetToTheBottomOfThis2
+  guid: 9f02bbc69682cb479acec5576ce41d71
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3873
+--- !u!114 &114812726579324620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114820592271975932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AT/EXT/At_ext_rain
+  m_EditorClassIdentifier: 
+  Path: event:/AT/EXT/At_ext_rain
+  guid: 3020add59f586a47a1137e96afc3c51e
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8652
+--- !u!114 &114821771657048872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Monster closenes
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Monster closenes
+  guid: bd153fc51a173a45b43913da076f4499
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114104722996928622}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114831948235883548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637456324355745383
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114843781324806234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Rev Hallway
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Rev Hallway
+  guid: 5de06e21b45baa49a2028fbda235d5fb
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114854066247732674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Rev Study
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Rev Study
+  guid: c2a328cb3733c1478f1253d971936cfa
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114857505308636848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Snap_safe_zone
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Snap_safe_zone
+  guid: afb5b52ec49ac94fb8a43a9e95e6938b
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114861030854956102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 25 IDon'tThinkICanDoThat
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 25 IDon'tThinkICanDoThat
+  guid: 7eb581209025db4ca83e0a1456568c47
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7149
+--- !u!114 &114869226223191996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Snap_lore_reading
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Snap_lore_reading
+  guid: b12b929450955d43a5c77b825dc273e4
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114871565345865512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 15 TheseBelongTogether2
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 15 TheseBelongTogether2
+  guid: 6a109257c918c14d8d90506b2a661161
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3241
+--- !u!114 &114875916231450700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 9 WhenWeLeftForTheStates
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 9 WhenWeLeftForTheStates
+  guid: efd582e4ab8d0a46af43e7fea080485a
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7034
+--- !u!114 &114890324586195212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AT/EXT/At_ext_thunder_far
+  m_EditorClassIdentifier: 
+  Path: event:/AT/EXT/At_ext_thunder_far
+  guid: e1f836e095f4534c96609b18ceccb81e
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 16200
+--- !u!114 &114890991540589734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_1 ManorEntry
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_1 ManorEntry
+  guid: 4a741ae1cd30794b962e49764522669f
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5823
+--- !u!114 &114891822012763424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SX/Player/Sx_player_movement_teleport
+  m_EditorClassIdentifier: 
+  Path: event:/SX/Player/Sx_player_movement_teleport
+  guid: bcf977fa9bb9fd46be68698c86292f10
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 512
+--- !u!114 &114904531071844692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 18 IWonderIfThereAreAnyMoreOfTheseAround
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 18 IWonderIfThereAreAnyMoreOfTheseAround
+  guid: 203833d202a19140adec783b899368f0
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4751
+--- !u!114 &114942671499169114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SX/Objects/Sx_int_book
+  m_EditorClassIdentifier: 
+  Path: event:/SX/Objects/Sx_int_book
+  guid: 34478b60c0ffed4ca23d90c9689e046a
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 285
+--- !u!114 &114947920904558188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114948487980465344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114961630628622640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO/Player/Vo_Sadie_ 20 LeverIsMissing
+  m_EditorClassIdentifier: 
+  Path: event:/VO/Player/Vo_Sadie_ 20 LeverIsMissing
+  guid: e304611a32f1154ab0f205b12acab9bc
+  Banks:
+  - {fileID: 114831948235883548}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2138

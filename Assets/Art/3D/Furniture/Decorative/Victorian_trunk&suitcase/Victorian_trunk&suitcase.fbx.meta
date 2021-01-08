@@ -147,6 +147,8 @@ ModelImporter:
     4300050: Cube.049
     4300052: Cube.050
     4300054: Cube.051
+    6400000: Cube.015
+    6400002: VictorianSuitcase_low
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -190,7 +192,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
