@@ -41,6 +41,12 @@ ModelImporter:
     4300008: table_cloth_2
     4300010: table_cloth_3
     4300012: table_cloth_1
+    6400000: table_1
+    6400002: table_2
+    6400004: table_3
+    6400006: table_cloth_1
+    6400008: table_cloth_2
+    6400010: table_cloth_3
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -79,7 +85,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

@@ -26,6 +26,10 @@ ModelImporter:
     4300002: Victorian_Wardrobe_Door_1
     4300004: Victorian_Wardrobe_Door_2
     4300006: VictorianLock
+    6400000: Victorian_Wardrobe_Door_1
+    6400002: Victorian_Wardrobe_Door_2
+    6400004: VictorianLock
+    6400006: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -74,7 +78,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

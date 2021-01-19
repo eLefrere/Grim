@@ -29,6 +29,11 @@ ModelImporter:
     4300004: victorian_couch_pillow_2
     4300006: victorian_couch_round_pillow_1
     4300008: victorian_couch_round_pillow_2
+    6400000: //RootNode
+    6400002: victorian_couch_pillow_1
+    6400004: victorian_couch_pillow_2
+    6400006: victorian_couch_round_pillow_1
+    6400008: victorian_couch_round_pillow_2
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -67,14 +72,14 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
