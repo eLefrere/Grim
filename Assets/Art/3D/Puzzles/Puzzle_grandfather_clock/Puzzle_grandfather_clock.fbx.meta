@@ -19,6 +19,15 @@ ModelImporter:
     100026: Cylinder.004
     100028: Cylinder.005
     100030: Cylinder.010
+    100032: Circle.009
+    100034: Circle.012
+    100036: Circle.013
+    100038: Circle.014
+    100040: Cube.037
+    100042: Cylinder.011
+    100044: Cylinder.012
+    100046: Cylinder.013
+    100048: Cylinder.014
     400000: Clock_Main
     400002: HourHand
     400004: LittleHand
@@ -35,6 +44,15 @@ ModelImporter:
     400026: Cylinder.004
     400028: Cylinder.005
     400030: Cylinder.010
+    400032: Circle.009
+    400034: Circle.012
+    400036: Circle.013
+    400038: Circle.014
+    400040: Cube.037
+    400042: Cylinder.011
+    400044: Cylinder.012
+    400046: Cylinder.013
+    400048: Cylinder.014
     2100000: Puzzle_Clock
     2100002: Puzzle_Clock_alpha
     2100004: Checker
@@ -52,6 +70,15 @@ ModelImporter:
     2300022: Cylinder.004
     2300024: Cylinder.005
     2300026: Cylinder.010
+    2300028: Circle.009
+    2300030: Circle.012
+    2300032: Circle.013
+    2300034: Circle.014
+    2300036: Cube.037
+    2300038: Cylinder.011
+    2300040: Cylinder.012
+    2300042: Cylinder.013
+    2300044: Cylinder.014
     3300000: Clock_Main
     3300002: HourHand
     3300004: LittleHand
@@ -66,6 +93,15 @@ ModelImporter:
     3300022: Cylinder.004
     3300024: Cylinder.005
     3300026: Cylinder.010
+    3300028: Circle.009
+    3300030: Circle.012
+    3300032: Circle.013
+    3300034: Circle.014
+    3300036: Cube.037
+    3300038: Cylinder.011
+    3300040: Cylinder.012
+    3300042: Cylinder.013
+    3300044: Cylinder.014
     4300000: TheClock
     4300002: LittleHand
     4300004: HourHand
@@ -81,12 +117,30 @@ ModelImporter:
     4300024: Cylinder.004
     4300026: Cylinder.005
     4300028: Cylinder.010
+    4300030: Circle.009
+    4300032: Circle.012
+    4300034: Circle.013
+    4300036: Circle.014
+    4300038: Cube.037
+    4300040: Cylinder.011
+    4300042: Cylinder.012
+    4300044: Cylinder.013
+    4300046: Cylinder.014
     6400000: Clock_Main
     6400002: HourHand
     6400004: LittleHand
     6400006: Swinger
     6400008: TheClock
     6400010: TheDrawer
+    6400012: Circle.009
+    6400014: Circle.012
+    6400016: Circle.013
+    6400018: Circle.014
+    6400020: Cube.037
+    6400022: Cylinder.011
+    6400024: Cylinder.012
+    6400026: Cylinder.013
+    6400028: Cylinder.014
     9500000: //RootNode
     13700000: TheDrawer
     13700002: Swinger
