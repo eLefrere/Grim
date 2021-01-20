@@ -33,6 +33,11 @@ ModelImporter:
     4300004: Box002.005
     4300006: Cylinder.009
     4300008: Cylinder.017
+    6400000: Box002.002
+    6400002: Box002.005
+    6400004: Cylinder.009
+    6400006: Cylinder.017
+    6400008: Plane.041
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -81,7 +86,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

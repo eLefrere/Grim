@@ -12,6 +12,10 @@ ModelImporter:
     100012: //RootNode
     100014: MiddlePiece
     100016: SingleDoor
+    100018: SingleDoorHinge2
+    100020: SingleDoorHinge3
+    100022: SingleDoorHinge4
+    100024: VictorianDoor.015
     400000: Cube.012
     400002: Cube.013
     400004: Cube.014
@@ -21,9 +25,14 @@ ModelImporter:
     400012: //RootNode
     400014: MiddlePiece
     400016: SingleDoor
+    400018: SingleDoorHinge2
+    400020: SingleDoorHinge3
+    400022: SingleDoorHinge4
+    400024: VictorianDoor.015
     2100000: Checker
     2100002: SingleDoor&Frame
     2100004: VictorianWardrobe
+    2100006: VictorianDoor.001
     2300000: Cube.012
     2300002: Cube.013
     2300004: Cube.014
@@ -33,6 +42,10 @@ ModelImporter:
     2300012: MiddlePiece
     2300014: SingleDoor
     2300016: //RootNode
+    2300018: SingleDoorHinge2
+    2300020: SingleDoorHinge3
+    2300022: SingleDoorHinge4
+    2300024: VictorianDoor.015
     3300000: Cube.012
     3300002: Cube.013
     3300004: Cube.014
@@ -42,6 +55,10 @@ ModelImporter:
     3300012: MiddlePiece
     3300014: SingleDoor
     3300016: //RootNode
+    3300018: SingleDoorHinge2
+    3300020: SingleDoorHinge3
+    3300022: SingleDoorHinge4
+    3300024: VictorianDoor.015
     4300000: Cube.019
     4300002: Cube.017
     4300004: Cube.016
@@ -51,6 +68,10 @@ ModelImporter:
     4300012: Frame
     4300014: SingleDoor
     4300016: MiddlePiece
+    4300018: SingleDoorHinge3
+    4300020: SingleDoorHinge4
+    4300022: VictorianDoor.015
+    4300024: SingleDoorHinge2
   externalObjects:
   - first:
       type: UnityEngine:Material
