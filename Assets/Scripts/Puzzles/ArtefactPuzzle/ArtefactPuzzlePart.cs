@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArtefactPuzzleLogic : Puzzlepart
+public class ArtefactPuzzlePart: Puzzlepart
 {
-    
+
 }
