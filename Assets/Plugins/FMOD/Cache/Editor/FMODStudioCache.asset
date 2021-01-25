@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114077343602255286}
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   EditorEvents:
   - {fileID: 114482290332375660}
   - {fileID: 114263711762687672}
@@ -92,13 +92,16 @@ MonoBehaviour:
   - {fileID: 114875916231450700}
   - {fileID: 114746310682786194}
   - {fileID: 114106894097600898}
+  - {fileID: 114061234615802126}
+  - {fileID: 114503894185465852}
+  - {fileID: 114898169016790682}
   EditorParameters:
-  - {fileID: 114561344906339760}
+  - {fileID: 114960105369930774}
   MasterBanks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   StringsBanks:
   - {fileID: 114077343602255286}
-  stringsBankWriteTime: 637461391582738015
+  stringsBankWriteTime: 637471955004435902
   cacheVersion: 3
 --- !u!114 &114004482901429100
 MonoBehaviour:
@@ -115,15 +118,32 @@ MonoBehaviour:
   Path: event:/SX/Doors/Sx_int_door_hum
   guid: c2d2975ee5a8d0478b34aa3afe795761
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114816032452652748}
+  - {fileID: 114186029382307912}
   MinDistance: 0
   MaxDistance: 0
   Length: 7303
+--- !u!114 &114005677156763126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/ArtifactDir
+  m_EditorClassIdentifier: 
+  Name: ArtifactDir
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &114008041321252950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +159,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 6 NoService2
   guid: 5be9093d9d40b242883326bebe66a74e
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -147,6 +167,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3427
+--- !u!114 &114008675089131178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114013030905708518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +201,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114017095621854482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637471950688345963
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &114017990572682642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +234,7 @@ MonoBehaviour:
   Path: event:/VO/Lore/Diary 7
   guid: 79dda6f4fb5ef541a75b004abf116a98
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -219,7 +274,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_testSpatialized
   guid: e7d0ffc1c4bdc34eb3be40f23e0a3a02
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -242,7 +297,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_29 WhatWasThat
   guid: 09cad49ae7028f42a09071ed5b560734
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -265,7 +320,7 @@ MonoBehaviour:
   Path: event:/VO/Lore/Letter 2
   guid: d5ed50f41615cb4a95c420322050f13a
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -273,6 +328,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 56872
+--- !u!114 &114061234615802126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Inventory/Ui_inventoryOpen
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Inventory/Ui_inventoryOpen
+  guid: 0ba3c48d5a2a1c45aa35360003f151a7
+  Banks:
+  - {fileID: 114431310075756200}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 105
 --- !u!114 &114077343602255286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,11 +365,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Audio/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637461391582738015
+  lastModified: 637471955004435902
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 5302
+    Value: 5516
   Exists: 1
 --- !u!114 &114091624848426440
 MonoBehaviour:
@@ -311,6 +389,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &114092069421383680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/ArtifactDir
+  m_EditorClassIdentifier: 
+  Name: ArtifactDir
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114099775679691078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,7 +421,7 @@ MonoBehaviour:
   Path: event:/SX/Puzzle/Sx_puzzle_mechanicalClicks_loop
   guid: 7137827e25cb7347b57212355a4e695b
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -334,6 +429,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 6533
+--- !u!114 &114100018748579544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114100316013126506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,7 +461,7 @@ MonoBehaviour:
   Path: event:/VO/Lore/Diary 2
   guid: 7516f413858fdd4fb9f18f80905d933d
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -389,7 +501,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 5 WhoIsPaying
   guid: fe4bcdb9a7dbd542a3f6d8eeaa73097d
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -397,6 +509,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3028
+--- !u!114 &114108218540563428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637471950645958643
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &114109917780568162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,7 +542,7 @@ MonoBehaviour:
   Path: event:/AT/INT/At_int_weird_test
   guid: c083b9d7ac668f41828b42cc608b2a08
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -452,7 +582,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 15 TheseBelongTogether1
   guid: 163bf9fa36fe5f4db73509d863518b97
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -460,6 +590,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2716
+--- !u!114 &114128345507979904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114129592142626192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,7 +622,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 22 IThinkIt'sComingThisWay
   guid: af4aa3791fa83b4d85388270738e1507
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -498,7 +645,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 21 IGuessIt'sMissingSomething
   guid: ed389d3a3be9874492c5b60229793de8
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -521,7 +668,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 26 NotDOingThat
   guid: ebd790fcdd23924d8aa22a23db87f4ac
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -561,7 +708,7 @@ MonoBehaviour:
   Path: event:/VO/Lore/Diary 8
   guid: 4731d87b5e0bf4408963395cba5a046f
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -584,7 +731,7 @@ MonoBehaviour:
   Path: event:/MU/Menus/Mu_main_menu
   guid: a77471bdb886e4489768777b662d29cf
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -592,6 +739,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 230000
+--- !u!114 &114165686136476340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637471943716888994
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &114176295099789082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,7 +772,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 11 StrangeLittleThing1
   guid: 076ee36486c7c745995124a28850a4a8
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -630,7 +795,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 2 UsedToLoveItHere
   guid: 1207831a8e2b9b47875020656860ba3c
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -673,6 +838,58 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114185115345444572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114186029382307912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &114190838646973334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637471954008696214
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &114191718101777142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -710,7 +927,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 23 It'sGoneForNow
   guid: 6cc09d8a664e934fad016a61fd1b8887
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -750,12 +967,13 @@ MonoBehaviour:
   Path: event:/MU/Artifact/Mu_artifact_search
   guid: b243a2fd23f8fc42b529f60be6a01985
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114342492695076960}
+  - {fileID: 114005677156763126}
+  - {fileID: 114683794565486194}
   MinDistance: 0
   MaxDistance: 0
   Length: 27281
@@ -791,7 +1009,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_28 ProbablyShouldNotTouchThat
   guid: 224a0e05ca49b74b875f71205ee55c6b
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -814,7 +1032,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 19 IShouldFindTheMissingPieces
   guid: 9aad6cdb9e83724e860336783ba1101b
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -837,7 +1055,7 @@ MonoBehaviour:
   Path: event:/VO/Lore/Letter 1
   guid: a0b4dc96a72645448857085554af2162
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -860,7 +1078,7 @@ MonoBehaviour:
   Path: "snapshot:/P\xE4\xE4henkil\xF6n p\xE4\xE4n kanssa sekoilu"
   guid: 23f94a6439263a488a948acfbb94f8d0
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -883,7 +1101,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 3 LetThereBeLight
   guid: b6b661f64fc310449f54a6fa3bfb1074
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -908,7 +1126,7 @@ MonoBehaviour:
   lastModified: 637461391583268496
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &114312947382571444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,7 +1142,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 11 StrangeLittleThing2
   guid: 432b6421a655a34f8098eac2a933f258
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -950,6 +1168,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &114328929102552314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_rotatingWheel/Puzzle_wheel_speed
+  m_EditorClassIdentifier: 
+  Name: Puzzle_wheel_speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114337902034128752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -965,7 +1200,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 8 ReconstructWhat2
   guid: 9102d0f79d4c2e43b4f065cb0a4e60da
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -989,7 +1224,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &114343794938280080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1005,7 +1240,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_letter
   guid: cd937345f139734393447137ea99037f
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1031,6 +1266,40 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &114390267926047492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114398236564267042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/ArtifactDir
+  m_EditorClassIdentifier: 
+  Name: ArtifactDir
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114401418835558788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1046,7 +1315,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 16 IReallyShouldGetToTheBottomOfThis1
   guid: 229b376e4beb79469484937467acf921
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1069,7 +1338,7 @@ MonoBehaviour:
   Path: snapshot:/Rev Living Room
   guid: 3a1cedf474846448b9543fd459aeee46
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1092,7 +1361,7 @@ MonoBehaviour:
   Path: event:/AT/INT/At_int_ambient_living_room
   guid: 356bb3b6efe28046bc829197a27323fe
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1115,7 +1384,7 @@ MonoBehaviour:
   Path: event:/AT/EXT/At_env_wind
   guid: 316557f68ca3fc49914661e91f7af7e5
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1138,7 +1407,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_impact_box
   guid: d86e9673cc80f049a803f2816e9d2d25
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1146,6 +1415,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 624
+--- !u!114 &114431310075756200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637471955004385858
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &114437039601968614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1161,7 +1448,7 @@ MonoBehaviour:
   Path: event:/SX/Doors/Sx_door_big
   guid: cb36b23b01d82245a4a145b4168c86ff
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1184,7 +1471,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 4 BulbsStillWork
   guid: 43d994fde9c7a64bbfcedc72d206b424
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1207,7 +1494,7 @@ MonoBehaviour:
   Path: event:/VO/Lore/Diary 5
   guid: d345d6efd65eb2459a9fa87cdcbaff6a
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1230,7 +1517,7 @@ MonoBehaviour:
   Path: snapshot:/Snap_hiding
   guid: 1dda053dfa7af1448cda7e2ee4a34433
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1253,7 +1540,7 @@ MonoBehaviour:
   Path: snapshot:/Rev Library
   guid: 4a34138d81fdc849a52e4b1619a82a9c
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1261,6 +1548,47 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114493593056474462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637471943976699358
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114503894185465852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Inventory/Ui_inventoryClose
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Inventory/Ui_inventoryClose
+  guid: 70c0691c3186e5489e0b6d48edcf1baf
+  Banks:
+  - {fileID: 114431310075756200}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 105
 --- !u!114 &114517970960584664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1276,7 +1604,7 @@ MonoBehaviour:
   Path: event:/AT/INT/At_int_drone
   guid: 50ff61adfa7ff740a5b0f812fc4a9513
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1299,7 +1627,7 @@ MonoBehaviour:
   Path: event:/AT/INT/At_int_window_draft
   guid: ef3a6ea9c05ec048b533332f660bb5e9
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1322,7 +1650,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 17 IHaveAMissionNow
   guid: 4c1742e7d69fc945a643f0b7e64893ce
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1330,6 +1658,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2252
+--- !u!114 &114551309044634644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_rotatingWheel/Puzzle_wheel_speed
+  m_EditorClassIdentifier: 
+  Name: Puzzle_wheel_speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114553123660206524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1345,7 +1690,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_27 Let'sSee
   guid: 44e2025de463804ba8c5afda0ede9517
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1369,7 +1714,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &114570827768522120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1404,6 +1749,23 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &114599764808427130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114600166046069174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1419,7 +1781,7 @@ MonoBehaviour:
   Path: event:/VO/Lore/Diary 4
   guid: 11b9689551d3904aa05565aecaca32f8
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1427,6 +1789,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 73043
+--- !u!114 &114604137664803842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_rotatingWheel/Puzzle_wheel_speed
+  m_EditorClassIdentifier: 
+  Name: Puzzle_wheel_speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &114607008616706638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1442,7 +1821,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 10 AmIFeelingThisToo
   guid: 31a10a37b15514469e1f529cbedf2aa1
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1465,7 +1844,7 @@ MonoBehaviour:
   Path: event:/VO/Lore/Diary 6
   guid: 5d3639ef0c6c65468546d15e860b9004
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1473,6 +1852,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 70935
+--- !u!114 &114624532264521036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114628370538208690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1488,7 +1884,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_impact_metal
   guid: 85ab1d4a4724224ab24eab17c4630f9e
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1496,6 +1892,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 880
+--- !u!114 &114628863125667896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114635317711178570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1511,7 +1924,7 @@ MonoBehaviour:
   Path: event:/VO/Lore/Diary 3
   guid: 23db468543a0fb4a8d5e680500be215a
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1519,6 +1932,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 55215
+--- !u!114 &114642434586052900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &114644630395991302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1534,7 +1964,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 13 WhatWasISupposedToDoAgain
   guid: 3e5a287eb9ed52459921a4e24981a053
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1557,7 +1987,7 @@ MonoBehaviour:
   Path: event:/VO/Monster/Vo_monster_state
   guid: 44ea2a21babb994183d8793383bdaeca
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1580,7 +2010,7 @@ MonoBehaviour:
   Path: event:/SX/Elevator/Sx_int_elevator_loop
   guid: 4c7471fd7d0201469d3c4cc71787959a
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1603,7 +2033,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_gramophone
   guid: 6d38da20dd2ab046946bd28a527fa789
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1611,6 +2041,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 30743
+--- !u!114 &114683794565486194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &114699696802089578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1626,7 +2073,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 6 NoService1
   guid: 1dbe27394c17f745bb24426bd0a19e80
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1651,6 +2098,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114711465624105360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114712708800488406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1666,7 +2130,7 @@ MonoBehaviour:
   Path: event:/SX/Puzzle/Sx_puzzle_lock
   guid: e1ad7ad7a69a974eb9d982232e3e125e
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1689,7 +2153,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 12 WhatIsThat
   guid: 1736d2c889b9394d857a636dff1262bb
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1712,7 +2176,7 @@ MonoBehaviour:
   Path: event:/UI/Ui_generic_button
   guid: 5eeefbf299c51d45ac58a0ff600fae03
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1752,7 +2216,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 7 ReconstructWhat1
   guid: 9d360e8dd145dc408a31f8dd9c34ff0d
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1775,7 +2239,7 @@ MonoBehaviour:
   Path: event:/VO/Lore/Diary 1
   guid: 0e9c4a056f403a43828cbdb67dffa7bd
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1783,6 +2247,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 68333
+--- !u!114 &114739631391943846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114742870474198534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1815,7 +2296,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 24 HeyThat'sUs
   guid: faf79a8153fad24ca206e59c6a4a9ce1
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1855,7 +2336,7 @@ MonoBehaviour:
   Path: event:/AT/INT/At_stinger
   guid: 8c98597b86b9d94a8093fb7c0134c8bb
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1863,6 +2344,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 250
+--- !u!114 &114761097060095876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster closenes/Monster Dist
+  m_EditorClassIdentifier: 
+  Name: Monster Dist
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114782514875077326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1895,7 +2393,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 14 INeedToFinishThisThing
   guid: ea78d9a249803447945380e55b1b2c10
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1918,7 +2416,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 16 IReallyShouldGetToTheBottomOfThis2
   guid: 9f02bbc69682cb479acec5576ce41d71
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1959,7 +2457,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &114820592271975932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1975,7 +2473,7 @@ MonoBehaviour:
   Path: event:/AT/EXT/At_ext_rain
   guid: 3020add59f586a47a1137e96afc3c51e
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1998,12 +2496,12 @@ MonoBehaviour:
   Path: snapshot:/Monster closenes
   guid: bd153fc51a173a45b43913da076f4499
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114879613029803050}
+  - {fileID: 114642434586052900}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -2025,6 +2523,40 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &114832075812326296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114835173670522592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114843781324806234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2040,7 +2572,7 @@ MonoBehaviour:
   Path: snapshot:/Rev Hallway
   guid: 5de06e21b45baa49a2028fbda235d5fb
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -2048,6 +2580,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114849647415350088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/ArtifactDir
+  m_EditorClassIdentifier: 
+  Name: ArtifactDir
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114854066247732674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2063,7 +2612,7 @@ MonoBehaviour:
   Path: snapshot:/Rev Study
   guid: c2a328cb3733c1478f1253d971936cfa
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -2071,6 +2620,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114855055250451336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114857505308636848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2086,7 +2652,7 @@ MonoBehaviour:
   Path: snapshot:/Snap_safe_zone
   guid: afb5b52ec49ac94fb8a43a9e95e6938b
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -2109,7 +2675,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 25 IDon'tThinkICanDoThat
   guid: 7eb581209025db4ca83e0a1456568c47
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2132,7 +2698,7 @@ MonoBehaviour:
   Path: snapshot:/Snap_lore_reading
   guid: b12b929450955d43a5c77b825dc273e4
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -2155,7 +2721,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 15 TheseBelongTogether2
   guid: 6a109257c918c14d8d90506b2a661161
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2178,7 +2744,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 9 WhenWeLeftForTheStates
   guid: efd582e4ab8d0a46af43e7fea080485a
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2202,7 +2768,41 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
+--- !u!114 &114882692503640816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_rotatingWheel/Puzzle_wheel_speed
+  m_EditorClassIdentifier: 
+  Name: Puzzle_wheel_speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114886807209170530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_rotatingWheel/Puzzle_wheel_speed
+  m_EditorClassIdentifier: 
+  Name: Puzzle_wheel_speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114890324586195212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2218,7 +2818,7 @@ MonoBehaviour:
   Path: event:/AT/EXT/At_ext_thunder_far
   guid: e1f836e095f4534c96609b18ceccb81e
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2241,7 +2841,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_1 ManorEntry
   guid: 4a741ae1cd30794b962e49764522669f
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2264,7 +2864,7 @@ MonoBehaviour:
   Path: event:/SX/Player/Sx_player_movement_teleport
   guid: bcf977fa9bb9fd46be68698c86292f10
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2272,6 +2872,64 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 512
+--- !u!114 &114896858917095232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114897493259088574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114898169016790682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SX/Puzzle/Sx_rotatingWheel
+  m_EditorClassIdentifier: 
+  Path: event:/SX/Puzzle/Sx_rotatingWheel
+  guid: b75a451a335a0c4eab428c6a50f9ee21
+  Banks:
+  - {fileID: 114431310075756200}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114604137664803842}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 16266
 --- !u!114 &114904531071844692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2287,7 +2945,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 18 IWonderIfThereAreAnyMoreOfTheseAround
   guid: 203833d202a19140adec783b899368f0
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2295,6 +2953,57 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4751
+--- !u!114 &114905092612416980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_int_door_hum/Door_open
+  m_EditorClassIdentifier: 
+  Name: Door_open
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &114913837247502854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sx_rotatingWheel/Puzzle_wheel_speed
+  m_EditorClassIdentifier: 
+  Name: Puzzle_wheel_speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114923217692594416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/ArtifactDir
+  m_EditorClassIdentifier: 
+  Name: ArtifactDir
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114933922162496610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2327,7 +3036,7 @@ MonoBehaviour:
   Path: event:/SX/Objects/Sx_int_book
   guid: 34478b60c0ffed4ca23d90c9689e046a
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2369,6 +3078,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114949524887751514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114952650343294480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2386,6 +3112,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114960105369930774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: monster_state
+  m_EditorClassIdentifier: 
+  Name: monster_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &114961630628622640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2401,7 +3144,7 @@ MonoBehaviour:
   Path: event:/VO/Player/Vo_Sadie_ 20 LeverIsMissing
   guid: e304611a32f1154ab0f205b12acab9bc
   Banks:
-  - {fileID: 114297272040964418}
+  - {fileID: 114431310075756200}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2409,3 +3152,37 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2138
+--- !u!114 &114973246194202288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/ArtifactDir
+  m_EditorClassIdentifier: 
+  Name: ArtifactDir
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114986556218292398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mu_artifact_search/dist_nearest_piece
+  m_EditorClassIdentifier: 
+  Name: dist_nearest_piece
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
