@@ -16,9 +16,17 @@ using UnityEngine;
 /// </summary>
 public class ClockPuzzle : Puzzle
 {
-	private List<ClockGear> gears = new List<ClockGear>();
+	private readonly List<ClockGear> gears = new List<ClockGear>();
 	private readonly string clockPuzzleGearCompleteCode = "ClockPuzzlePartComplete";
-	
+
+	[SerializeField]
+	private UnityEngine.Events.UnityEvent onComplete;
+
+	private void Reset()
+	{
+		completionEventCode = "ClockPuzzleComplete";
+		resetEventCode = "ClockPuzzleReset";
+	}
 
 	/// <summary>
 	/// Sub to parts complete event and prime the parts into list with error checking.
@@ -75,5 +83,8 @@ public class ClockPuzzle : Puzzle
 				nextFound = true;
 			}
 		}
+
+		if (!nextFound)
+			onComplete.Invoke();
 	}
 }

@@ -9,13 +9,29 @@ using UnityEngine;
 /// Checks if close enough to the designated target spot and snaps to it, but only after parent puzzle tells its your turn.
 /// Once complete tells parent puzzle to move isUpNext tag along.
 /// </summary>
+[RequireComponent(typeof(Valve.VR.InteractionSystem.Throwable))]
 public class ClockGear : Puzzlepart
 {
+	[Header("Part Specifics")]
+	[Tooltip("The spot where this part will snap to.")]
 	[SerializeField] private Transform targetSpot = null;
-	[SerializeField] private float snapDistance = 0.05f;
-	public bool inPosition = false;
-	[SerializeField] private float snappingTime = 1f;
-	public bool isUpNext = false;
+
+	[Tooltip("How close to the target spot part must be to snap to it.")]
+	[SerializeField, Range(0.05f, 0.5f)] private float snapDistance = 0.05f;
+
+	[Tooltip("How long it takes to snapping part to rotate and lock to its position.")]
+	[SerializeField, Range(0f, 10f)] private float snappingTime = 1f;
+
+	[SerializeField] private UnityEngine.Events.UnityEvent onPosition;
+
+	[HideInInspector] public bool isUpNext = false;
+	[HideInInspector] public bool inPosition = false;
+
+	private void Reset()
+	{
+		eventCodeComplete = "ClockPuzzlePartComplete";
+		eventCodeReset = "ClockPuzzlePartReset";
+	}
 
 	private void Awake()
 	{
@@ -66,7 +82,7 @@ public class ClockGear : Puzzlepart
 
 		while(true)
 		{
-			yield return null;
+			yield return new WaitForFixedUpdate();
 
 			float t = Mathf.InverseLerp(startTime, endTime, Time.time);
 
@@ -76,6 +92,7 @@ public class ClockGear : Puzzlepart
 			if(Time.time >= endTime)
 			{
 				inPosition = true;
+				onPosition.Invoke();
 				SetFinished();
 				break;
 			}
