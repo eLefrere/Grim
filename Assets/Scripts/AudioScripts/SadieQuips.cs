@@ -7,15 +7,16 @@ public class SadieQuips : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
+
     // Update is called once per frame
-    void Update() // vai pitäiskö olla vaan sillon ku tapahtuu, ei joka freimi
+   /*void Update() // vai pitäiskö olla vaan sillon ku tapahtuu, ei joka freimi
     {
-        if (/*jotain varmaan toisesta koodista ja aika moni eri juttu*/)
+       //if (//jotain varmaan toisesta koodista ja aika moni eri juttu)
         {
-            PlayQuip( _x_ );
+         //   PlayQuip( _x_ );
                 
         }
     }
@@ -35,4 +36,4 @@ public class SadieQuips : MonoBehaviour
 
         FMODUnity.RuntimeManager.PlayOneShotAttached(quip_path, this.gameObject);
     }
-}
+*/}
