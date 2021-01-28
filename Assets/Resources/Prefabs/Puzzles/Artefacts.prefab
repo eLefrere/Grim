@@ -101,7 +101,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArtefactPuzzle
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1673174553867695613, guid: 0c216897b261fe3469d8c26c2fe4c3f2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0c216897b261fe3469d8c26c2fe4c3f2, type: 3}
 --- !u!4 &5297189954183663453 stripped
 Transform:
