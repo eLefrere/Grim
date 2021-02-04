@@ -4,18 +4,22 @@ using UnityEngine;
 
 /// <summary>
 /// @Author : Veli-Matti Vuoti
+/// @Co-Author : Sam Hemming (Rewrote and bugfix)
 /// 
 /// This class is For Elevator
 /// Some stypid representation of door opening, changed to run Animation of door open!
 /// </summary>
 public class ElevatorDoorHandler : MonoBehaviour
 {
-    public Vector3 door1start;
-    public Vector3 door2start;
-    public Vector3 door1end;
-    public Vector3 door2end;
-    public float time = 1f;
-    public Transform [] doors;
+	[SerializeField, Range(0, 10)] private float closingTime = 1f;
+	[SerializeField] private Transform doorRight;
+	[SerializeField] private Transform doorLeft;
+
+	[SerializeField] private Vector3 doorLeftClosed;
+    [SerializeField] private Vector3 doorRightClosed;
+    [SerializeField] private Vector3 doorLeftOpen;
+	[SerializeField] private Vector3 doorRightOpen;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -26,6 +30,7 @@ public class ElevatorDoorHandler : MonoBehaviour
         }
     }
 
+
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -35,26 +40,127 @@ public class ElevatorDoorHandler : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// TODO: Change this function to activate door open animation.
-    /// </summary>
-    public void OpenDoors()
-    {
-        door1start = doors[0].position;
-        door2start = doors[1].position;
-        door1end = doors[0].position + Vector3.left * -1.5f;
-        door2end = doors[1].position + Vector3.left * 1.5f;
-        doors[0].position = Vector3.Lerp(door1start, door1end, time);
-        doors[1].position = Vector3.Lerp(door2start, door2end, time);
-    }
 
-    /// <summary>
-    /// TODO: Change this function to activate door closing animation.
-    /// </summary>
-    public void CloseDoors()
-    {
-        doors[0].position = Vector3.Lerp(door1end, door1start, time);
-        doors[1].position = Vector3.Lerp(door2end, door2start, time);
-    }
+	/// <summary>
+	/// TODO: Change this function to activate door open animation.
+	/// </summary>
+	public void OpenDoors()
+	{
+		StopAllCoroutines();
+		StartCoroutine(LerpToPosition(doorLeft, doorLeftOpen));
+		StartCoroutine(LerpToPosition(doorRight, doorRightOpen));
+	}
+
+
+	/// <summary>
+	/// TODO: Change this function to activate door closing animation.
+	/// </summary>
+	public void CloseDoors()
+	{
+		StopAllCoroutines();
+		StartCoroutine(LerpToPosition(doorLeft, doorLeftClosed));
+		StartCoroutine(LerpToPosition(doorRight, doorRightClosed));
+	}
+
+	/// <summary>
+	/// Lerps given object from its current position to given endposition over closingTime.
+	/// All in local worldspace.
+	/// </summary>
+	/// <param name="obj"></param>
+	/// <param name="endPos"></param>
+	/// <returns></returns>
+	IEnumerator LerpToPosition(Transform obj, Vector3 endPos)
+	{
+		Vector3 startPos = obj.localPosition;
+		float startTime = Time.unscaledTime;
+		float endTime = startTime + closingTime;
+
+		while(true)
+		{
+			float time = Time.unscaledTime;
+			obj.localPosition = Vector3.Lerp(startPos, endPos, Mathf.InverseLerp(startTime, endTime, time));
+
+			if (time >= endTime)
+				break;
+
+			yield return null;
+		}
+	}
+
+
+	// Extra editor and convenience stuff----------------------
+
+
+	/// <summary>
+	/// trys to find doors from parent gameobject
+	/// </summary>
+	private void Reset()
+	{
+		var parentTransforms = gameObject.transform.root.GetComponentsInChildren<Transform>();
+
+		foreach(Transform trans in parentTransforms)
+		{
+			if(trans.name.Equals("DoorLeft"))
+			{
+				doorLeft = trans;
+			}
+
+			if (trans.name.Equals("DoorRight"))
+			{
+				doorRight = trans;
+			}
+		}
+
+		if (!doorLeft || !doorRight)
+		{
+			Debug.LogError("Can not find doors by name! (DoorLeft, DoorRight)");
+			return;
+		}
+	}
+
+
+	[ContextMenu("Record Doors Open Position")]
+	private void RecordDoorsOpenPos()
+	{
+		if(!doorLeft || !doorRight)
+		{
+			Debug.LogError("Can not record door position when no door has been assigned!");
+			return;
+		}
+
+		doorLeftOpen = doorLeft.localPosition;
+		doorRightOpen = doorRight.localPosition;
+	}
+
+
+	[ContextMenu("Record Doors Closed Position")]
+	private void RecordDoorsClosedPos()
+	{
+		if (!doorLeft || !doorRight)
+		{
+			Debug.LogError("Can not record door position when no door has been assigned!");
+			return;
+		}
+
+		doorLeftClosed = doorLeft.localPosition;
+		doorRightClosed = doorRight.localPosition;
+	}
+
+
+	[ContextMenu("Close Doors")]
+	private void Close()
+	{
+		doorLeft.localPosition = doorLeftClosed;
+		doorRight.localPosition = doorRightClosed;
+	}
+
+
+	[ContextMenu("Open Doors")]
+	private void Open()
+	{
+		doorLeft.localPosition = doorLeftOpen;
+		doorRight.localPosition = doorRightOpen;
+	}
+
 
 }
