@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.02799021, g: 0.032359913, b: 0.04950581, a: 1}
+  m_IndirectSpecularColor: {r: 0.027990106, g: 0.032359682, b: 0.049505755, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5344,6 +5344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 600507647}
   - component: {fileID: 600507646}
+  - component: {fileID: 600507645}
   - component: {fileID: 600507644}
   - component: {fileID: 600507643}
   - component: {fileID: 600507642}
@@ -5448,6 +5449,14 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!81 &600507645
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600507641}
+  m_Enabled: 1
 --- !u!20 &600507646
 Camera:
   m_ObjectHideFlags: 0
@@ -8647,75 +8656,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 979996369}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &994178304
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 994178305}
-  - component: {fileID: 994178306}
-  m_Layer: 0
-  m_Name: REsonanceProbeTestLivingRoom
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &994178305
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 994178304}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.96, y: 4.34, z: -3.705}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &994178306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 994178304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97139fbde32144241958106d7df4b4e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rt60s:
-  - 0.48090735
-  - 0.48019788
-  - 0.47627777
-  - 0.48156676
-  - 0.4796475
-  - 0.48036113
-  - 0.47685114
-  - 0.47415495
-  - 0.43799117
-  reverbGainDb: 24
-  reverbBrightness: 1
-  reverbTime: 10
-  regionShape: 1
-  boxRegionSize: {x: 10, y: 9, z: 15}
-  sphereRegionRadius: 1
-  onlyApplyWhenVisible: 0
-  proxyRoomPosition: {x: -1.0961132, y: 5.9387064, z: -4.5476274}
-  proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 10.336927, y: 10.336927, z: 10.336927}
-  proxyRoomLeftWall: 22
-  proxyRoomRightWall: 21
-  proxyRoomFloor: 1
-  proxyRoomCeiling: 12
-  proxyRoomBackWall: 4
-  proxyRoomFrontWall: 21
 --- !u!1001 &1034703722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9060,75 +9000,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1054489605
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1054489607}
-  - component: {fileID: 1054489606}
-  m_Layer: 0
-  m_Name: REsonanceProbeTestDoor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1054489606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054489605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97139fbde32144241958106d7df4b4e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rt60s:
-  - 0.08825702
-  - 0.088221475
-  - 0.08791495
-  - 0.08845997
-  - 0.08905151
-  - 0.090311736
-  - 0.089268684
-  - 0.08959916
-  - 0.08294714
-  reverbGainDb: 24
-  reverbBrightness: 1
-  reverbTime: 2.19
-  regionShape: 0
-  boxRegionSize: {x: 10, y: 9, z: 15}
-  sphereRegionRadius: 2
-  onlyApplyWhenVisible: 0
-  proxyRoomPosition: {x: 5.3074474, y: 1.7606434, z: -5.4153986}
-  proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 3.2986124, y: 3.2986124, z: 3.2986124}
-  proxyRoomLeftWall: 4
-  proxyRoomRightWall: 21
-  proxyRoomFloor: 1
-  proxyRoomCeiling: 21
-  proxyRoomBackWall: 22
-  proxyRoomFrontWall: 22
---- !u!4 &1054489607
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054489605}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.852, y: 1.065, z: -5.115}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1055278650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10300,10 +10171,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 101548, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -10383,16 +10250,6 @@ PrefabInstance:
     - target: {fileID: 670160378, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Enabled
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508469399995249023, guid: dc06161b6d97feb419f45f03b62e14b9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8414337146610108515, guid: dc06161b6d97feb419f45f03b62e14b9,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
@@ -13013,75 +12870,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1477234796}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1485512481
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1485512483}
-  - component: {fileID: 1485512482}
-  m_Layer: 0
-  m_Name: REsonanceProbeTestSmallRoom
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1485512482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485512481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97139fbde32144241958106d7df4b4e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rt60s:
-  - 0.2722387
-  - 0.27195305
-  - 0.26853722
-  - 0.27627864
-  - 0.27385384
-  - 0.27580407
-  - 0.27158222
-  - 0.27021497
-  - 0.23708604
-  reverbGainDb: 24
-  reverbBrightness: 1
-  reverbTime: 1
-  regionShape: 1
-  boxRegionSize: {x: 2.5, y: 5, z: 6}
-  sphereRegionRadius: 2
-  onlyApplyWhenVisible: 0
-  proxyRoomPosition: {x: 6.168761, y: 2.1840425, z: -6.0397797}
-  proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 3.4537857, y: 3.4537857, z: 3.4537857}
-  proxyRoomLeftWall: 5
-  proxyRoomRightWall: 21
-  proxyRoomFloor: 1
-  proxyRoomCeiling: 5
-  proxyRoomBackWall: 22
-  proxyRoomFrontWall: 22
---- !u!4 &1485512483
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485512481}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.321, y: 1.56, z: -6.234}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1494117429
 PrefabInstance:
   m_ObjectHideFlags: 0
