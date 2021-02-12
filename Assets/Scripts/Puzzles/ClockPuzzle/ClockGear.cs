@@ -26,6 +26,8 @@ public class ClockGear : Puzzlepart
 
 	[HideInInspector] public bool isUpNext = false;
 	[HideInInspector] public bool inPosition = false;
+	private Valve.VR.InteractionSystem.Interactable interactable;
+	private bool snappingToPosition = false;
 
 	private void Reset()
 	{
@@ -35,6 +37,7 @@ public class ClockGear : Puzzlepart
 
 	private void Awake()
 	{
+		interactable = GetComponent<Valve.VR.InteractionSystem.Interactable>();
 		if (DebugTable.PuzzleDebug && targetSpot == null)
 			Debug.LogError($"{this.name}: Target Spot unassigned!");
 	}
@@ -50,6 +53,8 @@ public class ClockGear : Puzzlepart
 		{
 			GetComponent<Rigidbody>().isKinematic = true;
 			GetComponent<Collider>().enabled = false;
+			interactable.attachedToHand.DetachObject(this.gameObject);
+			interactable.highlightOnHover = false;
 		}
 	}
 
@@ -59,7 +64,7 @@ public class ClockGear : Puzzlepart
 	/// <returns>True if not in position yet but close enough to snap</returns>
 	private bool CheckSnapping()
 	{
-		if(!inPosition && Vector3.Distance(this.transform.position, targetSpot.position) <= snapDistance)
+		if(!inPosition && !snappingToPosition && Vector3.Distance(this.transform.position, targetSpot.position) <= snapDistance)
 		{
 			StartCoroutine(SnapToPosition());
 			return true;
@@ -79,6 +84,7 @@ public class ClockGear : Puzzlepart
 		Quaternion endRotation = targetSpot.rotation;
 		float startTime = Time.time;
 		float endTime = Time.time + snappingTime;
+		snappingToPosition = true;
 
 		while(true)
 		{
@@ -92,6 +98,7 @@ public class ClockGear : Puzzlepart
 			if(Time.time >= endTime)
 			{
 				inPosition = true;
+				snappingToPosition = false;
 				onPosition.Invoke();
 				SetFinished();
 				break;
