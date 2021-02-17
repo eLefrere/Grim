@@ -5,10 +5,10 @@ using UnityEngine;
 /// <summary>
 /// @Author : Veli-Matti Vuoti
 /// 
-/// This class is used to save puzzlepart data without causing merge issues with the puzzlepart class itself, implements ISaver interface
-/// Has reference to puzzlepart and the savedata
-/// Listens OnSave and OnLoad events for updating data
-/// Add this component for puzzleparts that needs saving
+/// This class is used to save puzzlepart data without causing merge issues with the puzzlepart class itself, implements ISaver interface.
+/// Has reference to puzzlepart and the savedata.
+/// Listens OnSave and OnLoad events for updating data.
+/// Add this component for puzzleparts that needs saving.
 /// </summary>
 public class PuzzlepartSaver : MonoBehaviour, ISaver
 {
@@ -38,7 +38,7 @@ public class PuzzlepartSaver : MonoBehaviour, ISaver
     }
 
     /// <summary>
-    /// On Save updates the save data with object data
+    /// On Save updates the save data with object data.
     /// </summary>
     public void UpdateSaveData()
     {
@@ -65,7 +65,7 @@ public class PuzzlepartSaver : MonoBehaviour, ISaver
     }
 
     /// <summary>
-    /// On Load updates the object data with save data
+    /// On Load updates the object data with save data.
     /// </summary>
     public void UpdateObjectData()
     {

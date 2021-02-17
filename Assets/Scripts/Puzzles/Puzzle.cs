@@ -6,8 +6,8 @@ using UnityEngine;
 /// <summary>
 /// Author : Veli-Matti Vuoti
 /// 
-/// Abstract Base class for puzzles, inherit from this to make custom puzzle logic! 
-/// Observer finds list of Puzzle classes to observe!
+/// Abstract Base class for puzzles, inherit from this to make custom puzzle logic. 
+/// Observer finds list of Puzzle classes to observe.
 /// </summary>
 public abstract class Puzzle : MonoBehaviour
 {
@@ -67,7 +67,7 @@ public abstract class Puzzle : MonoBehaviour
     }
 
     /// <summary>
-    /// Checks if puzzleparts are complete if they are runs CompletePuzzle function
+    /// Checks if puzzleparts are complete, if they are runs CompletePuzzle function
     /// </summary>
     public void CheckStatus()
     {
