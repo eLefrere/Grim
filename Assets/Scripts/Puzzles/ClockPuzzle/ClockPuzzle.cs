@@ -18,10 +18,9 @@ public class ClockPuzzle : Puzzle
 {
 	private readonly List<ClockGear> gears = new List<ClockGear>();
 	private readonly string clockPuzzleGearCompleteCode = "ClockPuzzlePartComplete";
-
-	[SerializeField]
-	private UnityEngine.Events.UnityEvent onComplete;
-
+#pragma warning disable 0649
+	[SerializeField] private UnityEngine.Events.UnityEvent onComplete;
+#pragma warning restore 0649
 	private void Reset()
 	{
 		completionEventCode = "ClockPuzzleComplete";

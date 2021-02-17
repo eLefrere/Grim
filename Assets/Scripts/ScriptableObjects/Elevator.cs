@@ -21,7 +21,9 @@ public class Elevator : MonoBehaviour
     bool moving = false;
     bool top = false;
 
-	[SerializeField] private ElevatorDoorHandler doorHandler;
+#pragma warning disable 0649
+    [SerializeField] private ElevatorDoorHandler doorHandler;
+#pragma warning restore 0649
 
     /// <summary>
     /// Calls the coroutine for elevator movement upwards.

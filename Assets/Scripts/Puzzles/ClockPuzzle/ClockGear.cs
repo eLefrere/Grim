@@ -21,9 +21,9 @@ public class ClockGear : Puzzlepart
 
 	[Tooltip("How long it takes to snapping part to rotate and lock to its position.")]
 	[SerializeField, Range(0f, 10f)] private float snappingTime = 1f;
-
+#pragma warning disable 0649
 	[SerializeField] private UnityEngine.Events.UnityEvent onPosition;
-
+#pragma warning restore 0649
 	[HideInInspector] public bool isUpNext = false;
 	[HideInInspector] public bool inPosition = false;
 	private Valve.VR.InteractionSystem.Interactable interactable;
