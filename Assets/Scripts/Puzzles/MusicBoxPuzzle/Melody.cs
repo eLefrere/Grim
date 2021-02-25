@@ -6,13 +6,14 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "New Melody", menuName = "Melody")]
-public class Melody : ScriptableObject, IEnumerable
+public class Melody : ScriptableObject//, IEnumerable
 {
-	public List<Note> Notes { get => notes; }
-	public int Length { get => notes.Count; }
+	public List<Note> Notes => notes;
+	[SerializeField] private List<Note> notes = new List<Note>();
+	//public List<Note> Notes => notes;
 
-	private List<Note> notes = new List<Note>();
-	private string toString = "";
+	public int Length => Notes.Count;
+
 
 
 
@@ -20,8 +21,10 @@ public class Melody : ScriptableObject, IEnumerable
 	//----------------------------------------------------
 	public void Clear()
 	{
-		notes.Clear();
-		UpdateToString(true);
+		UnityEditor.Undo.RecordObject(this, "Melody Cleared");
+		Notes.Clear();
+		//UpdateToString(true);
+		SaveChanges();
 	}
 
 
@@ -29,46 +32,62 @@ public class Melody : ScriptableObject, IEnumerable
 	//----------------------------------------------------
 	public void Add(Note note)
 	{
-		notes.Add(note);
-		UpdateToString();
+		UnityEditor.Undo.RecordObject(this, "Note Added To Melody");
+		Notes.Add(note);
+		//UpdateToString();
+		SaveChanges();
 	}
 
 
-
+	/*
 	//----------------------------------------------------
 	public IEnumerator GetEnumerator()
 	{
-		return ((IEnumerable)notes).GetEnumerator();
-	}
+		return ((IEnumerable)Notes).GetEnumerator();
+	}*/
 
 
 
 	//----------------------------------------------------
 	public override string ToString()
 	{
+		string toString = "";
+
+		foreach (Note note in Notes)
+		{
+			toString += $"{note.ToString().Replace("Sharp", "#")} ";
+		}
+
 		return toString;
 	}
 
 
-
+	/*
 	//----------------------------------------------------
 	private void UpdateToString(bool clear = false)
 	{
 		if(!clear)
 		{
-			toString += $"{notes[notes.Count-1].ToString().Replace("Sharp", "#")} ";
+			toString += $"{Notes[Notes.Count-1].ToString().Replace("Sharp", "#")} ";
 			return;
 		}
 
 		toString = "";
 
-		foreach (Note note in notes)
+		foreach (Note note in Notes)
 		{
 			toString += $"{note.ToString().Replace("Sharp", "#")} ";
 		}
+	}*/
+
+
+
+	//---------------------------------------------------------------
+	private void SaveChanges()
+	{
+		UnityEditor.EditorUtility.SetDirty(this);
+		//UnityEditor.AssetDatabase.SaveAssets();
 	}
-
-
 
 	//----------------------------------------------------------------
 	//----------------------------------------------------------------
@@ -162,7 +181,7 @@ public class Melody : ScriptableObject, IEnumerable
 			if (GUILayout.Button("No!"))
 			{
 				onResult?.Invoke(false);
-				this.Close(); 
+				this.Close();
 			}
 
 			UnityEditor.EditorGUILayout.EndHorizontal();

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e5456d2ee3fd4aa7b564353d70356, type: 3}
   m_Name: DefaultMelody
   m_EditorClassIdentifier: 
-  toString: 
+  notes: 000000000100000002000000030000000400000000000000
