@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEngine;
 
 
-
+[Serializable]
 public enum Note { C4, F4, A4, ASharp4, C5 }
 
 
