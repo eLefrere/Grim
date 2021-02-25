@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.027990106, g: 0.032359682, b: 0.049505755, a: 1}
+  m_IndirectSpecularColor: {r: 0.027989848, g: 0.032359973, b: 0.049506098, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3823,6 +3823,120 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 498578104}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &501091274
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 858589274}
+    m_Modifications:
+    - target: {fileID: 651431019263725709, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_Name
+      value: MusicBoxPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 757010428248591801, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.493
+      objectReference: {fileID: 0}
+    - target: {fileID: 757010428248591801, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.064
+      objectReference: {fileID: 0}
+    - target: {fileID: 757010428248591801, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.94584036
+      objectReference: {fileID: 0}
+    - target: {fileID: 757010428248591801, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.32463214
+      objectReference: {fileID: 0}
+    - target: {fileID: 757010428248591801, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -142.113
+      objectReference: {fileID: 0}
+    - target: {fileID: 757010428573230419, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 757010428573230419, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.832
+      objectReference: {fileID: 0}
+    - target: {fileID: 757010428573230419, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.207
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040369992367774604, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: startAngle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401803297480595343, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.437397
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401803297480595343, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.275572
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401803297480595343, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.361408
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401803297480595343, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401803297480595343, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.29407808
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401803297480595343, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401803297480595343, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9557814
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401803297480595343, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401803297480595343, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401803297480595343, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -34.205
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401803297480595343, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf, type: 3}
 --- !u!43 &504193827
 Mesh:
   m_ObjectHideFlags: 0
@@ -7250,6 +7364,7 @@ Transform:
   - {fileID: 1624116180}
   - {fileID: 1761193675}
   - {fileID: 3090771560540106325}
+  - {fileID: 1897956599}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12497,6 +12612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piano&Ottoman (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: f7d11bded4878534a9938ff4448a0faa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f7d11bded4878534a9938ff4448a0faa, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.918
@@ -15921,6 +16040,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881356628}
   m_Mesh: {fileID: 4300006, guid: 45bac0f30715b4f4cba3fa230dbbeaa0, type: 3}
+--- !u!4 &1897956599 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5401803297480595343, guid: eb2aded1b6e0b8144b58f7edf9d6a4cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 501091274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1900936772
 PrefabInstance:
   m_ObjectHideFlags: 0
