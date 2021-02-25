@@ -5,6 +5,7 @@ using Valve.VR.InteractionSystem;
 
 /// <summary>
 /// @Author: Veli-Matti Vuoti
+/// @Co-Author : Sam Hemming (Rewrote and bugfix)
 /// 
 /// This class moves the elevator upstairs and player aswell.
 /// If map changes change the heigh values.
@@ -13,14 +14,16 @@ using Valve.VR.InteractionSystem;
 /// </summary>
 public class Elevator : MonoBehaviour
 {
-    public float topHeight = 6f;
-    public float startHeight = 0f;
-    public float traverseTime = 5f;
+    [SerializeField] private float topHeight = 6f;
+	[SerializeField] private float startHeight = 0f;
+	[SerializeField] private float traverseTime = 5f;
 
     bool moving = false;
     bool top = false;
 
-    public ElevatorDoorHandler doorHandler;
+#pragma warning disable 0649
+    [SerializeField] private ElevatorDoorHandler doorHandler;
+#pragma warning restore 0649
 
     /// <summary>
     /// Calls the coroutine for elevator movement upwards.
@@ -33,7 +36,6 @@ public class Elevator : MonoBehaviour
             moving = true;
             doorHandler.CloseDoors();
             StartCoroutine(ReachedLevel(topHeight));
-            //transform.Rotate(Vector3.up * 90);
         }
     }
 
@@ -47,8 +49,7 @@ public class Elevator : MonoBehaviour
             top = false;
             moving = true;
             doorHandler.CloseDoors();
-            StartCoroutine(ReachedLevel(-topHeight));
-            //transform.rotation = Quaternion.Euler(0, 0, 0);
+            StartCoroutine(ReachedLevel(startHeight));
         }
     }
 
@@ -60,9 +61,14 @@ public class Elevator : MonoBehaviour
     public IEnumerator ReachedLevel(float newHeight)
     {
         yield return new WaitForSeconds(traverseTime);
-        transform.position += Vector3.up * newHeight;       
-        doorHandler.OpenDoors();
-        moving = false;
-        Player.instance.transform.position = Vector3.up * transform.position.y;
+		moving = false;
+
+		Player.instance.transform.position = new Vector3(Player.instance.transform.position.x,
+														 Player.instance.transform.position.y - transform.position.y + newHeight,
+														 Player.instance.transform.position.z);
+
+		transform.position = new Vector3(transform.position.x, newHeight, transform.position.z);
+
+		doorHandler.OpenDoors();
     }
 }
