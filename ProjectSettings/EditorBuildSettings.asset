@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/EmppuTest.unity
-    guid: f652389d252b7384e8459dffbf2b552f
+    path: Assets/Scenes/Main.unity
+    guid: 6900aa1a80b601b4e8bd443bdf7e5542
   m_configObjects: {}
