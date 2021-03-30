@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// @Author: Veli-Matti Vuoti
 /// 
-/// Handles the "VR" Movement without VR Eguipment
+/// Handles the "VR" Movement without VR Equipment
 /// </summary>
 public class FPSMovement : MonoBehaviour
 {
