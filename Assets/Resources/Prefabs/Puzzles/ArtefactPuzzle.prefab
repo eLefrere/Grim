@@ -697,16 +697,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7757195143868689299}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7589b3710bba4704ea3eb2f77fbf6d3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Nodes:
-  - {fileID: 3106584526031527412}
-  - {fileID: 3106584526931493071}
-  - {fileID: 3106584525209462794}
-  - {fileID: 3106584525170338764}
+  - {fileID: 3106584526031527415}
+  - {fileID: 3106584526931493066}
+  - {fileID: 3106584525209462805}
+  - {fileID: 3106584525170338767}
   NodeMats:
   - {fileID: 2100000, guid: 900c34c01a7886645adcd596a8742229, type: 2}
   - {fileID: 2100000, guid: efcbbe58d99387f4eb17bbcb305475fa, type: 2}
