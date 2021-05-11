@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3106584525170338766}
   - component: {fileID: 3106584525170338762}
   - component: {fileID: 3106584525170338761}
-  - component: {fileID: 1673174553772471843}
   m_Layer: 0
   m_Name: ArtefactNode4
   m_TagString: Untagged
@@ -134,18 +133,6 @@ MonoBehaviour:
   isResetedOverTime: 0
   triggerTimer: 0
   resettingTime: 0
---- !u!114 &1673174553772471843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3106584525170338764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0345e0de11b232f4c9d44baf92ae5553, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3106584525209462794
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +147,6 @@ GameObject:
   - component: {fileID: 3106584525209462804}
   - component: {fileID: 3106584525209462800}
   - component: {fileID: 3106584525209462807}
-  - component: {fileID: 1673174553867695613}
   m_Layer: 0
   m_Name: ArtefactNode3
   m_TagString: Untagged
@@ -280,18 +266,6 @@ MonoBehaviour:
   isResetedOverTime: 0
   triggerTimer: 0
   resettingTime: 0
---- !u!114 &1673174553867695613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3106584525209462794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51b717dc865ab9941b73ab320db688f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3106584525851486079
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +315,6 @@ GameObject:
   - component: {fileID: 3106584526031527414}
   - component: {fileID: 3106584526031527410}
   - component: {fileID: 3106584526031527409}
-  - component: {fileID: 1673174552508743707}
   m_Layer: 0
   m_Name: ArtefactNode1
   m_TagString: Untagged
@@ -461,18 +434,6 @@ MonoBehaviour:
   isResetedOverTime: 0
   triggerTimer: 0
   resettingTime: 0
---- !u!114 &1673174552508743707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3106584526031527412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 989a0a1795585674bb6a895e9a0a5bbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3106584526931493071
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +448,6 @@ GameObject:
   - component: {fileID: 3106584526931493065}
   - component: {fileID: 3106584526931493077}
   - component: {fileID: 3106584526931493076}
-  - component: {fileID: 1673174553476357438}
   m_Layer: 0
   m_Name: ArtefactNode2
   m_TagString: Untagged
@@ -607,18 +567,6 @@ MonoBehaviour:
   isResetedOverTime: 0
   triggerTimer: 0
   resettingTime: 0
---- !u!114 &1673174553476357438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3106584526931493071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2933fdcc6ee2548408e0481f0207fcd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5406304191936015598
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,27 +697,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7757195143868689299}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7589b3710bba4704ea3eb2f77fbf6d3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  completionEventCode: 
-  resetEventCode: 
-  timeStep: 3
-  puzzleParts:
-  - {fileID: 3106584526031527409}
-  - {fileID: 3106584526931493076}
-  - {fileID: 3106584525209462807}
-  - {fileID: 3106584525170338761}
-  finished: 0
   Nodes:
-  - {fileID: 3106584526031527412}
-  - {fileID: 3106584526931493071}
-  - {fileID: 3106584525209462794}
-  - {fileID: 3106584525170338764}
+  - {fileID: 3106584526031527415}
+  - {fileID: 3106584526931493066}
+  - {fileID: 3106584525209462805}
+  - {fileID: 3106584525170338767}
   NodeMats:
   - {fileID: 2100000, guid: 900c34c01a7886645adcd596a8742229, type: 2}
   - {fileID: 2100000, guid: efcbbe58d99387f4eb17bbcb305475fa, type: 2}
   - {fileID: 2100000, guid: 9eb34d9f19e7ca7449f3f2a963f0043d, type: 2}
   - {fileID: 2100000, guid: ce83990bea4f58a43a8648655548e55f, type: 2}
+  NodeValues: 02000000000000000300000000000000
