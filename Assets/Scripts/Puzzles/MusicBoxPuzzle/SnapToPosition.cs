@@ -7,15 +7,19 @@ public class SnapToPosition : MonoBehaviour
 	[Tooltip("The spot where this part will snap to.")]
 	[SerializeField] private Transform targetSpot = null;
 
-	[Tooltip("How close to the target spot part must be to snap to it.")]
-	[SerializeField, Range(0.05f, 0.5f)] private float snapDistance = 0.05f;
+	[Tooltip("How close to the target spot part must be to snap to it.\n0 = disabled.")]
+	[SerializeField, Range(0f, 0.5f)] private float snapDistance = 0.05f;
 
 	[Tooltip("How long it takes to snapping part to rotate and lock to its position.")]
 	[SerializeField, Range(0f, 10f)] private float lerppingTime = 1f;
 
+	[Tooltip("Parent to targetspot after snapping to it.")]
+	[SerializeField] private bool parentOnSnap = false;
+
 #pragma warning disable 0649
 	[SerializeField] private UnityEngine.Events.UnityEvent onPosition;
 #pragma warning restore 0649
+
 
 	private Valve.VR.InteractionSystem.Interactable interactable;
 	private Rigidbody rb;
@@ -47,11 +51,17 @@ public class SnapToPosition : MonoBehaviour
 
 	private bool InSnappingDistance()
 	{
+		if (snapDistance == 0) return false;
 		if(Vector3.Distance(transform.position, targetSpot.position) < snapDistance)
 		{
 			return true;
 		}
 		return false;
+	}
+
+	public void LerpToPos()
+	{
+		StartCoroutine(LerpToTargetSpot());
 	}
 
 	private IEnumerator LerpToTargetSpot()
@@ -74,6 +84,9 @@ public class SnapToPosition : MonoBehaviour
 				lerpping = false;
 				rb.isKinematic = true;
 				inPosition = true;
+
+				if (parentOnSnap) transform.parent = targetSpot;
+
 				onPosition?.Invoke();
 				break;
 			}

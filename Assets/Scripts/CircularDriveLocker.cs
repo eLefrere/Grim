@@ -19,15 +19,19 @@ public class CircularDriveLocker : MonoBehaviour
 	public UnityEvent OnToggleLock;
 
 
+	private bool limitByDefault = false;
+
 	private void Start()
 	{
 		cd = GetComponent<CircularDrive>();
 		angles = new Vector2(cd.minAngle, cd.maxAngle);
+		limitByDefault = cd.limited;
 
 		if(isLocked)
 		{
 			cd.minAngle = cd.outAngle;
 			cd.maxAngle = cd.outAngle;
+			cd.limited = true;
 		}
 
 	}
@@ -45,6 +49,7 @@ public class CircularDriveLocker : MonoBehaviour
 
 			cd.minAngle = cd.outAngle;
 			cd.maxAngle = cd.outAngle;
+			cd.limited = true;
 
 			OnLock?.Invoke();
 		}
@@ -52,6 +57,7 @@ public class CircularDriveLocker : MonoBehaviour
 		{
 			cd.minAngle = angles.x;
 			cd.maxAngle = angles.y;
+			cd.limited = limitByDefault;
 
 			OnUnlock?.Invoke();
 		}

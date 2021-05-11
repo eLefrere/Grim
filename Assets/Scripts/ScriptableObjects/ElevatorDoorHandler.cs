@@ -20,12 +20,14 @@ public class ElevatorDoorHandler : MonoBehaviour
     [SerializeField] private Vector3 doorLeftOpen;
 	[SerializeField] private Vector3 doorRightOpen;
 
+	private bool isLocked = false;
+	public bool IsLocked { get => isLocked; set => isLocked = value; }
 
-    private void OnTriggerEnter(Collider other)
+	private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player is near doors!");
+            //Debug.Log("Player is near doors!");
             OpenDoors();
         }
     }
@@ -35,7 +37,7 @@ public class ElevatorDoorHandler : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player moved away from doors!");
+            //Debug.Log("Player moved away from doors!");
             CloseDoors();
         }
     }
@@ -46,6 +48,8 @@ public class ElevatorDoorHandler : MonoBehaviour
 	/// </summary>
 	public void OpenDoors()
 	{
+		if (isLocked) return;
+
 		StopAllCoroutines();
 		StartCoroutine(LerpToPosition(doorLeft, doorLeftOpen));
 		StartCoroutine(LerpToPosition(doorRight, doorRightOpen));
@@ -57,6 +61,8 @@ public class ElevatorDoorHandler : MonoBehaviour
 	/// </summary>
 	public void CloseDoors()
 	{
+		if (isLocked) return;
+
 		StopAllCoroutines();
 		StartCoroutine(LerpToPosition(doorLeft, doorLeftClosed));
 		StartCoroutine(LerpToPosition(doorRight, doorRightClosed));
