@@ -1,59 +1,60 @@
 fileFormatVersion: 2
-guid: f932d5504b081d24ea704530ad06c691
+guid: 476b74666e578e1459a912ab6306e382
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Elevator
-    100002: //RootNode
+    100002: Elevator_Chair
     100004: Elevator_Decor1_Handles
     100006: Elevator_Decor2
-    100008: ElevatorChair
+    100008: //RootNode
     100010: InnerDoor
     100012: Lever
     100014: Lever_Base
-    100016: SlidingDoors
-    400000: //RootNode
-    400002: Elevator
+    100016: SlidingDoors_ElevatorShaft
+    400000: Elevator
+    400002: Elevator_Chair
     400004: Elevator_Decor1_Handles
     400006: Elevator_Decor2
-    400008: ElevatorChair
+    400008: //RootNode
     400010: InnerDoor
     400012: Lever
     400014: Lever_Base
-    400016: SlidingDoors
+    400016: SlidingDoors_ElevatorShaft
     2100000: ElevatorWalls
     2100002: ElevatorFloor
     2100004: Elevator_Decor
     2100006: Elevator_Light
     2100008: Steel_Rough
-    2100010: ElevatorBench_Wood
-    2100012: ElevatorBench_Fabric
-    2100014: ElevatorDoor
-    2100016: ElevatorDoorCage
+    2100010: 2L_Wood_Oak-Dark_mqm
+    2100012: ElevatorBench_Wood
+    2100014: ElevatorBench_Fabric
+    2100016: ElevatorDoor
+    2100018: ElevatorDoorCage
     2300000: Elevator
-    2300002: Elevator_Decor1_Handles
-    2300004: Elevator_Decor2
-    2300006: ElevatorChair
+    2300002: Elevator_Chair
+    2300004: Elevator_Decor1_Handles
+    2300006: Elevator_Decor2
     2300008: InnerDoor
     2300010: Lever
     2300012: Lever_Base
     3300000: Elevator
-    3300002: Elevator_Decor1_Handles
-    3300004: Elevator_Decor2
-    3300006: ElevatorChair
+    3300002: Elevator_Chair
+    3300004: Elevator_Decor1_Handles
+    3300006: Elevator_Decor2
     3300008: InnerDoor
     3300010: Lever
     3300012: Lever_Base
     4300000: Elevator
     4300002: Elevator_Decor2
     4300004: Elevator_Decor1_Handles
-    4300006: SlidingDoors
-    4300008: ElevatorChair
+    4300006: SlidingDoors_ElevatorShaft
+    4300008: Elevator_Chair
     4300010: Lever_Base
     4300012: Lever
     4300014: InnerDoor
     9500000: //RootNode
-    13700000: SlidingDoors
+    13700000: SlidingDoors_ElevatorShaft
   externalObjects: {}
   materials:
     importMaterials: 1
