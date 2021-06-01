@@ -11,8 +11,7 @@ ModelImporter:
     100010: InnerDoor
     100012: Lever
     100014: Lever_Base
-    100016: SlidingDoorL
-    100018: SlidingDoorR
+    100016: SlidingDoors
     400000: //RootNode
     400002: Elevator
     400004: Elevator_Decor1_Handles
@@ -21,8 +20,7 @@ ModelImporter:
     400010: InnerDoor
     400012: Lever
     400014: Lever_Base
-    400016: SlidingDoorL
-    400018: SlidingDoorR
+    400016: SlidingDoors
     2100000: ElevatorWalls
     2100002: ElevatorFloor
     2100004: Elevator_Decor
@@ -49,15 +47,13 @@ ModelImporter:
     4300000: Elevator
     4300002: Elevator_Decor2
     4300004: Elevator_Decor1_Handles
-    4300006: SlidingDoorR
-    4300008: SlidingDoorL
-    4300010: ElevatorChair
-    4300012: Lever_Base
-    4300014: Lever
-    4300016: InnerDoor
+    4300006: SlidingDoors
+    4300008: ElevatorChair
+    4300010: Lever_Base
+    4300012: Lever
+    4300014: InnerDoor
     9500000: //RootNode
-    13700000: SlidingDoorL
-    13700002: SlidingDoorR
+    13700000: SlidingDoors
   externalObjects: {}
   materials:
     importMaterials: 1
