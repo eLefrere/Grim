@@ -20,7 +20,7 @@ public class ElevatorDoorHandler : MonoBehaviour
     [SerializeField] private Vector3 doorLeftOpen;
 	[SerializeField] private Vector3 doorRightOpen;
 
-	private bool isLocked = false;
+	public bool isLocked = false;
 	public bool IsLocked { get => isLocked; set => isLocked = value; }
 
 	private void OnTriggerEnter(Collider other)

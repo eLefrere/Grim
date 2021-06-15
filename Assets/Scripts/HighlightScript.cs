@@ -34,6 +34,7 @@ public class HighlightScript : MonoBehaviour
         trigger.transform.parent = transform;
         trigger.transform.position = transform.position;
         trigger.transform.rotation = transform.rotation;
+        trigger.layer = 2;
         col = trigger.gameObject.AddComponent<SphereCollider>();
         col.radius = radius;
         col.isTrigger = true;

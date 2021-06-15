@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class SnapToPosition : MonoBehaviour
 {
 	[Tooltip("The spot where this part will snap to.")]

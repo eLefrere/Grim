@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class SoundOnAngleSpeed : MonoBehaviour
@@ -12,12 +13,12 @@ public class SoundOnAngleSpeed : MonoBehaviour
     public string RotateSound = "";
     FMOD.Studio.EventInstance instance;
 
-    public int RotateSoundParam;
+    //public int RotateSoundParam;
     public string ParameterName = "Puzzle_wheel_speed";
 
     public int arraySize = 100;
     public float[] speedArray;
-    public int index = 0;
+    //public int index = 0;
 
     public int volumeDivider = 20;
     void Start()
@@ -30,23 +31,20 @@ public class SoundOnAngleSpeed : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void FixedUpdate()
-    {
-        angularSpeed = (transform.rotation.eulerAngles - previousAngle.eulerAngles).magnitude;
-
-        previousAngle = transform.rotation;
-        speedArray[index % arraySize] = angularSpeed;
-        index++;
-        float sum = 0;
-        for (int i = 0; i < arraySize; i++)
-        {
-            sum += speedArray[i];
-        }
-        averageSpeed = sum / arraySize;
-    }
-
     private void Update()
     {
+        angularSpeed = (transform.rotation.eulerAngles - previousAngle.eulerAngles).magnitude;// * Time.deltaTime;
+
+        previousAngle = transform.rotation;
+        speedArray[Time.frameCount % arraySize] = angularSpeed;
+        //index++;
+        //float sum = 0;
+        /*for (int i = 0; i < arraySize; i++)
+        {
+            sum += speedArray[i];
+        }*/
+        averageSpeed = speedArray.Average();
+
         instance.setParameterByName(ParameterName, Mathf.Clamp01(averageSpeed/volumeDivider));
       
         /*instance.getParameterByName(ParameterName, out float value);

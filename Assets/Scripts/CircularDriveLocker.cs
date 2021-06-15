@@ -23,6 +23,11 @@ public class CircularDriveLocker : MonoBehaviour
 
 	private void Start()
 	{
+		Invoke(nameof(LateStart), 0);
+	}
+
+	private void LateStart()
+	{
 		cd = GetComponent<CircularDrive>();
 		angles = new Vector2(cd.minAngle, cd.maxAngle);
 		limitByDefault = cd.limited;
@@ -31,6 +36,7 @@ public class CircularDriveLocker : MonoBehaviour
 		{
 			cd.minAngle = cd.outAngle;
 			cd.maxAngle = cd.outAngle;
+			Debug.Log(cd.outAngle);
 			cd.limited = true;
 		}
 

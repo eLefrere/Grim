@@ -78,7 +78,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   forceStart: 1
-  startAngle: 105
+  startAngle: 0
   rotateGameObject: 1
   debugPath: 0
   dbgPathLimit: 50
@@ -256,6 +256,7 @@ MonoBehaviour:
   targetSpot: {fileID: 6091717116992499901}
   snapDistance: 0.113
   lerppingTime: 0.59
+  parentOnSnap: 0
   onPosition:
     m_PersistentCalls:
       m_Calls:

@@ -21,7 +21,7 @@ public class IgnoreHoveringInteractable : MonoBehaviour
 
 	private void Start()
 	{
-		Invoke("LateStart", 0);
+		Invoke(nameof(LateStart), 0);
 	}
 
 
