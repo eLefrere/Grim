@@ -7,29 +7,51 @@ ModelImporter:
     100002: Victorian_Wardrobe_Door_2
     100004: VictorianLock
     100006: //RootNode
+    100008: Victorian_Wardrobe_Door_1.002
+    100010: Victorian_Wardrobe_Door_2.002
+    100012: VictorianLock.001
     400000: Victorian_Wardrobe_Door_1
     400002: Victorian_Wardrobe_Door_2
     400004: VictorianLock
     400006: //RootNode
+    400008: Victorian_Wardrobe_Door_1.002
+    400010: Victorian_Wardrobe_Door_2.002
+    400012: VictorianLock.001
     2100000: VictorianWardrobe
     2100002: VictorianWardrobe_door
     2100004: VictorianLock&Key
+    2100006: VictorianWardrobe.001
+    2100008: VictorianWardrobe_door.001
+    2100010: VictorianLock&Key.001
     2300000: Victorian_Wardrobe_Door_1
     2300002: Victorian_Wardrobe_Door_2
     2300004: VictorianLock
     2300006: //RootNode
+    2300008: Victorian_Wardrobe_Door_1.002
+    2300010: Victorian_Wardrobe_Door_2.002
+    2300012: VictorianLock.001
     3300000: Victorian_Wardrobe_Door_1
     3300002: Victorian_Wardrobe_Door_2
     3300004: VictorianLock
     3300006: //RootNode
+    3300008: Victorian_Wardrobe_Door_1.002
+    3300010: Victorian_Wardrobe_Door_2.002
+    3300012: VictorianLock.001
     4300000: Victorian_Wardrobe
     4300002: Victorian_Wardrobe_Door_1
     4300004: Victorian_Wardrobe_Door_2
     4300006: VictorianLock
+    4300008: Victorian_Wardrobe.002
+    4300010: Victorian_Wardrobe_Door_1.002
+    4300012: VictorianLock.001
+    4300014: Victorian_Wardrobe_Door_2.002
     6400000: Victorian_Wardrobe_Door_1
     6400002: Victorian_Wardrobe_Door_2
     6400004: VictorianLock
     6400006: //RootNode
+    6400008: Victorian_Wardrobe_Door_1.002
+    6400010: Victorian_Wardrobe_Door_2.002
+    6400012: VictorianLock.001
   externalObjects:
   - first:
       type: UnityEngine:Material
