@@ -11,162 +11,93 @@ using UnityEngine;
 /// </summary>
 public class ElevatorDoorHandler : MonoBehaviour
 {
-	[SerializeField, Range(0, 10)] private float closingTime = 1f;
-	[SerializeField] private Transform doorRight;
-	[SerializeField] private Transform doorLeft;
+	[SerializeField, Range(0, 10)] public float doorOpenCloseTime = 1f;
+	[SerializeField, Range(2, 10)] public float shaftTravelTime = 5f;
+#pragma warning disable 0649
+	[SerializeField] private CircularDriveLocker circularDriveLocker;
+#pragma warning restore 0649
 
-	[SerializeField] private Vector3 doorLeftClosed;
-    [SerializeField] private Vector3 doorRightClosed;
-    [SerializeField] private Vector3 doorLeftOpen;
-	[SerializeField] private Vector3 doorRightOpen;
+	private SkinnedMeshRenderer skinnedMesh;
 
 	public bool isLocked = false;
 	public bool IsLocked { get => isLocked; set => isLocked = value; }
 
-	private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            //Debug.Log("Player is near doors!");
-            OpenDoors();
-        }
-    }
-
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            //Debug.Log("Player moved away from doors!");
-            CloseDoors();
-        }
-    }
-
+	private void Start()
+	{
+		skinnedMesh = GetComponent<SkinnedMeshRenderer>();
+	}
 
 	/// <summary>
 	/// TODO: Change this function to activate door open animation.
 	/// </summary>
-	public void OpenDoors()
+	public void OperateDoors()
 	{
 		if (isLocked) return;
 
 		StopAllCoroutines();
-		StartCoroutine(LerpToPosition(doorLeft, doorLeftOpen));
-		StartCoroutine(LerpToPosition(doorRight, doorRightOpen));
+		StartCoroutine(LerpMesh());
 	}
 
 
-	/// <summary>
-	/// TODO: Change this function to activate door closing animation.
-	/// </summary>
-	public void CloseDoors()
+	IEnumerator LerpMesh()
 	{
-		if (isLocked) return;
+		// Lock inner door
+		circularDriveLocker.Lock();
 
-		StopAllCoroutines();
-		StartCoroutine(LerpToPosition(doorLeft, doorLeftClosed));
-		StartCoroutine(LerpToPosition(doorRight, doorRightClosed));
-	}
 
-	/// <summary>
-	/// Lerps given object from its current position to given endposition over closingTime.
-	/// All in local worldspace.
-	/// </summary>
-	/// <param name="obj"></param>
-	/// <param name="endPos"></param>
-	/// <returns></returns>
-	IEnumerator LerpToPosition(Transform obj, Vector3 endPos)
-	{
-		Vector3 startPos = obj.localPosition;
+		// Doors close
 		float startTime = Time.unscaledTime;
-		float endTime = startTime + closingTime;
+		float endTime = startTime + doorOpenCloseTime;
 
 		while(true)
 		{
 			float time = Time.unscaledTime;
-			obj.localPosition = Vector3.Lerp(startPos, endPos, Mathf.InverseLerp(startTime, endTime, time));
+			skinnedMesh.SetBlendShapeWeight(0, 100*Mathf.InverseLerp(startTime, endTime, time));
 
 			if (time >= endTime)
 				break;
 
 			yield return null;
 		}
-	}
 
 
-	// Extra editor and convenience stuff----------------------
+		// Shaft travel
+		startTime = Time.unscaledTime;
+		endTime = startTime + shaftTravelTime;
 
+		bool goingUp = (skinnedMesh.GetBlendShapeWeight(1) == 0);
 
-	/// <summary>
-	/// trys to find doors from parent gameobject
-	/// </summary>
-	private void Reset()
-	{
-		var parentTransforms = gameObject.transform.root.GetComponentsInChildren<Transform>();
-
-		foreach(Transform trans in parentTransforms)
+		while (true)
 		{
-			if(trans.name.Equals("DoorLeft"))
-			{
-				doorLeft = trans;
-			}
+			float time = Time.unscaledTime;
+			if (goingUp) skinnedMesh.SetBlendShapeWeight(1, 100 * Mathf.InverseLerp(startTime, endTime, time));
+			else skinnedMesh.SetBlendShapeWeight(1, 100 * (1 - Mathf.InverseLerp(startTime, endTime, time)));
 
-			if (trans.name.Equals("DoorRight"))
-			{
-				doorRight = trans;
-			}
+			if (time >= endTime)
+				break;
+
+			yield return null;
 		}
 
-		if (!doorLeft || !doorRight)
+
+		// Doors open
+		startTime = Time.unscaledTime;
+		endTime = startTime + doorOpenCloseTime;
+
+		while (true)
 		{
-			Debug.LogError("Can not find doors by name! (DoorLeft, DoorRight)");
-			return;
-		}
-	}
+			float time = Time.unscaledTime;
+			skinnedMesh.SetBlendShapeWeight(0, 100 * (1 - Mathf.InverseLerp(startTime, endTime, time)));
 
+			if (time >= endTime)
+				break;
 
-	[ContextMenu("Record Doors Open Position")]
-	private void RecordDoorsOpenPos()
-	{
-		if(!doorLeft || !doorRight)
-		{
-			Debug.LogError("Can not record door position when no door has been assigned!");
-			return;
-		}
-
-		doorLeftOpen = doorLeft.localPosition;
-		doorRightOpen = doorRight.localPosition;
-	}
-
-
-	[ContextMenu("Record Doors Closed Position")]
-	private void RecordDoorsClosedPos()
-	{
-		if (!doorLeft || !doorRight)
-		{
-			Debug.LogError("Can not record door position when no door has been assigned!");
-			return;
+			yield return null;
 		}
 
-		doorLeftClosed = doorLeft.localPosition;
-		doorRightClosed = doorRight.localPosition;
+
+		// Unlock inner door
+		circularDriveLocker.Unlock();
 	}
-
-
-	[ContextMenu("Close Doors")]
-	private void Close()
-	{
-		doorLeft.localPosition = doorLeftClosed;
-		doorRight.localPosition = doorRightClosed;
-	}
-
-
-	[ContextMenu("Open Doors")]
-	private void Open()
-	{
-		doorLeft.localPosition = doorLeftOpen;
-		doorRight.localPosition = doorRightOpen;
-	}
-
 
 }
