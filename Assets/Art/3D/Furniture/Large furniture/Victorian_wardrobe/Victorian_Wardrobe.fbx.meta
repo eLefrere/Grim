@@ -11,6 +11,7 @@ ModelImporter:
     400004: Victorian_Wardrobe_Door_2
     2100000: VictorianWardrobe
     2100002: VictorianWardrobe_door
+    2100004: VictorianWardrobe.001
     2300000: //RootNode
     2300002: Victorian_Wardrobe_Door_1
     2300004: Victorian_Wardrobe_Door_2
@@ -20,6 +21,7 @@ ModelImporter:
     4300000: Victorian_Wardrobe
     4300002: Victorian_Wardrobe_Door_1
     4300004: Victorian_Wardrobe_Door_2
+    4300006: Victorian_Wardrobe.002
   externalObjects:
   - first:
       type: UnityEngine:Material
