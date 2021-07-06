@@ -3,21 +3,27 @@ guid: a2d183093177ffd49a9bb6cac1ce590e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: ArtifactEyeCage
-    100002: ArtifactMainStructure
-    100004: //RootNode
-    400000: ArtifactEyeCage
-    400002: ArtifactMainStructure
-    400004: //RootNode
+    100000: ArtifactEye
+    100002: ArtifactEyeCage
+    100004: ArtifactMainStructure
+    100006: //RootNode
+    400000: ArtifactEye
+    400002: ArtifactEyeCage
+    400004: ArtifactMainStructure
+    400006: //RootNode
     2100000: ArtifactCage
     2100002: ArtifactMainStruct
     2100004: ArtifactPipes
-    2300000: ArtifactEyeCage
-    2300002: ArtifactMainStructure
-    3300000: ArtifactEyeCage
-    3300002: ArtifactMainStructure
+    2100006: ArtifactPupil
+    2300000: ArtifactEye
+    2300002: ArtifactEyeCage
+    2300004: ArtifactMainStructure
+    3300000: ArtifactEye
+    3300002: ArtifactEyeCage
+    3300004: ArtifactMainStructure
     4300000: ArtifactEyeCage
     4300002: ArtifactMainStructure
+    4300004: ArtifactEye
   externalObjects: {}
   materials:
     importMaterials: 1
