@@ -121,7 +121,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 1e1418395a26a724dbcd950817ceb868, type: 3}
       propertyPath: m_Name
-      value: TableBell
+      value: NewGameBell
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1e1418395a26a724dbcd950817ceb868, type: 3}
       propertyPath: m_LocalPosition.x
@@ -521,7 +521,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 1e1418395a26a724dbcd950817ceb868, type: 3}
       propertyPath: m_Name
-      value: TableBell (2)
+      value: OptionsBell
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1e1418395a26a724dbcd950817ceb868, type: 3}
       propertyPath: m_LocalPosition.x
@@ -658,7 +658,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 1e1418395a26a724dbcd950817ceb868, type: 3}
       propertyPath: m_Name
-      value: TableBell (1)
+      value: ExitBell
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1e1418395a26a724dbcd950817ceb868, type: 3}
       propertyPath: m_LocalPosition.x
